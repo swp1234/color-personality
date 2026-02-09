@@ -73,6 +73,9 @@ class ColorPersonalityApp {
         const premiumBtn = document.getElementById('premium-btn');
         if (premiumBtn) premiumBtn.addEventListener('click', () => this.showPremiumAnalysis());
 
+        // Initialize Theme Toggle
+        this.initTheme();
+
         // Google Analytics
         this.setupGA();
     }
@@ -487,6 +490,36 @@ class ColorPersonalityApp {
         if ('serviceWorker' in navigator) {
             // 현재 폴더에 sw.js가 없어도 부모 폴더의 sw를 사용할 수 있음
             // 또는 프로젝트마다 sw.js를 만들 수 있음
+        }
+    }
+
+    // Theme Toggle Function
+    initTheme() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Load theme preference from localStorage
+        const savedTheme = localStorage.getItem('app-theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        this.updateThemeButton(savedTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme') || 'dark';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('app-theme', newTheme);
+                this.updateThemeButton(newTheme);
+            });
+        }
+    }
+
+    updateThemeButton(theme) {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+            themeToggle.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
         }
     }
 }
