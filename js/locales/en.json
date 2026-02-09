@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "description": "What color represents your personality? Discover your color personality type with 12 questions. Viral personality test for social media sharing!",
+    "keywords": "color personality test, personality test, color personality, personality assessment, viral test",
+    "og_title": "What's Your Color Personality? 🎨 8 Color Types",
+    "og_description": "Discover your personality color with 12 questions! Red, Blue, Green, Yellow and more. Share your results on social media!",
+    "twitter_title": "What's Your Color Personality? 🎨",
+    "twitter_description": "Find your color personality with this fun test!"
+  },
+  "app": {
+    "title": "Color Personality Test",
+    "skipLink": "Skip to main content",
+    "loading": "Loading..."
+  },
+  "intro": {
+    "title": "Color Personality Test",
+    "subtitle": "If your personality could be a color, what would it be?",
+    "description": "Discover your personality type with 12 insightful questions.",
+    "description_2": "Find which of the 8 color personality types best represents you!",
+    "time_estimate": "Time to complete: About 3 minutes"
+  },
+  "button": {
+    "start": "Start Test",
+    "back": "Back",
+    "retry": "Try Again",
+    "premium": "Watch Ad for AI Deep Analysis",
+    "share_download": "Download Image",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copy Link"
+  },
+  "questions": {
+    "q1": {
+      "text": "How do you usually make decisions?",
+      "opt1": "Follow your emotions and intuition",
+      "opt2": "Use careful planning and logic",
+      "opt3": "Respect others' opinions",
+      "opt4": "Try creative and new approaches"
+    },
+    "q2": {
+      "text": "How do you handle stress?",
+      "opt1": "Take time alone to recharge",
+      "opt2": "Seek rest in nature",
+      "opt3": "Have deep conversations",
+      "opt4": "Switch activities for distraction"
+    },
+    "q3": {
+      "text": "How do you think others perceive you?",
+      "opt1": "Energetic and outgoing",
+      "opt2": "Thoughtful and careful",
+      "opt3": "Kind and considerate",
+      "opt4": "Creative and unique"
+    },
+    "q4": {
+      "text": "How do you face new challenges?",
+      "opt1": "With fearless determination",
+      "opt2": "With careful planning",
+      "opt3": "With careful consideration",
+      "opt4": "With creative exploration"
+    },
+    "q5": {
+      "text": "What's your ideal environment?",
+      "opt1": "Quiet and peaceful",
+      "opt2": "Free and comfortable",
+      "opt3": "Warm with good people",
+      "opt4": "Dynamic and lively"
+    },
+    "q6": {
+      "text": "How do you react to failure?",
+      "opt1": "Try again immediately",
+      "opt2": "Analyze and improve",
+      "opt3": "Seek comfort from others",
+      "opt4": "Learn from it differently"
+    },
+    "q7": {
+      "text": "What best describes you?",
+      "opt1": "Imaginative and emotional",
+      "opt2": "Bright and optimistic",
+      "opt3": "Calm and balanced",
+      "opt4": "Brave and decisive"
+    },
+    "q8": {
+      "text": "What's your work style?",
+      "opt1": "Quick and efficient",
+      "opt2": "Thorough and careful",
+      "opt3": "Collaborative with team",
+      "opt4": "Creative and innovative"
+    },
+    "q9": {
+      "text": "How do you prefer to travel?",
+      "opt1": "Spontaneous without plans",
+      "opt2": "With detailed planning",
+      "opt3": "With friends enjoying together",
+      "opt4": "Seeking unique experiences"
+    },
+    "q10": {
+      "text": "What do you value most?",
+      "opt1": "Peace and harmony",
+      "opt2": "Truth and honesty",
+      "opt3": "Warmth and connection",
+      "opt4": "Freedom and expression"
+    },
+    "q11": {
+      "text": "In relationships, you tend to:",
+      "opt1": "Take the lead",
+      "opt2": "Seek deep connections",
+      "opt3": "Get along with everyone",
+      "opt4": "Maintain independence"
+    },
+    "q12": {
+      "text": "What's your ideal future?",
+      "opt1": "Major achievements and recognition",
+      "opt2": "Peaceful and stable life",
+      "opt3": "Helping others",
+      "opt4": "New meaningful challenges"
+    }
+  },
+  "analyzing": {
+    "title": "Analyzing your personality...",
+    "subtitle": "Please wait a moment"
+  },
+  "result": {
+    "meaning": "Color Meaning",
+    "strengths": "Key Strengths",
+    "weaknesses": "Areas to Improve",
+    "compatible": "Compatible Colors",
+    "incompatible": "Colors to Watch",
+    "share": "Share Your Result",
+    "deep_analysis": "AI Deep Analysis"
+  },
+  "colors": {
+    "red": {
+      "name": "Red - The Passionate",
+      "tagline": "You achieve everything with fiery passion",
+      "description": "You have a passionate and bold personality. With endless energy, you can achieve any goal and lead naturally. You embrace new challenges fearlessly and cherish living in the present moment.",
+      "meaning": "Passion, Energy, Courage, Leadership, Activity, Strong Will",
+      "strength1": "Excellent leadership and drive",
+      "strength2": "Fearlessness and determination",
+      "strength3": "Quick action and decisiveness",
+      "weakness1": "Can be impulsive sometimes",
+      "weakness2": "May ignore others' opinions",
+      "deepAnalysis": "You are a natural leader. Your energy inspires everyone around you and makes the impossible possible. Your drive is invaluable, but adding thoughtful planning will make you an even greater leader."
+    },
+    "blue": {
+      "name": "Blue - The Intellectual",
+      "tagline": "Understanding the world through deep reflection",
+      "description": "You are calm and thoughtful, seeking stability and security. Your analytical thinking solves problems effectively, and your reliability earns trust from those around you.",
+      "meaning": "Tranquility, Trust, Depth, Wisdom, Stability, Composure",
+      "strength1": "Excellent analytical and logical thinking",
+      "strength2": "High reliability and trustworthiness",
+      "strength3": "Deep insight and wisdom",
+      "weakness1": "Can be overly passive",
+      "weakness2": "Overthinking may hinder action",
+      "deepAnalysis": "You are a true philosopher. Your calm analysis clarifies complex situations, and your stability is a precious asset. Balance your thoughts with action to manifest your ideas in reality."
+    },
+    "green": {
+      "name": "Green - The Harmonizer",
+      "tagline": "Healing the world with harmony and balance",
+      "description": "You are peaceful and seek harmony. You understand others' emotions and show deep compassion. You prefer a stable, balanced life and bring comfort to those around you.",
+      "meaning": "Peace, Healing, Harmony, Consideration, Balance, Naturalness",
+      "strength1": "Excellent empathy and consideration",
+      "strength2": "Ability to maintain harmonious relationships",
+      "strength3": "Stability and trustworthiness",
+      "weakness1": "May avoid sharing your opinions",
+      "weakness2": "Tend to procrastinate decisions",
+      "deepAnalysis": "You are a natural mediator. Your empathy heals many hearts, and your presence brings peace. Don't forget that your needs matter too. Balance caring for others with caring for yourself."
+    },
+    "yellow": {
+      "name": "Yellow - The Optimist",
+      "tagline": "Brightening everything with positivity like the sun",
+      "description": "You are bright and optimistic. Your positive attitude lights up everyone around you and you excel at finding joy. Your friendly nature helps you build good relationships with many people.",
+      "meaning": "Optimism, Hope, Brightness, Friendliness, Positivity, Vitality",
+      "strength1": "Positive attitude and optimism",
+      "strength2": "Excellent social skills",
+      "strength3": "Ability to inspire others",
+      "weakness1": "May avoid deep thinking",
+      "weakness2": "May struggle with adversity",
+      "deepAnalysis": "You are a beacon of positivity. Your brightness makes the world warmer for everyone. While your optimism is precious, embrace life's challenges too to grow deeper."
+    },
+    "purple": {
+      "name": "Purple - The Creator",
+      "tagline": "Drawing new worlds with unique imagination",
+      "description": "You are creative with a rich imagination. You see the world uniquely, with high artistic sensitivity. You are a free spirit not bound by tradition.",
+      "meaning": "Creativity, Imagination, Mystery, Individuality, Artistry, Innovation",
+      "strength1": "Excellent creativity and imagination",
+      "strength2": "Unique perspective and individuality",
+      "strength3": "Artistic sensitivity",
+      "weakness1": "May be disconnected from reality",
+      "weakness2": "Execution may be weak",
+      "deepAnalysis": "You are a true artist. Your imagination is infinite and inspires many. Balance your creativity with practical planning to bring your dreams to reality."
+    },
+    "orange": {
+      "name": "Orange - The Energizer",
+      "tagline": "Living freely with vibrant energy in each moment",
+      "description": "You are energetic and vivid. You love new experiences and have the ability to fully enjoy the present. You are sociable, flexible, and bring vitality to everyone around you.",
+      "meaning": "Vitality, Freedom, Immediacy, Passion, Flexibility, Liveliness",
+      "strength1": "Strong activity and liveliness",
+      "strength2": "Ability to enjoy new experiences",
+      "strength3": "Excellent adaptability",
+      "weakness1": "Long-term planning may be weak",
+      "weakness2": "May lack consistency",
+      "deepAnalysis": "You are a true spirit of freedom. Your vibrant energy makes everything enjoyable. Balance living in the moment with working toward future goals for a richer life."
+    },
+    "pink": {
+      "name": "Pink - The Empath",
+      "tagline": "Touching hearts with warm feelings",
+      "description": "You are emotionally rich and highly sensitive. You care deeply for those around you with warm consideration. Your emotional expression is abundant and you read others' feelings well.",
+      "meaning": "Emotion, Compassion, Warmth, Sensitivity, Delicacy, Inner Beauty",
+      "strength1": "Excellent sensitivity and empathy",
+      "strength2": "Warm consideration and compassion",
+      "strength3": "Rich emotional expression",
+      "weakness1": "May be swayed by emotions",
+      "weakness2": "Too influenced by others' moods",
+      "deepAnalysis": "You are a true artist of emotion. Your sensitivity touches many hearts and your care moves people deeply. Balance your emotional openness with rational judgment to become stronger."
+    },
+    "white": {
+      "name": "White - The Pure",
+      "tagline": "The great capacity to embrace everything",
+      "description": "You have a pure and open heart. You accept everyone warmly and try to understand without judgment. You seek genuineness and honesty, harmonizing with all colors and people.",
+      "meaning": "Purity, Completion, Neutrality, Tranquility, Inclusivity, Beginning",
+      "strength1": "Open heart embracing everyone",
+      "strength2": "High morality and honesty",
+      "strength3": "Harmony with all types",
+      "weakness1": "May lack self-assertion",
+      "weakness2": "May hide your emotions",
+      "deepAnalysis": "You are a true sage. Your openness and inclusivity comfort everyone, and your honesty earns trust. Remember to value yourself too, and express your opinions confidently. Your authentic self is most beautiful."
+    }
+  },
+  "message": {
+    "copy_success": "Result link copied to clipboard!",
+    "copy_error": "Failed to copy to clipboard. Please try again."
+  },
+  "recommendations": {
+    "title": "Try These Too"
+  },
+  "game": {
+    "back": "DopaBrain Home"
+  }
+}
