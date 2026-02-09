@@ -107,8 +107,11 @@ class ColorPersonalityApp {
     }
 
     startQuiz() {
+        // GA4: 테스트 시작
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'quiz_start', {
+            gtag('event', 'test_start', {
+                app_name: 'color-personality',
+                content_type: 'test',
                 event_category: 'engagement'
             });
         }
@@ -186,9 +189,10 @@ class ColorPersonalityApp {
             }
         });
 
-        // Google Analytics
+        // Google Analytics: 테스트 완료
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'quiz_complete', {
+            gtag('event', 'test_complete', {
+                app_name: 'color-personality',
                 event_category: 'engagement',
                 result_type: this.resultType
             });
