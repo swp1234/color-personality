@@ -24,6 +24,62 @@
     --text-secondary: #5a5a70;
 }
 
+[data-theme="light"] .option {
+    background: rgba(0,0,0,0.03);
+    border-color: rgba(0,0,0,0.1);
+}
+[data-theme="light"] .option:hover {
+    background: rgba(255,107,107,0.08);
+    border-color: rgba(255,107,107,0.25);
+}
+[data-theme="light"] .option.selected {
+    background: rgba(255,107,107,0.1);
+    border-color: var(--accent);
+}
+[data-theme="light"] .type-item {
+    background: rgba(0,0,0,0.03);
+    border-color: rgba(0,0,0,0.08);
+}
+[data-theme="light"] .lang-toggle,
+[data-theme="light"] .theme-toggle {
+    background: rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.1);
+    color: var(--text-primary);
+}
+[data-theme="light"] .lang-toggle:hover,
+[data-theme="light"] .theme-toggle:hover {
+    background: rgba(0,0,0,0.08);
+}
+[data-theme="light"] .lang-menu {
+    background: rgba(245,245,250,0.98);
+    border-color: rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
+[data-theme="light"] .lang-option:hover {
+    background: rgba(255,107,107,0.08);
+}
+[data-theme="light"] .rec-card {
+    background: rgba(0,0,0,0.03);
+    border-color: rgba(0,0,0,0.08);
+}
+[data-theme="light"] .rec-card:hover {
+    background: rgba(255,107,107,0.06);
+    border-color: rgba(255,107,107,0.2);
+}
+[data-theme="light"] .ad-banner {
+    background: rgba(0,0,0,0.03);
+    border-color: rgba(0,0,0,0.08);
+}
+[data-theme="light"] .app-loader {
+    background: #f5f5fa;
+}
+[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #f0f0f5;
+}
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.15);
+}
+
 * {
     margin: 0;
     padding: 0;
