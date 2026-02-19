@@ -1,35 +1,250 @@
 {
-  "meta": {"description": "Que cor é sua personalidade? Descubra seu tipo de cor de personalidade com 12 perguntas.", "keywords": "teste de cor de personalidade,teste de personalidade,cor de personalidade", "og_title": "Qual é sua cor de personalidade? 🎨", "og_description": "Descubra a cor da sua personalidade com 12 perguntas! Vermelho, azul, verde, amarelo e mais.", "twitter_title": "Qual é sua cor de personalidade? 🎨", "twitter_description": "Encontre a cor da sua personalidade com este teste!"},
-  "app": {"title": "Teste de Cor de Personalidade", "skipLink": "Ir para o conteúdo principal", "loading": "Carregando..."},
-  "intro": {"title": "Teste de Cor de Personalidade", "subtitle": "Se sua personalidade fosse uma cor, qual seria?", "description": "Descubra seu tipo de personalidade com 12 perguntas.", "description_2": "Encontre a cor que melhor o representa!", "time_estimate": "Tempo: aproximadamente 3 minutos"},
-  "button": {"start": "Iniciar Teste", "back": "Voltar", "retry": "Tentar Novamente", "premium": "Assistir anúncio para análise profunda", "share_download": "Baixar imagem", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Copiar link"},
+  "meta": {
+    "description": "Que cor é sua personalidade? Descubra seu tipo de cor de personalidade com 12 perguntas.",
+    "keywords": "teste de cor de personalidade,teste de personalidade,cor de personalidade",
+    "og_title": "Qual é sua cor de personalidade? 🎨",
+    "og_description": "Descubra a cor da sua personalidade com 12 perguntas! Vermelho, azul, verde, amarelo e mais.",
+    "twitter_title": "Qual é sua cor de personalidade? 🎨",
+    "twitter_description": "Encontre a cor da sua personalidade com este teste!"
+  },
+  "app": {
+    "title": "Teste de Cor de Personalidade",
+    "skipLink": "Ir para o conteúdo principal",
+    "loading": "Carregando..."
+  },
+  "intro": {
+    "title": "Teste de Cor de Personalidade",
+    "subtitle": "Se sua personalidade fosse uma cor, qual seria?",
+    "description": "Descubra seu tipo de personalidade com 12 perguntas.",
+    "description_2": "Encontre a cor que melhor o representa!",
+    "time_estimate": "Tempo: aproximadamente 3 minutos"
+  },
+  "button": {
+    "start": "Iniciar Teste",
+    "back": "Voltar",
+    "retry": "Tentar Novamente",
+    "premium": "Assistir anúncio para análise profunda",
+    "share_download": "Baixar imagem",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copiar link"
+  },
   "questions": {
-    "q1": {"text": "Como você normalmente toma decisões?", "opt1": "Sigo minha intuição", "opt2": "Uso lógica e planejamento", "opt3": "Respeito opiniões alheias", "opt4": "Tento métodos criativos"},
-    "q2": {"text": "Como você lida com estresse?", "opt1": "Passo tempo sozinho", "opt2": "Busco descanso na natureza", "opt3": "Falo com pessoas próximas", "opt4": "Mudo para outra atividade"},
-    "q3": {"text": "Como você acha que é percebido?", "opt1": "Energético e sociável", "opt2": "Reflexivo e cauteloso", "opt3": "Amável e considerado", "opt4": "Criativo e único"},
-    "q4": {"text": "Como você enfrenta novos desafios?", "opt1": "Sem medo", "opt2": "Planejando cuidadosamente", "opt3": "Com cautela", "opt4": "Explorando criativamente"},
-    "q5": {"text": "Qual é seu ambiente ideal?", "opt1": "Tranquilo e pacífico", "opt2": "Livre e confortável", "opt3": "Caloroso com boas pessoas", "opt4": "Dinâmico e animado"},
-    "q6": {"text": "Como você reage ao fracasso?", "opt1": "Tento novamente imediatamente", "opt2": "Analiso e melhoro", "opt3": "Busco apoio de outros", "opt4": "Aprendo de outra perspectiva"},
-    "q7": {"text": "O que o descreve melhor?", "opt1": "Imaginação e sentimento", "opt2": "Brilho e otimismo", "opt3": "Calma e equilíbrio", "opt4": "Coragem e decisão"},
-    "q8": {"text": "Qual é seu estilo de trabalho?", "opt1": "Rápido e eficiente", "opt2": "Minucioso e cuidadoso", "opt3": "Em equipe", "opt4": "Criativo e inovador"},
-    "q9": {"text": "Como você gosta de viajar?", "opt1": "Espontaneamente sem plano", "opt2": "Com plano detalhado", "opt3": "Com amigos desfrutando", "opt4": "Buscando experiências únicas"},
-    "q10": {"text": "O que você valoriza mais?", "opt1": "Paz e harmonia", "opt2": "Verdade e honestidade", "opt3": "Calor e conexão", "opt4": "Liberdade e expressão"},
-    "q11": {"text": "Em relacionamentos você tende a:", "opt1": "Tomar a liderança", "opt2": "Buscar conexões profundas", "opt3": "Se dar bem com todos", "opt4": "Manter independência"},
-    "q12": {"text": "Qual é seu futuro ideal?", "opt1": "Grandes conquistas", "opt2": "Vida pacífica e estável", "opt3": "Ajudar outros", "opt4": "Novos desafios significativos"}
+    "q1": {
+      "text": "Como você normalmente toma decisões?",
+      "opt1": "Sigo minha intuição",
+      "opt2": "Uso lógica e planejamento",
+      "opt3": "Respeito opiniões alheias",
+      "opt4": "Tento métodos criativos"
+    },
+    "q2": {
+      "text": "Como você lida com estresse?",
+      "opt1": "Passo tempo sozinho",
+      "opt2": "Busco descanso na natureza",
+      "opt3": "Falo com pessoas próximas",
+      "opt4": "Mudo para outra atividade"
+    },
+    "q3": {
+      "text": "Como você acha que é percebido?",
+      "opt1": "Energético e sociável",
+      "opt2": "Reflexivo e cauteloso",
+      "opt3": "Amável e considerado",
+      "opt4": "Criativo e único"
+    },
+    "q4": {
+      "text": "Como você enfrenta novos desafios?",
+      "opt1": "Sem medo",
+      "opt2": "Planejando cuidadosamente",
+      "opt3": "Com cautela",
+      "opt4": "Explorando criativamente"
+    },
+    "q5": {
+      "text": "Qual é seu ambiente ideal?",
+      "opt1": "Tranquilo e pacífico",
+      "opt2": "Livre e confortável",
+      "opt3": "Caloroso com boas pessoas",
+      "opt4": "Dinâmico e animado"
+    },
+    "q6": {
+      "text": "Como você reage ao fracasso?",
+      "opt1": "Tento novamente imediatamente",
+      "opt2": "Analiso e melhoro",
+      "opt3": "Busco apoio de outros",
+      "opt4": "Aprendo de outra perspectiva"
+    },
+    "q7": {
+      "text": "O que o descreve melhor?",
+      "opt1": "Imaginação e sentimento",
+      "opt2": "Brilho e otimismo",
+      "opt3": "Calma e equilíbrio",
+      "opt4": "Coragem e decisão"
+    },
+    "q8": {
+      "text": "Qual é seu estilo de trabalho?",
+      "opt1": "Rápido e eficiente",
+      "opt2": "Minucioso e cuidadoso",
+      "opt3": "Em equipe",
+      "opt4": "Criativo e inovador"
+    },
+    "q9": {
+      "text": "Como você gosta de viajar?",
+      "opt1": "Espontaneamente sem plano",
+      "opt2": "Com plano detalhado",
+      "opt3": "Com amigos desfrutando",
+      "opt4": "Buscando experiências únicas"
+    },
+    "q10": {
+      "text": "O que você valoriza mais?",
+      "opt1": "Paz e harmonia",
+      "opt2": "Verdade e honestidade",
+      "opt3": "Calor e conexão",
+      "opt4": "Liberdade e expressão"
+    },
+    "q11": {
+      "text": "Em relacionamentos você tende a:",
+      "opt1": "Tomar a liderança",
+      "opt2": "Buscar conexões profundas",
+      "opt3": "Se dar bem com todos",
+      "opt4": "Manter independência"
+    },
+    "q12": {
+      "text": "Qual é seu futuro ideal?",
+      "opt1": "Grandes conquistas",
+      "opt2": "Vida pacífica e estável",
+      "opt3": "Ajudar outros",
+      "opt4": "Novos desafios significativos"
+    }
   },
-  "analyzing": {"title": "Analisando sua personalidade...", "subtitle": "Por favor aguarde"},
-  "result": {"meaning": "Significado da cor", "strengths": "Pontos fortes principais", "weaknesses": "Áreas a melhorar", "compatible": "Cores compatíveis", "incompatible": "Cores para observar", "share": "Compartilhar resultado", "deep_analysis": "Análise Profunda"},
+  "analyzing": {
+    "title": "Analisando sua personalidade...",
+    "subtitle": "Por favor aguarde"
+  },
+  "result": {
+    "meaning": "Significado da cor",
+    "strengths": "Pontos fortes principais",
+    "weaknesses": "Áreas a melhorar",
+    "compatible": "Cores compatíveis",
+    "incompatible": "Cores para observar",
+    "share": "Compartilhar resultado",
+    "deep_analysis": "Análise Profunda"
+  },
   "colors": {
-    "red": {"name": "Vermelho - Apaixonado", "tagline": "Alcançar tudo com paixão ardente", "description": "Você é apaixonado e audacioso. Tem energia infinita e liderança natural.", "meaning": "Paixão, energia, coragem, liderança, atividade, vontade forte", "strength1": "Excelente liderança", "strength2": "Coragem destemida", "strength3": "Ação rápida", "weakness1": "Às vezes impulsivo", "weakness2": "Pode ignorar opiniões", "deepAnalysis": "Você é um líder nato."},
-    "blue": {"name": "Azul - Sábio", "tagline": "Compreender o mundo através do pensamento profundo", "description": "Você é calmo e reflexivo. Busca estabilidade e pensamento lógico.", "meaning": "Paz, confiança, profundidade, sabedoria, estabilidade, serenidade", "strength1": "Excelente análise", "strength2": "Alta confiabilidade", "strength3": "Visão profunda", "weakness1": "Às vezes passivo", "weakness2": "Excesso de pensamento", "deepAnalysis": "Você é um verdadeiro pensador."},
-    "green": {"name": "Verde - Harmônico", "tagline": "Curar o mundo com harmonia e equilíbrio", "description": "Você busca paz e harmonia. É empático e considerado.", "meaning": "Paz, cura, harmonia, consideração, equilíbrio, naturalidade", "strength1": "Excelente empatia", "strength2": "Relacionamentos harmônicos", "strength3": "Estabilidade", "weakness1": "Pode evitar opiniões", "weakness2": "Tende a adiar decisões", "deepAnalysis": "Você é um mediador natural."},
-    "yellow": {"name": "Amarelo - Otimista", "tagline": "Iluminar tudo como o sol com positividade", "description": "Você é brilhante e otimista. Sua positividade inspira outros.", "meaning": "Otimismo, esperança, brilho, amabilidade, positividade, vitalidade", "strength1": "Atitude positiva", "strength2": "Excelentes habilidades sociais", "strength3": "Capacidade inspiradora", "weakness1": "Pode evitar pensamento profundo", "weakness2": "Pode lutar com adversidade", "deepAnalysis": "Você é um raio de otimismo."},
-    "purple": {"name": "Roxo - Criativo", "tagline": "Desenhar novo mundo com imaginação única", "description": "Você é criativo e imaginativo. Vê o mundo unicamente.", "meaning": "Criatividade, imaginação, mistério, individualidade, arte, inovação", "strength1": "Excelente criatividade", "strength2": "Perspectiva única", "strength3": "Sensibilidade artística", "weakness1": "Pode desconectar da realidade", "weakness2": "Execução fraca", "deepAnalysis": "Você é um verdadeiro artista."},
-    "orange": {"name": "Laranja - Energético", "tagline": "Viver livremente com energia vibrante", "description": "Você é energético e vivaz. Ama novas experiências e o presente.", "meaning": "Energia, liberdade, espontaneidade, paixão, flexibilidade, vitalidade", "strength1": "Forte atividade", "strength2": "Desfrute de novas experiências", "strength3": "Excelente adaptabilidade", "weakness1": "Planejamento fraco a longo prazo", "weakness2": "Pode faltar consistência", "deepAnalysis": "Você é espírito de liberdade."},
-    "pink": {"name": "Rosa - Sensível", "tagline": "Tocar corações com sentimentos quentes", "description": "Você é emocionalmente rico e sensível. Cuida dos outros.", "meaning": "Emoção, compaixão, calor, sensibilidade, delicadeza, beleza interior", "strength1": "Excelente sensibilidade", "strength2": "Cuidado caloroso", "strength3": "Expressão emocional rica", "weakness1": "Pode ser influenciado por emoções", "weakness2": "Muito afetado por outros", "deepAnalysis": "Você é verdadeiro artista emocional."},
-    "white": {"name": "Branco - Puro", "tagline": "Abraçar tudo com pureza e magnanimidade", "description": "Você é puro e de coração aberto. Aceita todos sem julgamento.", "meaning": "Pureza, perfeição, neutralidade, paz, inclusividade, começo", "strength1": "Abraço aberto", "strength2": "Moralidade alta", "strength3": "Harmonia com todos", "weakness1": "Pode ser fraco em asserção", "weakness2": "Pode ocultar emoções", "deepAnalysis": "Você é verdadeiro sábio."}
+    "red": {
+      "name": "Vermelho - Apaixonado",
+      "tagline": "Alcançar tudo com paixão ardente",
+      "description": "Você é apaixonado e audacioso. Tem energia infinita e liderança natural.",
+      "meaning": "Paixão, energia, coragem, liderança, atividade, vontade forte",
+      "strength1": "Excelente liderança",
+      "strength2": "Coragem destemida",
+      "strength3": "Ação rápida",
+      "weakness1": "Às vezes impulsivo",
+      "weakness2": "Pode ignorar opiniões",
+      "deepAnalysis": "Você é um líder nato."
+    },
+    "blue": {
+      "name": "Azul - Sábio",
+      "tagline": "Compreender o mundo através do pensamento profundo",
+      "description": "Você é calmo e reflexivo. Busca estabilidade e pensamento lógico.",
+      "meaning": "Paz, confiança, profundidade, sabedoria, estabilidade, serenidade",
+      "strength1": "Excelente análise",
+      "strength2": "Alta confiabilidade",
+      "strength3": "Visão profunda",
+      "weakness1": "Às vezes passivo",
+      "weakness2": "Excesso de pensamento",
+      "deepAnalysis": "Você é um verdadeiro pensador."
+    },
+    "green": {
+      "name": "Verde - Harmônico",
+      "tagline": "Curar o mundo com harmonia e equilíbrio",
+      "description": "Você busca paz e harmonia. É empático e considerado.",
+      "meaning": "Paz, cura, harmonia, consideração, equilíbrio, naturalidade",
+      "strength1": "Excelente empatia",
+      "strength2": "Relacionamentos harmônicos",
+      "strength3": "Estabilidade",
+      "weakness1": "Pode evitar opiniões",
+      "weakness2": "Tende a adiar decisões",
+      "deepAnalysis": "Você é um mediador natural."
+    },
+    "yellow": {
+      "name": "Amarelo - Otimista",
+      "tagline": "Iluminar tudo como o sol com positividade",
+      "description": "Você é brilhante e otimista. Sua positividade inspira outros.",
+      "meaning": "Otimismo, esperança, brilho, amabilidade, positividade, vitalidade",
+      "strength1": "Atitude positiva",
+      "strength2": "Excelentes habilidades sociais",
+      "strength3": "Capacidade inspiradora",
+      "weakness1": "Pode evitar pensamento profundo",
+      "weakness2": "Pode lutar com adversidade",
+      "deepAnalysis": "Você é um raio de otimismo."
+    },
+    "purple": {
+      "name": "Roxo - Criativo",
+      "tagline": "Desenhar novo mundo com imaginação única",
+      "description": "Você é criativo e imaginativo. Vê o mundo unicamente.",
+      "meaning": "Criatividade, imaginação, mistério, individualidade, arte, inovação",
+      "strength1": "Excelente criatividade",
+      "strength2": "Perspectiva única",
+      "strength3": "Sensibilidade artística",
+      "weakness1": "Pode desconectar da realidade",
+      "weakness2": "Execução fraca",
+      "deepAnalysis": "Você é um verdadeiro artista."
+    },
+    "orange": {
+      "name": "Laranja - Energético",
+      "tagline": "Viver livremente com energia vibrante",
+      "description": "Você é energético e vivaz. Ama novas experiências e o presente.",
+      "meaning": "Energia, liberdade, espontaneidade, paixão, flexibilidade, vitalidade",
+      "strength1": "Forte atividade",
+      "strength2": "Desfrute de novas experiências",
+      "strength3": "Excelente adaptabilidade",
+      "weakness1": "Planejamento fraco a longo prazo",
+      "weakness2": "Pode faltar consistência",
+      "deepAnalysis": "Você é espírito de liberdade."
+    },
+    "pink": {
+      "name": "Rosa - Sensível",
+      "tagline": "Tocar corações com sentimentos quentes",
+      "description": "Você é emocionalmente rico e sensível. Cuida dos outros.",
+      "meaning": "Emoção, compaixão, calor, sensibilidade, delicadeza, beleza interior",
+      "strength1": "Excelente sensibilidade",
+      "strength2": "Cuidado caloroso",
+      "strength3": "Expressão emocional rica",
+      "weakness1": "Pode ser influenciado por emoções",
+      "weakness2": "Muito afetado por outros",
+      "deepAnalysis": "Você é verdadeiro artista emocional."
+    },
+    "white": {
+      "name": "Branco - Puro",
+      "tagline": "Abraçar tudo com pureza e magnanimidade",
+      "description": "Você é puro e de coração aberto. Aceita todos sem julgamento.",
+      "meaning": "Pureza, perfeição, neutralidade, paz, inclusividade, começo",
+      "strength1": "Abraço aberto",
+      "strength2": "Moralidade alta",
+      "strength3": "Harmonia com todos",
+      "weakness1": "Pode ser fraco em asserção",
+      "weakness2": "Pode ocultar emoções",
+      "deepAnalysis": "Você é verdadeiro sábio."
+    }
   },
-  "message": {"copy_success": "Link copiado!", "copy_error": "Erro ao copiar. Tente novamente."},
-  "recommendations": {"title": "Tente isto também"},
-  "game": {"back": "Página Inicial DopaBrain"}
+  "message": {
+    "copy_success": "Link copiado!",
+    "copy_error": "Erro ao copiar. Tente novamente."
+  },
+  "recommendations": {
+    "title": "Tente isto também"
+  },
+  "game": {
+    "back": "Página Inicial DopaBrain"
+  },
+  "badge": {
+    "red": "Vermelho",
+    "blue": "Azul",
+    "green": "Verde",
+    "yellow": "Amarelo",
+    "purple": "Roxo",
+    "orange": "Laranja",
+    "pink": "Rosa",
+    "white": "Branco"
+  }
 }

@@ -236,5 +236,15 @@
   },
   "game": {
     "back": "DopaBrain ホーム"
+  },
+  "badge": {
+    "red": "赤",
+    "blue": "青",
+    "green": "緑",
+    "yellow": "黄",
+    "purple": "紫",
+    "orange": "オレンジ",
+    "pink": "ピンク",
+    "white": "白"
   }
 }

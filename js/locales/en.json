@@ -236,5 +236,15 @@
   },
   "game": {
     "back": "DopaBrain Home"
+  },
+  "badge": {
+    "red": "Red",
+    "blue": "Blue",
+    "green": "Green",
+    "yellow": "Yellow",
+    "purple": "Purple",
+    "orange": "Orange",
+    "pink": "Pink",
+    "white": "White"
   }
 }

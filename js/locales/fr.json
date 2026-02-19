@@ -1,35 +1,250 @@
 {
-  "meta": {"description": "Quelle est la couleur de votre personnalité? Découvrez votre type de couleur de personnalité avec 12 questions. Test viral à partager sur les réseaux sociaux!", "keywords": "test de couleur de personnalité,test de personnalité,couleur de personnalité", "og_title": "Quelle est votre couleur de personnalité? 🎨", "og_description": "Découvrez la couleur de votre personnalité avec 12 questions! Rouge, bleu, vert, jaune et plus encore.", "twitter_title": "Quelle est votre couleur de personnalité? 🎨", "twitter_description": "Trouvez la couleur de votre personnalité avec ce test!"},
-  "app": {"title": "Test de Couleur de Personnalité", "skipLink": "Aller au contenu principal", "loading": "Chargement..."},
-  "intro": {"title": "Test de Couleur de Personnalité", "subtitle": "Si votre personnalité était une couleur, ce serait laquelle?", "description": "Découvrez votre type de personnalité avec 12 questions.", "description_2": "Trouvez la couleur qui vous représente le mieux!", "time_estimate": "Durée: environ 3 minutes"},
-  "button": {"start": "Commencer le Test", "back": "Retour", "retry": "Réessayer", "premium": "Regarder une publicité pour une analyse approfondie", "share_download": "Télécharger l'image", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Copier le lien"},
+  "meta": {
+    "description": "Quelle est la couleur de votre personnalité? Découvrez votre type de couleur de personnalité avec 12 questions. Test viral à partager sur les réseaux sociaux!",
+    "keywords": "test de couleur de personnalité,test de personnalité,couleur de personnalité",
+    "og_title": "Quelle est votre couleur de personnalité? 🎨",
+    "og_description": "Découvrez la couleur de votre personnalité avec 12 questions! Rouge, bleu, vert, jaune et plus encore.",
+    "twitter_title": "Quelle est votre couleur de personnalité? 🎨",
+    "twitter_description": "Trouvez la couleur de votre personnalité avec ce test!"
+  },
+  "app": {
+    "title": "Test de Couleur de Personnalité",
+    "skipLink": "Aller au contenu principal",
+    "loading": "Chargement..."
+  },
+  "intro": {
+    "title": "Test de Couleur de Personnalité",
+    "subtitle": "Si votre personnalité était une couleur, ce serait laquelle?",
+    "description": "Découvrez votre type de personnalité avec 12 questions.",
+    "description_2": "Trouvez la couleur qui vous représente le mieux!",
+    "time_estimate": "Durée: environ 3 minutes"
+  },
+  "button": {
+    "start": "Commencer le Test",
+    "back": "Retour",
+    "retry": "Réessayer",
+    "premium": "Regarder une publicité pour une analyse approfondie",
+    "share_download": "Télécharger l'image",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copier le lien"
+  },
   "questions": {
-    "q1": {"text": "Comment prenez-vous généralement vos décisions?", "opt1": "Suivez votre intuition", "opt2": "Utilisez la logique et la planification", "opt3": "Respectez l'avis des autres", "opt4": "Essayez des méthodes créatives"},
-    "q2": {"text": "Comment gérez-vous le stress?", "opt1": "Passez du temps seul", "opt2": "Cherchez du repos dans la nature", "opt3": "Parlez avec vos proches", "opt4": "Changez d'activité"},
-    "q3": {"text": "Comment croyez-vous être perçu?", "opt1": "Énergique et sociable", "opt2": "Réfléchi et prudent", "opt3": "Bienveillant et attentionné", "opt4": "Créatif et unique"},
-    "q4": {"text": "Comment faites-vous face aux nouveaux défis?", "opt1": "Sans peur", "opt2": "Avec une planification minutieuse", "opt3": "Avec prudence", "opt4": "En explorant créativement"},
-    "q5": {"text": "Quel est votre environnement idéal?", "opt1": "Calme et paisible", "opt2": "Libre et confortable", "opt3": "Chaleureux avec de bonnes personnes", "opt4": "Dynamique et vivant"},
-    "q6": {"text": "Comment réagissez-vous aux échecs?", "opt1": "Réessayez immédiatement", "opt2": "Analysez et améliorez", "opt3": "Cherchez le soutien des autres", "opt4": "Apprenez d'une autre perspective"},
-    "q7": {"text": "Qu'est-ce qui vous décrit le mieux?", "opt1": "Imagination et sentiment", "opt2": "Clarté et optimisme", "opt3": "Calme et équilibre", "opt4": "Courage et détermination"},
-    "q8": {"text": "Quel est votre style de travail?", "opt1": "Rapide et efficace", "opt2": "Minutieux et prudent", "opt3": "En équipe", "opt4": "Créatif et innovant"},
-    "q9": {"text": "Comment aimez-vous voyager?", "opt1": "Spontanément sans plan", "opt2": "Avec un plan détaillé", "opt3": "Avec des amis pour profiter", "opt4": "À la recherche d'expériences uniques"},
-    "q10": {"text": "Qu'est-ce que vous valorisez le plus?", "opt1": "Paix et harmonie", "opt2": "Vérité et honnêteté", "opt3": "Chaleur et connexion", "opt4": "Liberté et expression"},
-    "q11": {"text": "Dans les relations, vous avez tendance à:", "opt1": "Prendre la direction", "opt2": "Chercher des connexions profondes", "opt3": "Vous entendre avec tout le monde", "opt4": "Garder votre indépendance"},
-    "q12": {"text": "Quel est votre avenir idéal?", "opt1": "Grands accomplissements et reconnaissance", "opt2": "Vie paisible et stable", "opt3": "Aider les autres", "opt4": "Nouveaux défis significatifs"}
+    "q1": {
+      "text": "Comment prenez-vous généralement vos décisions?",
+      "opt1": "Suivez votre intuition",
+      "opt2": "Utilisez la logique et la planification",
+      "opt3": "Respectez l'avis des autres",
+      "opt4": "Essayez des méthodes créatives"
+    },
+    "q2": {
+      "text": "Comment gérez-vous le stress?",
+      "opt1": "Passez du temps seul",
+      "opt2": "Cherchez du repos dans la nature",
+      "opt3": "Parlez avec vos proches",
+      "opt4": "Changez d'activité"
+    },
+    "q3": {
+      "text": "Comment croyez-vous être perçu?",
+      "opt1": "Énergique et sociable",
+      "opt2": "Réfléchi et prudent",
+      "opt3": "Bienveillant et attentionné",
+      "opt4": "Créatif et unique"
+    },
+    "q4": {
+      "text": "Comment faites-vous face aux nouveaux défis?",
+      "opt1": "Sans peur",
+      "opt2": "Avec une planification minutieuse",
+      "opt3": "Avec prudence",
+      "opt4": "En explorant créativement"
+    },
+    "q5": {
+      "text": "Quel est votre environnement idéal?",
+      "opt1": "Calme et paisible",
+      "opt2": "Libre et confortable",
+      "opt3": "Chaleureux avec de bonnes personnes",
+      "opt4": "Dynamique et vivant"
+    },
+    "q6": {
+      "text": "Comment réagissez-vous aux échecs?",
+      "opt1": "Réessayez immédiatement",
+      "opt2": "Analysez et améliorez",
+      "opt3": "Cherchez le soutien des autres",
+      "opt4": "Apprenez d'une autre perspective"
+    },
+    "q7": {
+      "text": "Qu'est-ce qui vous décrit le mieux?",
+      "opt1": "Imagination et sentiment",
+      "opt2": "Clarté et optimisme",
+      "opt3": "Calme et équilibre",
+      "opt4": "Courage et détermination"
+    },
+    "q8": {
+      "text": "Quel est votre style de travail?",
+      "opt1": "Rapide et efficace",
+      "opt2": "Minutieux et prudent",
+      "opt3": "En équipe",
+      "opt4": "Créatif et innovant"
+    },
+    "q9": {
+      "text": "Comment aimez-vous voyager?",
+      "opt1": "Spontanément sans plan",
+      "opt2": "Avec un plan détaillé",
+      "opt3": "Avec des amis pour profiter",
+      "opt4": "À la recherche d'expériences uniques"
+    },
+    "q10": {
+      "text": "Qu'est-ce que vous valorisez le plus?",
+      "opt1": "Paix et harmonie",
+      "opt2": "Vérité et honnêteté",
+      "opt3": "Chaleur et connexion",
+      "opt4": "Liberté et expression"
+    },
+    "q11": {
+      "text": "Dans les relations, vous avez tendance à:",
+      "opt1": "Prendre la direction",
+      "opt2": "Chercher des connexions profondes",
+      "opt3": "Vous entendre avec tout le monde",
+      "opt4": "Garder votre indépendance"
+    },
+    "q12": {
+      "text": "Quel est votre avenir idéal?",
+      "opt1": "Grands accomplissements et reconnaissance",
+      "opt2": "Vie paisible et stable",
+      "opt3": "Aider les autres",
+      "opt4": "Nouveaux défis significatifs"
+    }
   },
-  "analyzing": {"title": "Analyse de votre personnalité en cours...", "subtitle": "Veuillez patienter"},
-  "result": {"meaning": "Signification de la couleur", "strengths": "Forces principales", "weaknesses": "Domaines à améliorer", "compatible": "Couleurs compatibles", "incompatible": "Couleurs à observer", "share": "Partager le résultat", "deep_analysis": "Analyse Approfondie"},
+  "analyzing": {
+    "title": "Analyse de votre personnalité en cours...",
+    "subtitle": "Veuillez patienter"
+  },
+  "result": {
+    "meaning": "Signification de la couleur",
+    "strengths": "Forces principales",
+    "weaknesses": "Domaines à améliorer",
+    "compatible": "Couleurs compatibles",
+    "incompatible": "Couleurs à observer",
+    "share": "Partager le résultat",
+    "deep_analysis": "Analyse Approfondie"
+  },
   "colors": {
-    "red": {"name": "Rouge - Passionné", "tagline": "Réalisez tout avec une passion ardente", "description": "Vous êtes passionné et audacieux. Avec une énergie infinie et un leadership naturel.", "meaning": "Passion, énergie, courage, leadership, activité, volonté forte", "strength1": "Excellent leadership", "strength2": "Courage intrépide", "strength3": "Action rapide", "weakness1": "Parfois impulsif", "weakness2": "Pourrait ignorer les opinions", "deepAnalysis": "Vous êtes un leader-né."},
-    "blue": {"name": "Bleu - Sage", "tagline": "Comprendre le monde par la pensée profonde", "description": "Vous êtes calme et réfléchi. Vous recherchez la stabilité et la pensée logique.", "meaning": "Paix, confiance, profondeur, sagesse, stabilité, sérénité", "strength1": "Excellente analyse", "strength2": "Haute fiabilité", "strength3": "Vision profonde", "weakness1": "Parfois passif", "weakness2": "Réflexion excessive", "deepAnalysis": "Vous êtes un vrai penseur."},
-    "green": {"name": "Vert - Harmonieux", "tagline": "Guérir le monde avec harmonie et équilibre", "description": "Vous recherchez la paix et l'harmonie. Vous êtes empathique et prévenant.", "meaning": "Paix, guérison, harmonie, attention, équilibre, naturel", "strength1": "Excellente empathie", "strength2": "Relations harmonieuses", "strength3": "Stabilité", "weakness1": "Pourrait éviter les opinions", "weakness2": "Tend à repousser les décisions", "deepAnalysis": "Vous êtes un médiateur naturel."},
-    "yellow": {"name": "Jaune - Optimiste", "tagline": "Éclairer tout comme le soleil avec positivité", "description": "Vous êtes brillant et optimiste. Votre positivité inspire les autres.", "meaning": "Optimisme, espoir, clarté, amabilité, positivité, vitalité", "strength1": "Attitude positive", "strength2": "Excellentes compétences sociales", "strength3": "Capacité à inspirer", "weakness1": "Pourrait éviter la réflexion profonde", "weakness2": "Pourrait lutter avec l'adversité", "deepAnalysis": "Vous êtes un rayon d'optimisme."},
-    "purple": {"name": "Violet - Créatif", "tagline": "Peindre un nouveau monde avec imaginaton unique", "description": "Vous êtes créatif et imaginatif. Vous voyez le monde uniquement.", "meaning": "Créativité, imagination, mystère, individualité, art, innovation", "strength1": "Excellente créativité", "strength2": "Perspective unique", "strength3": "Sensibilité artistique", "weakness1": "Pourrait être déconnecté de la réalité", "weakness2": "Exécution faible", "deepAnalysis": "Vous êtes un vrai artiste."},
-    "orange": {"name": "Orange - Énergique", "tagline": "Vivre librement avec énergie vibrante", "description": "Vous êtes énergique et vivant. Vous aimez les nouvelles expériences et le présent.", "meaning": "Énergie, liberté, spontanéité, passion, flexibilité, vitalité", "strength1": "Forte activité", "strength2": "Appréciation des nouvelles expériences", "strength3": "Excellente adaptabilité", "weakness1": "Planification à long terme faible", "weakness2": "Pourrait manquer de consistance", "deepAnalysis": "Vous êtes un esprit de liberté."},
-    "pink": {"name": "Rose - Sensible", "tagline": "Toucher les cœurs avec des sentiments chauds", "description": "Vous êtes émotionnellement riche et sensible. Vous prenez soin des autres.", "meaning": "Émotion, compassion, chaleur, sensibilité, délicatesse, beauté intérieure", "strength1": "Excellente sensibilité", "strength2": "Soin chaleureux", "strength3": "Expression émotionnelle riche", "weakness1": "Pourrait être influencé par les émotions", "weakness2": "Trop affecté par les autres", "deepAnalysis": "Vous êtes un vrai artiste émotionnel."},
-    "white": {"name": "Blanc - Pur", "tagline": "Embrasser tout avec pureté et magnanimité", "description": "Vous êtes pur et au cœur ouvert. Vous acceptez tous sans jugement.", "meaning": "Pureté, perfection, neutralité, paix, inclusivité, commencement", "strength1": "Cœur ouvert", "strength2": "Moralité élevée", "strength3": "Harmonie avec tous", "weakness1": "Pourrait être faible en affirmation de soi", "weakness2": "Pourrait cacher les émotions", "deepAnalysis": "Vous êtes un vrai sage."}
+    "red": {
+      "name": "Rouge - Passionné",
+      "tagline": "Réalisez tout avec une passion ardente",
+      "description": "Vous êtes passionné et audacieux. Avec une énergie infinie et un leadership naturel.",
+      "meaning": "Passion, énergie, courage, leadership, activité, volonté forte",
+      "strength1": "Excellent leadership",
+      "strength2": "Courage intrépide",
+      "strength3": "Action rapide",
+      "weakness1": "Parfois impulsif",
+      "weakness2": "Pourrait ignorer les opinions",
+      "deepAnalysis": "Vous êtes un leader-né."
+    },
+    "blue": {
+      "name": "Bleu - Sage",
+      "tagline": "Comprendre le monde par la pensée profonde",
+      "description": "Vous êtes calme et réfléchi. Vous recherchez la stabilité et la pensée logique.",
+      "meaning": "Paix, confiance, profondeur, sagesse, stabilité, sérénité",
+      "strength1": "Excellente analyse",
+      "strength2": "Haute fiabilité",
+      "strength3": "Vision profonde",
+      "weakness1": "Parfois passif",
+      "weakness2": "Réflexion excessive",
+      "deepAnalysis": "Vous êtes un vrai penseur."
+    },
+    "green": {
+      "name": "Vert - Harmonieux",
+      "tagline": "Guérir le monde avec harmonie et équilibre",
+      "description": "Vous recherchez la paix et l'harmonie. Vous êtes empathique et prévenant.",
+      "meaning": "Paix, guérison, harmonie, attention, équilibre, naturel",
+      "strength1": "Excellente empathie",
+      "strength2": "Relations harmonieuses",
+      "strength3": "Stabilité",
+      "weakness1": "Pourrait éviter les opinions",
+      "weakness2": "Tend à repousser les décisions",
+      "deepAnalysis": "Vous êtes un médiateur naturel."
+    },
+    "yellow": {
+      "name": "Jaune - Optimiste",
+      "tagline": "Éclairer tout comme le soleil avec positivité",
+      "description": "Vous êtes brillant et optimiste. Votre positivité inspire les autres.",
+      "meaning": "Optimisme, espoir, clarté, amabilité, positivité, vitalité",
+      "strength1": "Attitude positive",
+      "strength2": "Excellentes compétences sociales",
+      "strength3": "Capacité à inspirer",
+      "weakness1": "Pourrait éviter la réflexion profonde",
+      "weakness2": "Pourrait lutter avec l'adversité",
+      "deepAnalysis": "Vous êtes un rayon d'optimisme."
+    },
+    "purple": {
+      "name": "Violet - Créatif",
+      "tagline": "Peindre un nouveau monde avec imaginaton unique",
+      "description": "Vous êtes créatif et imaginatif. Vous voyez le monde uniquement.",
+      "meaning": "Créativité, imagination, mystère, individualité, art, innovation",
+      "strength1": "Excellente créativité",
+      "strength2": "Perspective unique",
+      "strength3": "Sensibilité artistique",
+      "weakness1": "Pourrait être déconnecté de la réalité",
+      "weakness2": "Exécution faible",
+      "deepAnalysis": "Vous êtes un vrai artiste."
+    },
+    "orange": {
+      "name": "Orange - Énergique",
+      "tagline": "Vivre librement avec énergie vibrante",
+      "description": "Vous êtes énergique et vivant. Vous aimez les nouvelles expériences et le présent.",
+      "meaning": "Énergie, liberté, spontanéité, passion, flexibilité, vitalité",
+      "strength1": "Forte activité",
+      "strength2": "Appréciation des nouvelles expériences",
+      "strength3": "Excellente adaptabilité",
+      "weakness1": "Planification à long terme faible",
+      "weakness2": "Pourrait manquer de consistance",
+      "deepAnalysis": "Vous êtes un esprit de liberté."
+    },
+    "pink": {
+      "name": "Rose - Sensible",
+      "tagline": "Toucher les cœurs avec des sentiments chauds",
+      "description": "Vous êtes émotionnellement riche et sensible. Vous prenez soin des autres.",
+      "meaning": "Émotion, compassion, chaleur, sensibilité, délicatesse, beauté intérieure",
+      "strength1": "Excellente sensibilité",
+      "strength2": "Soin chaleureux",
+      "strength3": "Expression émotionnelle riche",
+      "weakness1": "Pourrait être influencé par les émotions",
+      "weakness2": "Trop affecté par les autres",
+      "deepAnalysis": "Vous êtes un vrai artiste émotionnel."
+    },
+    "white": {
+      "name": "Blanc - Pur",
+      "tagline": "Embrasser tout avec pureté et magnanimité",
+      "description": "Vous êtes pur et au cœur ouvert. Vous acceptez tous sans jugement.",
+      "meaning": "Pureté, perfection, neutralité, paix, inclusivité, commencement",
+      "strength1": "Cœur ouvert",
+      "strength2": "Moralité élevée",
+      "strength3": "Harmonie avec tous",
+      "weakness1": "Pourrait être faible en affirmation de soi",
+      "weakness2": "Pourrait cacher les émotions",
+      "deepAnalysis": "Vous êtes un vrai sage."
+    }
   },
-  "message": {"copy_success": "Lien copié!", "copy_error": "Erreur de copie. Réessayez."},
-  "recommendations": {"title": "Essayez aussi ceci"},
-  "game": {"back": "Accueil DopaBrain"}
+  "message": {
+    "copy_success": "Lien copié!",
+    "copy_error": "Erreur de copie. Réessayez."
+  },
+  "recommendations": {
+    "title": "Essayez aussi ceci"
+  },
+  "game": {
+    "back": "Accueil DopaBrain"
+  },
+  "badge": {
+    "red": "Rouge",
+    "blue": "Bleu",
+    "green": "Vert",
+    "yellow": "Jaune",
+    "purple": "Violet",
+    "orange": "Orange",
+    "pink": "Rose",
+    "white": "Blanc"
+  }
 }

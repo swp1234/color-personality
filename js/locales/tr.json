@@ -1,35 +1,250 @@
 {
-  "meta": {"description": "Kişiliğinizin rengi ne? 12 soruyla kişilik rengi türünüzü keşfedin. Sosyal medyada paylaşılabilir viral test!", "keywords": "kişilik rengi testi,kişilik testi,kişilik rengi", "og_title": "Kişiliğinizin Rengi Ne? 🎨", "og_description": "12 soruyla kişiliğinizin rengini keşfedin! Kırmızı, mavi, yeşil, sarı ve daha fazlası.", "twitter_title": "Kişiliğinizin Rengi Ne? 🎨", "twitter_description": "Bu testle kişiliğinizin rengini bulun!"},
-  "app": {"title": "Kişilik Rengi Testi", "skipLink": "Ana içeriğe git", "loading": "Yükleniyor..."},
-  "intro": {"title": "Kişilik Rengi Testi", "subtitle": "Kişiliğiniz bir renk olsaydı hangi renk olurdu?", "description": "Kişiliğiniz türünü 12 soruyla keşfedin.", "description_2": "Sizi en iyi temsil eden rengi bulun!", "time_estimate": "Süre: yaklaşık 3 dakika"},
-  "button": {"start": "Teste Başla", "back": "Geri", "retry": "Tekrar Dene", "premium": "Reklam izle ve derin analiz al", "share_download": "Resmi İndir", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Bağlantıyı Kopyala"},
+  "meta": {
+    "description": "Kişiliğinizin rengi ne? 12 soruyla kişilik rengi türünüzü keşfedin. Sosyal medyada paylaşılabilir viral test!",
+    "keywords": "kişilik rengi testi,kişilik testi,kişilik rengi",
+    "og_title": "Kişiliğinizin Rengi Ne? 🎨",
+    "og_description": "12 soruyla kişiliğinizin rengini keşfedin! Kırmızı, mavi, yeşil, sarı ve daha fazlası.",
+    "twitter_title": "Kişiliğinizin Rengi Ne? 🎨",
+    "twitter_description": "Bu testle kişiliğinizin rengini bulun!"
+  },
+  "app": {
+    "title": "Kişilik Rengi Testi",
+    "skipLink": "Ana içeriğe git",
+    "loading": "Yükleniyor..."
+  },
+  "intro": {
+    "title": "Kişilik Rengi Testi",
+    "subtitle": "Kişiliğiniz bir renk olsaydı hangi renk olurdu?",
+    "description": "Kişiliğiniz türünü 12 soruyla keşfedin.",
+    "description_2": "Sizi en iyi temsil eden rengi bulun!",
+    "time_estimate": "Süre: yaklaşık 3 dakika"
+  },
+  "button": {
+    "start": "Teste Başla",
+    "back": "Geri",
+    "retry": "Tekrar Dene",
+    "premium": "Reklam izle ve derin analiz al",
+    "share_download": "Resmi İndir",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Bağlantıyı Kopyala"
+  },
   "questions": {
-    "q1": {"text": "Genellikle kararlarınızı nasıl alırsınız?", "opt1": "Sezginizi takip edin", "opt2": "Mantık ve planlama kullanın", "opt3": "Başkalarının görüşlerine saygı duyun", "opt4": "Yaratıcı yöntemler deneyin"},
-    "q2": {"text": "Stresi nasıl yönetirsiniz?", "opt1": "Yalnız zaman harcayın", "opt2": "Doğada dinlenme arayın", "opt3": "Yakınlarınızla konuşun", "opt4": "Başka aktiviteye geçin"},
-    "q3": {"text": "Sizin algılanış şekliniz nedir?", "opt1": "Enerjik ve sosyal", "opt2": "Düşünceli ve ihtiyatlı", "opt3": "Nazik ve ilgili", "opt4": "Yaratıcı ve benzersiz"},
-    "q4": {"text": "Yeni zorlukların karşısında nasıl davranırsınız?", "opt1": "Korkusuzca", "opt2": "Dikkatle planlayarak", "opt3": "Ihtiyatlı biçimde", "opt4": "Yaratıcı şekilde keşfederek"},
-    "q5": {"text": "İdeal ortamınız nedir?", "opt1": "Sakin ve huzurlu", "opt2": "Özgür ve rahat", "opt3": "İyi insanlarla sıcak", "opt4": "Dinamik ve canlı"},
-    "q6": {"text": "Başarısızlığa nasıl tepki verirsiniz?", "opt1": "Hemen yeniden deneyin", "opt2": "Analiz edin ve iyileştirin", "opt3": "Başkalarından destek bulun", "opt4": "Farklı perspektiften öğrenin"},
-    "q7": {"text": "Sizi en iyi ne anlatır?", "opt1": "Hayal gücü ve duygu", "opt2": "Parlaklık ve iyimserlik", "opt3": "Sakinlik ve denge", "opt4": "Cesaret ve kararlılık"},
-    "q8": {"text": "Çalışma stiliniz nedir?", "opt1": "Hızlı ve verimli", "opt2": "Detaylı ve dikkatli", "opt3": "Takımda", "opt4": "Yaratıcı ve yenilikçi"},
-    "q9": {"text": "Seyahat etmeyi nasıl seversiniz?", "opt1": "Plansız spontan", "opt2": "Detaylı planlama ile", "opt3": "Arkadaşlarla keyif alarak", "opt4": "Eşsiz deneyimler arayarak"},
-    "q10": {"text": "En çok neyi değerli bulursunuz?", "opt1": "Barış ve uyum", "opt2": "Gerçek ve dürüstlük", "opt3": "Sıcaklık ve bağlantı", "opt4": "Özgürlük ve ifade"},
-    "q11": {"text": "İlişkilerde siz:", "opt1": "Liderlik yaparsınız", "opt2": "Derin bağlantı ararsiniz", "opt3": "Herkesle iyi geçinirsiniz", "opt4": "Bağımsızlığı koruursunuz"},
-    "q12": {"text": "İdeal geleceğiniz nedir?", "opt1": "Büyük başarılar ve tanınma", "opt2": "Huzurlu ve stabil yaşam", "opt3": "Başkalarına yardım etme", "opt4": "Yeni anlamlı zorluklar"}
+    "q1": {
+      "text": "Genellikle kararlarınızı nasıl alırsınız?",
+      "opt1": "Sezginizi takip edin",
+      "opt2": "Mantık ve planlama kullanın",
+      "opt3": "Başkalarının görüşlerine saygı duyun",
+      "opt4": "Yaratıcı yöntemler deneyin"
+    },
+    "q2": {
+      "text": "Stresi nasıl yönetirsiniz?",
+      "opt1": "Yalnız zaman harcayın",
+      "opt2": "Doğada dinlenme arayın",
+      "opt3": "Yakınlarınızla konuşun",
+      "opt4": "Başka aktiviteye geçin"
+    },
+    "q3": {
+      "text": "Sizin algılanış şekliniz nedir?",
+      "opt1": "Enerjik ve sosyal",
+      "opt2": "Düşünceli ve ihtiyatlı",
+      "opt3": "Nazik ve ilgili",
+      "opt4": "Yaratıcı ve benzersiz"
+    },
+    "q4": {
+      "text": "Yeni zorlukların karşısında nasıl davranırsınız?",
+      "opt1": "Korkusuzca",
+      "opt2": "Dikkatle planlayarak",
+      "opt3": "Ihtiyatlı biçimde",
+      "opt4": "Yaratıcı şekilde keşfederek"
+    },
+    "q5": {
+      "text": "İdeal ortamınız nedir?",
+      "opt1": "Sakin ve huzurlu",
+      "opt2": "Özgür ve rahat",
+      "opt3": "İyi insanlarla sıcak",
+      "opt4": "Dinamik ve canlı"
+    },
+    "q6": {
+      "text": "Başarısızlığa nasıl tepki verirsiniz?",
+      "opt1": "Hemen yeniden deneyin",
+      "opt2": "Analiz edin ve iyileştirin",
+      "opt3": "Başkalarından destek bulun",
+      "opt4": "Farklı perspektiften öğrenin"
+    },
+    "q7": {
+      "text": "Sizi en iyi ne anlatır?",
+      "opt1": "Hayal gücü ve duygu",
+      "opt2": "Parlaklık ve iyimserlik",
+      "opt3": "Sakinlik ve denge",
+      "opt4": "Cesaret ve kararlılık"
+    },
+    "q8": {
+      "text": "Çalışma stiliniz nedir?",
+      "opt1": "Hızlı ve verimli",
+      "opt2": "Detaylı ve dikkatli",
+      "opt3": "Takımda",
+      "opt4": "Yaratıcı ve yenilikçi"
+    },
+    "q9": {
+      "text": "Seyahat etmeyi nasıl seversiniz?",
+      "opt1": "Plansız spontan",
+      "opt2": "Detaylı planlama ile",
+      "opt3": "Arkadaşlarla keyif alarak",
+      "opt4": "Eşsiz deneyimler arayarak"
+    },
+    "q10": {
+      "text": "En çok neyi değerli bulursunuz?",
+      "opt1": "Barış ve uyum",
+      "opt2": "Gerçek ve dürüstlük",
+      "opt3": "Sıcaklık ve bağlantı",
+      "opt4": "Özgürlük ve ifade"
+    },
+    "q11": {
+      "text": "İlişkilerde siz:",
+      "opt1": "Liderlik yaparsınız",
+      "opt2": "Derin bağlantı ararsiniz",
+      "opt3": "Herkesle iyi geçinirsiniz",
+      "opt4": "Bağımsızlığı koruursunuz"
+    },
+    "q12": {
+      "text": "İdeal geleceğiniz nedir?",
+      "opt1": "Büyük başarılar ve tanınma",
+      "opt2": "Huzurlu ve stabil yaşam",
+      "opt3": "Başkalarına yardım etme",
+      "opt4": "Yeni anlamlı zorluklar"
+    }
   },
-  "analyzing": {"title": "Kişiliğiniz analiz ediliyor...", "subtitle": "Lütfen bekleyin"},
-  "result": {"meaning": "Rengin Anlamı", "strengths": "Temel Güçleri", "weaknesses": "İyileştirilecek Alanlar", "compatible": "Uyumlu Renkler", "incompatible": "İzlenmesi Gereken Renkler", "share": "Sonucu Paylaş", "deep_analysis": "Derin Analiz"},
+  "analyzing": {
+    "title": "Kişiliğiniz analiz ediliyor...",
+    "subtitle": "Lütfen bekleyin"
+  },
+  "result": {
+    "meaning": "Rengin Anlamı",
+    "strengths": "Temel Güçleri",
+    "weaknesses": "İyileştirilecek Alanlar",
+    "compatible": "Uyumlu Renkler",
+    "incompatible": "İzlenmesi Gereken Renkler",
+    "share": "Sonucu Paylaş",
+    "deep_analysis": "Derin Analiz"
+  },
   "colors": {
-    "red": {"name": "Kırmızı - Tutkulu", "tagline": "Ateşli tutku ile her şeyi başarı", "description": "Siz tutkulu ve cesurlar. Sınırsız enerjiye ve doğal liderliğe sahipsiniz.", "meaning": "Tutku, enerji, cesaret, liderlik, aktivite, güçlü irade", "strength1": "Mükemmel liderlik", "strength2": "Korkusuz cesaret", "strength3": "Hızlı eylem", "weakness1": "Bazen dürtüsel", "weakness2": "Görüşleri görmezden gelebilir", "deepAnalysis": "Siz doğuştan lidersiniz."},
-    "blue": {"name": "Mavi - Bilge", "tagline": "Derin düşünce ile dünyayı anla", "description": "Siz sakin ve düşünceli. Istikrar ve mantıksal düşünme istersiniz.", "meaning": "Barış, güven, derinlik, bilgelik, istikrar, sakinlik", "strength1": "Mükemmel analiz", "strength2": "Yüksek güvenilirlik", "strength3": "Derin görüş", "weakness1": "Bazen pasif", "weakness2": "Aşırı düşünme", "deepAnalysis": "Siz hakiki bir düşünürsünüz."},
-    "green": {"name": "Yeşil - Uyumlu", "tagline": "Uyum ve denge ile dünyayı iyileştir", "description": "Barış ve uyum istersiniz. Empati gösterir ve dikkatlisiniz.", "meaning": "Barış, iyileştirme, uyum, bakım, denge, doğallık", "strength1": "Mükemmel empati", "strength2": "Uyumlu ilişkiler", "strength3": "İstikrar", "weakness1": "Fikirlerini kaçınabilir", "weakness2": "Kararları ertelemede meyildir", "deepAnalysis": "Siz doğuştan arabulucu."},
-    "yellow": {"name": "Sarı - İyimser", "tagline": "Güneş gibi her şeyi pozitiflikle aydınlat", "description": "Siz parlak ve iyimsersiniz. Olumlu tutumunuz başkalarını ilham verir.", "meaning": "İyimserlik, umut, parlaklık, dostluk, pozitiflik, canlılık", "strength1": "Olumlu tavır", "strength2": "Mükemmel sosyal beceriler", "strength3": "İlham verme kabiliyeti", "weakness1": "Derin düşünceyi kaçınabilir", "weakness2": "Zorluklar ile boğuşabilir", "deepAnalysis": "Siz iyimserlik ışığısınız."},
-    "purple": {"name": "Mor - Yaratıcı", "tagline": "Eşsiz hayal gücü ile yeni dünya çiz", "description": "Siz yaratıcı ve hayal gücü zengin. Dünyayı benzersiz görürsünüz.", "meaning": "Yaratıcılık, hayal gücü, gizem, bireysellik, sanat, yenilik", "strength1": "Mükemmel yaratıcılık", "strength2": "Eşsiz perspektif", "strength3": "Sanatsal hassasiyet", "weakness1": "Gerçeklikten uzaklaşabilir", "weakness2": "Zayıf uygulanım", "deepAnalysis": "Siz hakiki bir sanatsınız."},
-    "orange": {"name": "Turuncu - Enerji", "tagline": "Canlı enerji ile özgürce yaşa", "description": "Siz enerjik ve canlısınız. Yeni deneyimler ve şimdiki anı seversiniz.", "meaning": "Enerji, özgürlük, anlık, tutku, esneklik, canlılık", "strength1": "Güçlü aktivite", "strength2": "Yeni deneyimleri tadı alma", "strength3": "Mükemmel uyum", "weakness1": "Uzun vadeli planlama zayıf", "weakness2": "Tutarlılık eksik olabilir", "deepAnalysis": "Siz özgürlük ruhu."},
-    "pink": {"name": "Pembe - Hassas", "tagline": "Sıcak duygular ile kalplere dokun", "description": "Siz duygusal olarak zengin ve hassassınız. Başkaları için özgürlüğü taşıyorsunuz.", "meaning": "Duygu, merhamet, sıcaklık, hassasiyet, incelik, iç güzellik", "strength1": "Mükemmel hassasiyet", "strength2": "Sıcak bakım", "strength3": "Zengin duygusal ifade", "weakness1": "Duygulardan etkilenebilir", "weakness2": "Başkalarından aşırı etkilenebilir", "deepAnalysis": "Siz hakiki duygu sanatçısısınız."},
-    "white": {"name": "Beyaz - Saf", "tagline": "Saflık ve metanet ile her şeyi kucakla", "description": "Siz saf ve açık kalplisiniz. Herkesi yargısız kabullenirsiniz.", "meaning": "Saflık, mükemmellik, nötr, barış, kapsayıcılık, başlangıç", "strength1": "Açık kalpli kucaklaş", "strength2": "Yüksek ahlak", "strength3": "Her türle uyum", "weakness1": "Kendini iddia etmede zayıf olabilir", "weakness2": "Duygularını gizleyebilir", "deepAnalysis": "Siz hakiki bilgesisiniz."}
+    "red": {
+      "name": "Kırmızı - Tutkulu",
+      "tagline": "Ateşli tutku ile her şeyi başarı",
+      "description": "Siz tutkulu ve cesurlar. Sınırsız enerjiye ve doğal liderliğe sahipsiniz.",
+      "meaning": "Tutku, enerji, cesaret, liderlik, aktivite, güçlü irade",
+      "strength1": "Mükemmel liderlik",
+      "strength2": "Korkusuz cesaret",
+      "strength3": "Hızlı eylem",
+      "weakness1": "Bazen dürtüsel",
+      "weakness2": "Görüşleri görmezden gelebilir",
+      "deepAnalysis": "Siz doğuştan lidersiniz."
+    },
+    "blue": {
+      "name": "Mavi - Bilge",
+      "tagline": "Derin düşünce ile dünyayı anla",
+      "description": "Siz sakin ve düşünceli. Istikrar ve mantıksal düşünme istersiniz.",
+      "meaning": "Barış, güven, derinlik, bilgelik, istikrar, sakinlik",
+      "strength1": "Mükemmel analiz",
+      "strength2": "Yüksek güvenilirlik",
+      "strength3": "Derin görüş",
+      "weakness1": "Bazen pasif",
+      "weakness2": "Aşırı düşünme",
+      "deepAnalysis": "Siz hakiki bir düşünürsünüz."
+    },
+    "green": {
+      "name": "Yeşil - Uyumlu",
+      "tagline": "Uyum ve denge ile dünyayı iyileştir",
+      "description": "Barış ve uyum istersiniz. Empati gösterir ve dikkatlisiniz.",
+      "meaning": "Barış, iyileştirme, uyum, bakım, denge, doğallık",
+      "strength1": "Mükemmel empati",
+      "strength2": "Uyumlu ilişkiler",
+      "strength3": "İstikrar",
+      "weakness1": "Fikirlerini kaçınabilir",
+      "weakness2": "Kararları ertelemede meyildir",
+      "deepAnalysis": "Siz doğuştan arabulucu."
+    },
+    "yellow": {
+      "name": "Sarı - İyimser",
+      "tagline": "Güneş gibi her şeyi pozitiflikle aydınlat",
+      "description": "Siz parlak ve iyimsersiniz. Olumlu tutumunuz başkalarını ilham verir.",
+      "meaning": "İyimserlik, umut, parlaklık, dostluk, pozitiflik, canlılık",
+      "strength1": "Olumlu tavır",
+      "strength2": "Mükemmel sosyal beceriler",
+      "strength3": "İlham verme kabiliyeti",
+      "weakness1": "Derin düşünceyi kaçınabilir",
+      "weakness2": "Zorluklar ile boğuşabilir",
+      "deepAnalysis": "Siz iyimserlik ışığısınız."
+    },
+    "purple": {
+      "name": "Mor - Yaratıcı",
+      "tagline": "Eşsiz hayal gücü ile yeni dünya çiz",
+      "description": "Siz yaratıcı ve hayal gücü zengin. Dünyayı benzersiz görürsünüz.",
+      "meaning": "Yaratıcılık, hayal gücü, gizem, bireysellik, sanat, yenilik",
+      "strength1": "Mükemmel yaratıcılık",
+      "strength2": "Eşsiz perspektif",
+      "strength3": "Sanatsal hassasiyet",
+      "weakness1": "Gerçeklikten uzaklaşabilir",
+      "weakness2": "Zayıf uygulanım",
+      "deepAnalysis": "Siz hakiki bir sanatsınız."
+    },
+    "orange": {
+      "name": "Turuncu - Enerji",
+      "tagline": "Canlı enerji ile özgürce yaşa",
+      "description": "Siz enerjik ve canlısınız. Yeni deneyimler ve şimdiki anı seversiniz.",
+      "meaning": "Enerji, özgürlük, anlık, tutku, esneklik, canlılık",
+      "strength1": "Güçlü aktivite",
+      "strength2": "Yeni deneyimleri tadı alma",
+      "strength3": "Mükemmel uyum",
+      "weakness1": "Uzun vadeli planlama zayıf",
+      "weakness2": "Tutarlılık eksik olabilir",
+      "deepAnalysis": "Siz özgürlük ruhu."
+    },
+    "pink": {
+      "name": "Pembe - Hassas",
+      "tagline": "Sıcak duygular ile kalplere dokun",
+      "description": "Siz duygusal olarak zengin ve hassassınız. Başkaları için özgürlüğü taşıyorsunuz.",
+      "meaning": "Duygu, merhamet, sıcaklık, hassasiyet, incelik, iç güzellik",
+      "strength1": "Mükemmel hassasiyet",
+      "strength2": "Sıcak bakım",
+      "strength3": "Zengin duygusal ifade",
+      "weakness1": "Duygulardan etkilenebilir",
+      "weakness2": "Başkalarından aşırı etkilenebilir",
+      "deepAnalysis": "Siz hakiki duygu sanatçısısınız."
+    },
+    "white": {
+      "name": "Beyaz - Saf",
+      "tagline": "Saflık ve metanet ile her şeyi kucakla",
+      "description": "Siz saf ve açık kalplisiniz. Herkesi yargısız kabullenirsiniz.",
+      "meaning": "Saflık, mükemmellik, nötr, barış, kapsayıcılık, başlangıç",
+      "strength1": "Açık kalpli kucaklaş",
+      "strength2": "Yüksek ahlak",
+      "strength3": "Her türle uyum",
+      "weakness1": "Kendini iddia etmede zayıf olabilir",
+      "weakness2": "Duygularını gizleyebilir",
+      "deepAnalysis": "Siz hakiki bilgesisiniz."
+    }
   },
-  "message": {"copy_success": "Bağlantı kopyalandı!", "copy_error": "Kopyalama başarısız. Tekrar deneyin."},
-  "recommendations": {"title": "Bunu da deneyin"},
-  "game": {"back": "DopaBrain Ana Sayfa"}
+  "message": {
+    "copy_success": "Bağlantı kopyalandı!",
+    "copy_error": "Kopyalama başarısız. Tekrar deneyin."
+  },
+  "recommendations": {
+    "title": "Bunu da deneyin"
+  },
+  "game": {
+    "back": "DopaBrain Ana Sayfa"
+  },
+  "badge": {
+    "red": "Kırmızı",
+    "blue": "Mavi",
+    "green": "Yeşil",
+    "yellow": "Sarı",
+    "purple": "Mor",
+    "orange": "Turuncu",
+    "pink": "Pembe",
+    "white": "Beyaz"
+  }
 }

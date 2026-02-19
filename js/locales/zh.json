@@ -236,5 +236,15 @@
   },
   "game": {
     "back": "DopaBrain首页"
+  },
+  "badge": {
+    "red": "红色",
+    "blue": "蓝色",
+    "green": "绿色",
+    "yellow": "黄色",
+    "purple": "紫色",
+    "orange": "橙色",
+    "pink": "粉色",
+    "white": "白色"
   }
 }
