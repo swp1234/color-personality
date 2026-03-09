@@ -1,5 +1,6 @@
 /* ============================================
-   성격 색상 테스트 CSS
+   Color Mixing Lab CSS
+   Dark mode first, Glassmorphism 2.0
    ============================================ */
 
 :root {
@@ -10,75 +11,79 @@
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
     --accent: #ff6b6b;
+    --accent-glow: rgba(255, 107, 107, 0.3);
     --gradient: linear-gradient(135deg, #ff6b6b, #ffd93d, #00b894, #4ecdc4, #a29bfe);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-blur: blur(20px);
 }
 
 /* Light Mode */
 [data-theme="light"] {
     --dark-bg: #f5f5fa;
     --darker-bg: #efefff;
-    --card-bg: rgba(0, 0, 0, 0.08);
-    --card-border: rgba(0, 0, 0, 0.1);
+    --card-bg: rgba(0, 0, 0, 0.05);
+    --card-border: rgba(0, 0, 0, 0.08);
     --text-primary: #1a1a2e;
     --text-secondary: #5a5a70;
+    --glass-bg: rgba(0, 0, 0, 0.03);
+    --glass-border: rgba(0, 0, 0, 0.08);
+    --glass-blur: blur(20px);
 }
 
-[data-theme="light"] .option {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.1);
-}
-[data-theme="light"] .option:hover {
-    background: rgba(255,107,107,0.08);
-    border-color: rgba(255,107,107,0.25);
-}
-[data-theme="light"] .option.selected {
-    background: rgba(255,107,107,0.1);
-    border-color: var(--accent);
-}
-[data-theme="light"] .type-item {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.08);
-}
 [data-theme="light"] .lang-toggle,
 [data-theme="light"] .theme-toggle {
-    background: rgba(0,0,0,0.05);
-    border-color: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
     color: var(--text-primary);
 }
+
 [data-theme="light"] .lang-toggle:hover,
 [data-theme="light"] .theme-toggle:hover {
-    background: rgba(0,0,0,0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
+
 [data-theme="light"] .lang-menu {
-    background: rgba(245,245,250,0.98);
-    border-color: rgba(0,0,0,0.1);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    background: rgba(245, 245, 250, 0.98);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
+
 [data-theme="light"] .lang-option:hover {
-    background: rgba(255,107,107,0.08);
+    background: rgba(255, 107, 107, 0.08);
 }
-[data-theme="light"] .rec-card {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.08);
-}
-[data-theme="light"] .rec-card:hover {
-    background: rgba(255,107,107,0.06);
-    border-color: rgba(255,107,107,0.2);
-}
-[data-theme="light"] .ad-banner {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.08);
-}
+
 [data-theme="light"] .app-loader {
     background: #f5f5fa;
 }
+
+[data-theme="light"] .palette-card {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .palette-card:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(255, 107, 107, 0.3);
+}
+
+[data-theme="light"] .type-item {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
 [data-theme="light"] ::-webkit-scrollbar-track {
     background: #f0f0f5;
 }
+
 [data-theme="light"] ::-webkit-scrollbar-thumb {
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
 }
+
+/* ============================================
+   Reset & Base
+   ============================================ */
 
 * {
     margin: 0;
@@ -87,16 +92,10 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Touch Optimization */
 button, a, input, [role="button"], [role="link"] {
     touch-action: manipulation;
     -webkit-user-select: none;
     user-select: none;
-}
-
-input[type="text"], textarea {
-    -webkit-user-select: text;
-    user-select: text;
 }
 
 html {
@@ -115,7 +114,7 @@ body {
 }
 
 /* ============================================
-   로더 스타일
+   Loader
    ============================================ */
 
 .app-loader {
@@ -164,7 +163,7 @@ body {
 }
 
 /* ============================================
-   애니메이션
+   Animations
    ============================================ */
 
 @keyframes bounce {
@@ -192,36 +191,56 @@ body {
 }
 
 @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
 }
 
 @keyframes confetti-fall {
     to {
-        transform: translateY(100vh) rotate(360deg);
+        transform: translateY(100vh) rotate(720deg);
         opacity: 0;
     }
 }
 
 @keyframes glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.3); }
-    50% { box-shadow: 0 0 40px rgba(255, 107, 107, 0.6); }
+    0%, 100% { box-shadow: 0 0 20px var(--accent-glow); }
+    50% { box-shadow: 0 0 40px var(--accent-glow), 0 0 60px var(--accent-glow); }
 }
 
-@keyframes colorShift {
-    0% { background: linear-gradient(135deg, #ff6b6b, #ff8787); }
-    25% { background: linear-gradient(135deg, #ffd93d, #ffed4e); }
-    50% { background: linear-gradient(135deg, #00b894, #1dd1a1); }
-    75% { background: linear-gradient(135deg, #a29bfe, #9b59b6); }
-    100% { background: linear-gradient(135deg, #ff6b6b, #ff8787); }
+@keyframes bubbleRise {
+    0% { transform: translateY(0) scale(1); opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-80px) scale(0.3); opacity: 0; }
+}
+
+@keyframes liquidShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes dropFall {
+    0% { transform: translateY(-40px) scale(1); opacity: 1; }
+    100% { transform: translateY(40px) scale(0.5); opacity: 0; }
+}
+
+@keyframes mixPulse {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.1); }
+}
+
+@keyframes cardReveal {
+    0% { opacity: 0; transform: scale(0.8) rotateY(20deg); }
+    60% { transform: scale(1.05) rotateY(-5deg); }
+    100% { opacity: 1; transform: scale(1) rotateY(0); }
 }
 
 /* ============================================
-   컨테이너 & 레이아웃
+   Container & Layout
    ============================================ */
 
 .app-container {
-    max-width: 100%;
+    max-width: 540px;
     margin: 0 auto;
     padding: 1rem;
     position: relative;
@@ -239,7 +258,7 @@ body {
 }
 
 /* ============================================
-   언어 선택기
+   Language Selector
    ============================================ */
 
 .language-selector {
@@ -253,15 +272,16 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     color: var(--text-primary);
     font-size: 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     transition: var(--transition);
 }
 
@@ -274,10 +294,11 @@ body {
     position: absolute;
     top: 50px;
     right: 0;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     border-radius: 12px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     overflow: hidden;
     min-width: 140px;
     z-index: 200;
@@ -299,6 +320,7 @@ body {
     cursor: pointer;
     transition: var(--transition);
     border-left: 3px solid transparent;
+    min-height: 44px;
 }
 
 .lang-option:hover {
@@ -318,15 +340,16 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
     color: var(--text-primary);
     font-size: 1.2rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
     z-index: 1000;
     transition: var(--transition);
 }
@@ -342,7 +365,7 @@ body {
 }
 
 /* ============================================
-   광고 영역
+   Ad Container
    ============================================ */
 
 .ad-container {
@@ -358,7 +381,7 @@ body {
 }
 
 /* ============================================
-   인트로 화면
+   Intro Screen
    ============================================ */
 
 .intro-content {
@@ -367,20 +390,58 @@ body {
     animation: fadeIn 0.6s ease-out;
 }
 
-.color-circle-animation {
+.intro-visual {
     margin: 2rem 0 1.5rem;
-    position: relative;
-    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.intro-emoji {
-    font-size: 5rem;
-    display: inline-block;
-    animation: bounce 2s ease-in-out infinite;
+.mixing-beaker {
+    position: relative;
+    width: 100px;
+    height: 130px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    overflow: hidden;
 }
+
+.mixing-beaker::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -10px;
+    right: -10px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.beaker-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70%;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #4ecdc4, #a29bfe);
+    background-size: 300% 300%;
+    animation: liquidShift 4s ease infinite;
+    border-radius: 0 0 17px 17px;
+}
+
+.beaker-bubble {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    animation: bubbleRise 2s ease-in-out infinite;
+}
+
+.beaker-bubble.b1 { left: 20%; bottom: 10%; animation-delay: 0s; }
+.beaker-bubble.b2 { left: 50%; bottom: 5%; animation-delay: 0.7s; width: 6px; height: 6px; }
+.beaker-bubble.b3 { left: 70%; bottom: 15%; animation-delay: 1.4s; width: 5px; height: 5px; }
 
 .intro-title {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
@@ -399,45 +460,46 @@ body {
     font-weight: 300;
 }
 
-.intro-description {
+.intro-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     margin: 2rem 0;
-    line-height: 1.6;
+    text-align: left;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.intro-description p {
-    margin: 0.8rem 0;
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.step-num {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), #ff8787);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step-text {
     color: var(--text-secondary);
     font-size: 0.95rem;
-}
-
-.color-types-preview {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.8rem;
-    margin: 2rem 0;
-    max-width: 100%;
-}
-
-.color-badge {
-    padding: 0.8rem 0.4rem;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    transition: var(--transition);
-    cursor: default;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.color-badge:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.color-badge.white {
-    color: #333;
-    text-shadow: none;
 }
 
 .time-estimate {
@@ -447,15 +509,15 @@ body {
 }
 
 /* ============================================
-   버튼 스타일
+   Buttons
    ============================================ */
 
 .btn {
-    padding: 12px 28px;
+    padding: 14px 32px;
     font-size: 1rem;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     transition: var(--transition);
     min-height: 48px;
@@ -469,7 +531,7 @@ body {
     background: linear-gradient(135deg, #ff6b6b, #ff8787);
     color: white;
     margin-top: 1.5rem;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 4px 15px var(--accent-glow);
 }
 
 .btn-primary:hover {
@@ -482,7 +544,7 @@ body {
 }
 
 .btn-secondary {
-    background: var(--card-bg);
+    background: var(--glass-bg);
     border: 1.5px solid var(--accent);
     color: var(--accent);
     margin-top: 1.5rem;
@@ -493,19 +555,6 @@ body {
     border-color: #ff8787;
 }
 
-.btn-premium {
-    background: linear-gradient(135deg, #ffd93d, #ffed4e);
-    color: #1a1a3f;
-    font-weight: 700;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.btn-premium:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(255, 217, 61, 0.3);
-}
-
 .back-btn {
     background: none;
     border: none;
@@ -513,6 +562,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     padding: 0.5rem;
+    min-height: 44px;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -524,10 +574,10 @@ body {
 }
 
 /* ============================================
-   퀴즈 화면
+   Phase Header
    ============================================ */
 
-.quiz-header {
+.phase-header {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -557,15 +607,37 @@ body {
     text-align: right;
 }
 
-.quiz-content {
-    animation: fadeIn 0.4s ease-out 0.2s backwards;
+/* ============================================
+   Phase Content
+   ============================================ */
+
+.phase-content {
+    text-align: center;
+    animation: fadeIn 0.4s ease-out;
+    padding: 0 0.5rem;
 }
 
-.question-container {
-    margin: 2rem 0;
+.phase-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(255, 135, 135, 0.1));
+    border: 1px solid rgba(255, 107, 107, 0.3);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
 }
 
-.question-text {
+.phase-badge-2 {
+    background: linear-gradient(135deg, rgba(78, 205, 196, 0.2), rgba(78, 205, 196, 0.1));
+    border-color: rgba(78, 205, 196, 0.3);
+    color: #4ecdc4;
+}
+
+.phase-prompt {
     font-size: clamp(1.2rem, 5vw, 1.5rem);
     font-weight: 600;
     margin-bottom: 2rem;
@@ -573,94 +645,226 @@ body {
     color: var(--text-primary);
 }
 
-.options-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+/* ============================================
+   Phase 1: Spectrum Picker
+   ============================================ */
+
+.spectrum-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+    border-radius: 16px;
+    overflow: visible;
+    cursor: pointer;
+    touch-action: none;
 }
 
-.option {
-    padding: 1rem 1.5rem;
-    background: var(--card-bg);
-    border: 2px solid var(--card-border);
-    border-radius: 12px;
-    color: var(--text-primary);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: var(--transition);
-    text-align: left;
-    min-height: 56px;
+.spectrum-canvas {
+    width: 100%;
+    height: 180px;
+    border-radius: 16px;
+    display: block;
+    border: 2px solid var(--glass-border);
+}
+
+.spectrum-thumb {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transition: box-shadow 0.2s ease;
+    z-index: 2;
+}
+
+.color-preview-row {
     display: flex;
     align-items: center;
-    backdrop-filter: blur(10px);
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
 }
 
-.option:hover {
-    background: rgba(255, 107, 107, 0.1);
-    border-color: var(--accent);
-    transform: translateX(8px);
+.selected-color-preview {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #ff6b6b;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.15s ease;
 }
 
-.option:active {
-    transform: translateX(4px);
+.selected-color-hex {
+    font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    min-width: 80px;
 }
 
 /* ============================================
-   분석 중 화면
+   Phase 2: Palette Comparison
    ============================================ */
 
-.analyzing-content {
+.palette-comparison {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.palette-card {
+    flex: 1;
+    background: var(--glass-bg);
+    border: 2px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    min-height: 200px;
+}
+
+.palette-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.palette-card:active {
+    transform: translateY(-2px);
+}
+
+.palette-colors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    width: 100%;
+    flex: 1;
+}
+
+.palette-swatch {
+    border-radius: 8px;
+    min-height: 50px;
+    transition: var(--transition);
+}
+
+.palette-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: center;
+}
+
+.vs-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    min-width: 36px;
+}
+
+/* ============================================
+   Mixing Animation
+   ============================================ */
+
+.mixing-content {
     text-align: center;
     padding: 3rem 1.5rem;
     animation: fadeIn 0.4s ease-out;
 }
 
-.color-scan {
+.mixing-animation {
     position: relative;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 2rem;
+    width: 120px;
+    height: 180px;
+    margin: 2rem auto;
 }
 
-.color-scan-circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border: 3px solid var(--accent);
-    border-radius: 50%;
-    top: 25px;
-    left: 25px;
-    animation: pulse 2s infinite;
+.mix-vial {
+    position: relative;
+    width: 80px;
+    height: 140px;
+    margin: 0 auto;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 40px 40px;
+    border-top: none;
+    overflow: hidden;
 }
 
-.color-scan-wave {
+.mix-vial::before {
+    content: '';
     position: absolute;
-    width: 150px;
-    height: 150px;
-    border: 2px solid var(--accent);
-    border-radius: 50%;
-    top: 0;
+    top: -10px;
+    left: -14px;
+    right: -14px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+.mix-liquid {
+    position: absolute;
+    bottom: 0;
     left: 0;
-    opacity: 0;
-    animation: pulse 2s infinite;
+    right: 0;
+    height: 0;
+    border-radius: 0 0 37px 37px;
+    transition: height 2s ease, background 1.5s ease;
+    animation: mixPulse 1.5s ease-in-out infinite;
 }
 
-.color-scan-text {
+.mix-bubble {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: bubbleRise 1.8s ease-in-out infinite;
 }
 
-.analyzing-content h2 {
-    font-size: clamp(1.2rem, 4vw, 1.8rem);
+.mix-bubble.mb1 { width: 6px; height: 6px; left: 20%; bottom: 10%; animation-delay: 0s; }
+.mix-bubble.mb2 { width: 4px; height: 4px; left: 55%; bottom: 15%; animation-delay: 0.5s; }
+.mix-bubble.mb3 { width: 5px; height: 5px; left: 35%; bottom: 8%; animation-delay: 1s; }
+.mix-bubble.mb4 { width: 3px; height: 3px; left: 65%; bottom: 20%; animation-delay: 1.5s; }
+
+.color-drops {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.color-drop {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    animation: dropFall 1s ease-in forwards;
+}
+
+.mixing-content h2 {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
     margin-bottom: 0.5rem;
 }
 
-.analyzing-content p {
+.mixing-subtitle {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    font-size: 0.95rem;
 }
 
 .loading-dots {
@@ -677,16 +881,11 @@ body {
     animation: bounce 1.4s infinite;
 }
 
-.loading-dots span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.loading-dots span:nth-child(3) {
-    animation-delay: 0.4s;
-}
+.loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.4s; }
 
 /* ============================================
-   결과 화면
+   Result Screen
    ============================================ */
 
 .result-content {
@@ -699,13 +898,37 @@ body {
     margin: 2rem 0;
 }
 
-.result-color-circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.signature-color-card {
+    width: 200px;
+    height: 240px;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-    animation: glow 2s infinite;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    animation: cardReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+    position: relative;
+    border: 2px solid var(--glass-border);
+}
+
+.signature-gradient {
+    width: 100%;
+    height: 80%;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+}
+
+.signature-hex {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    letter-spacing: 0.05em;
 }
 
 .result-title {
@@ -722,31 +945,89 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.result-description {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
+/* Your Blend Section */
+.your-blend-section {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.your-blend-section h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.blend-swatches {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blend-swatch {
+    width: 48px;
+    height: 48px;
     border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.blend-swatch::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.blend-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.blend-result {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    border: 3px solid var(--accent);
+    box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+/* Result sections */
+.result-description {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
     margin: 2rem 0;
     line-height: 1.7;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
 }
 
 .result-description p {
     margin: 0.8rem 0;
 }
 
-/* ============================================
-   색상 의미
-   ============================================ */
-
 .color-meanings {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
     margin: 2rem 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
 }
 
 .color-meanings h3 {
@@ -759,10 +1040,7 @@ body {
     line-height: 1.7;
 }
 
-/* ============================================
-   강점 & 약점
-   ============================================ */
-
+/* Strengths & Weaknesses */
 .strengths-weaknesses {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -771,11 +1049,12 @@ body {
 }
 
 .strengths, .weaknesses {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
 }
 
 .strengths h3, .weaknesses h3 {
@@ -797,7 +1076,7 @@ body {
 }
 
 .strengths li::before {
-    content: '✓';
+    content: '+';
     position: absolute;
     left: 0;
     color: #00b894;
@@ -806,23 +1085,15 @@ body {
 }
 
 .weaknesses li::before {
-    content: '◆';
+    content: '-';
     position: absolute;
-    left: 0;
+    left: 2px;
     color: #ffd93d;
-    font-size: 0.7rem;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-@media (max-width: 640px) {
-    .strengths-weaknesses {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ============================================
-   호환성
-   ============================================ */
-
+/* Compatibility */
 .compatibility {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -831,11 +1102,12 @@ body {
 }
 
 .compatible-types, .incompatible-types {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
 }
 
 .compatible-types h4, .incompatible-types h4 {
@@ -853,7 +1125,7 @@ body {
 .type-item {
     padding: 0.8rem 1rem;
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
+    border-radius: 10px;
     font-size: 0.95rem;
     transition: var(--transition);
 }
@@ -863,63 +1135,18 @@ body {
     transform: translateX(4px);
 }
 
-@media (max-width: 640px) {
-    .compatibility {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ============================================
-   프리미엄 분석
-   ============================================ */
-
-.premium-analysis {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    backdrop-filter: blur(10px);
-}
-
-.premium-content {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--card-border);
-}
-
-.premium-content.hidden {
-    display: none;
-}
-
-.premium-content h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--text-primary);
-}
-
-.premium-content p {
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin: 0.8rem 0;
-}
-
-#premium-analysis-text {
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* ============================================
-   공유 섹션
+   Share Section
    ============================================ */
 
 .share-section {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
     margin: 2rem 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
 }
 
 .share-section h3 {
@@ -939,7 +1166,7 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     transition: var(--transition);
     min-height: 44px;
@@ -970,7 +1197,7 @@ body {
 }
 
 .share-btn.copy {
-    background: var(--card-bg);
+    background: var(--glass-bg);
     border: 1.5px solid var(--text-secondary);
     color: var(--text-secondary);
 }
@@ -985,75 +1212,13 @@ body {
 }
 
 /* ============================================
-   추천 섹션
-   ============================================ */
-
-.recommendations-section {
-    background: var(--card-bg);
-    border-top: 1px solid var(--card-border);
-    padding: 2rem 1.5rem;
-    margin-top: 2rem;
-    backdrop-filter: blur(10px);
-}
-
-.rec-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: var(--text-primary);
-}
-
-.rec-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1rem;
-}
-
-.rec-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.rec-card:hover {
-    background: rgba(255, 107, 107, 0.1);
-    border-color: var(--accent);
-    transform: translateY(-4px);
-}
-
-.rec-icon {
-    font-size: 2rem;
-}
-
-.rec-name {
-    font-size: 0.85rem;
-    text-align: center;
-    color: var(--text-secondary);
-    transition: var(--transition);
-}
-
-.rec-card:hover .rec-name {
-    color: var(--text-primary);
-}
-
-/* ============================================
-   푸터
+   Footer
    ============================================ */
 
 .game-footer {
     text-align: center;
     padding: 2rem 1.5rem;
-    border-top: 1px solid var(--card-border);
+    border-top: 1px solid var(--glass-border);
     margin-top: 2rem;
 }
 
@@ -1067,6 +1232,7 @@ body {
     transition: var(--transition);
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    min-height: 44px;
 }
 
 .back-link:hover {
@@ -1075,7 +1241,7 @@ body {
 }
 
 /* ============================================
-   컨페티 효과
+   Confetti
    ============================================ */
 
 .confetti {
@@ -1085,7 +1251,7 @@ body {
 }
 
 /* ============================================
-   반응형 디자인
+   Responsive
    ============================================ */
 
 @media (max-width: 640px) {
@@ -1097,106 +1263,97 @@ body {
         padding: 1.5rem 1rem;
     }
 
-    .color-types-preview {
-        grid-template-columns: repeat(4, 1fr);
+    .spectrum-canvas {
+        height: 150px;
+    }
+
+    .palette-comparison {
         gap: 0.6rem;
     }
 
-    .color-badge {
-        padding: 0.6rem 0.3rem;
-        font-size: 0.7rem;
+    .palette-card {
+        padding: 0.8rem;
+        min-height: 170px;
     }
 
-    .quiz-header {
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin: 1rem 0 1.5rem;
+    .palette-swatch {
+        min-height: 40px;
     }
 
-    .progress-text {
-        min-width: 35px;
+    .vs-divider {
+        min-width: 28px;
+        font-size: 0.8rem;
     }
 
-    .option {
-        padding: 0.9rem 1.2rem;
-        min-height: 52px;
+    .signature-color-card {
+        width: 160px;
+        height: 200px;
     }
 
-    .result-color-circle {
-        width: 100px;
-        height: 100px;
+    .strengths-weaknesses {
+        grid-template-columns: 1fr;
+    }
+
+    .compatibility {
+        grid-template-columns: 1fr;
     }
 
     .share-buttons {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .rec-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .phase-header {
+        gap: 0.75rem;
+        margin: 1rem 0 1.5rem;
     }
 }
 
-/* 터치 디바이스 최적화 */
+/* Touch optimization */
 @media (hover: none) {
-    .option:hover {
-        background: var(--card-bg);
-        border-color: var(--card-border);
+    .palette-card:hover {
+        transform: none;
+        border-color: var(--glass-border);
+        box-shadow: none;
     }
 
-    .option:active {
-        background: rgba(255, 107, 107, 0.1);
+    .palette-card:active {
+        transform: translateY(-2px);
         border-color: var(--accent);
+        box-shadow: 0 8px 30px var(--accent-glow);
     }
 }
 
-/* 다크 모드 (기본값이 다크모드이므로 라이트모드 옵션) */
-@media (prefers-color-scheme: light) {
-    :root {
-        --dark-bg: #f5f5f5;
-        --darker-bg: #e8e8e8;
-        --card-bg: rgba(0, 0, 0, 0.05);
-        --card-border: rgba(0, 0, 0, 0.1);
-        --text-primary: #1a1a3f;
-        --text-secondary: #666666;
-    }
-
-    body {
-        background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
-    }
-}
-
-/* 접근성 */
-/* Scrollbar Styling */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--bg-dark, var(--bg-primary, var(--background, #0f0f23)));
+    background: var(--dark-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e74c3c;
+    background: var(--accent);
     border-radius: 5px;
-    border: 2px solid var(--bg-dark, var(--bg-primary, var(--background, #0f0f23)));
+    border: 2px solid var(--dark-bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #eb6f63;
-    opacity: 0.8;
+    background: #ff8787;
 }
 
 /* Selection Color */
 ::selection {
-    background: #e74c3c;
+    background: var(--accent);
     color: white;
 }
 
 ::-moz-selection {
-    background: #e74c3c;
+    background: var(--accent);
     color: white;
 }
 
+/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
@@ -1204,7 +1361,7 @@ body {
     }
 }
 
-/* 스킵 링크 */
+/* Skip link */
 .skip-link {
     position: absolute;
     top: -40px;
