@@ -1,6 +1,7 @@
 {
   "meta": {
-    "description": "Mix colors to create your unique personality color! Discover your personality type through an interactive 7-step color mixing experience.",
+    "title": "Free Color Personality Test Online | DopaBrain",
+    "description": "What does your favorite color say about you? Take this free color personality test to mix colors and discover your unique personality type. 8 results, instant!",
     "keywords": "color mixing lab, personality color test, color mixing, personality test, viral test",
     "og_title": "Color Mixing Lab - Create Your Personality Color!",
     "og_description": "Pick colors from the spectrum and choose palettes to blend your unique personality color! Which of the 8 types are you?",
@@ -12,8 +13,15 @@
     "skipLink": "Skip to main content",
     "loading": "Loading..."
   },
+  "about": {
+    "toggle": "About This Test",
+    "heading1": "How the Color Personality Test Works",
+    "text1": "The Color Personality Test uses a unique 7-step interactive process where you pick colors from a spectrum and choose between palettes. Your instinctive color choices are analyzed to determine your dominant personality color among 8 types: Red (Passionate), Blue (Intellectual), Green (Harmonizer), Yellow (Optimist), Purple (Creator), Orange (Energizer), Pink (Empath), and White (Pure).",
+    "heading2": "The Science of Color Psychology",
+    "text2": "Color psychology studies how colors affect human behavior and emotions. Research shows that color preferences can reflect personality traits, emotional states, and cognitive styles. This test applies these principles in a fun, interactive format to help you discover which color best represents your personality."
+  },
   "intro": {
-    "title": "Color Mixing Lab",
+    "title": "Color Personality Test - Discover Your Color Type",
     "subtitle": "Mix colors to discover your personality",
     "step1": "Pick colors from the spectrum instinctively",
     "step2": "Choose palettes that resonate with you",

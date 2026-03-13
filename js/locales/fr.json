@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Melangez les couleurs et creez votre couleur de personnalite unique! Experience interactive en 7 etapes dans le Laboratoire de Melange de Couleurs.",
+    "description": "Que dit votre couleur préférée sur vous ? Test gratuit avec 8 résultats !",
     "keywords": "laboratoire de melange de couleurs, test de couleur de personnalite, melange de couleurs, test psychologique",
     "og_title": "Laboratoire de Melange de Couleurs - Creez votre couleur de personnalite!",
     "og_description": "Choisissez des couleurs du spectre et melangez votre couleur de personnalite unique!",
     "twitter_title": "Laboratoire de Melange de Couleurs",
-    "twitter_description": "Melangez les couleurs et decouvrez votre couleur de personnalite!"
+    "twitter_description": "Melangez les couleurs et decouvrez votre couleur de personnalite!",
+    "title": "Test de Personnalité Couleur Gratuit | DopaBrain"
   },
   "app": {
     "title": "Laboratoire de Melange de Couleurs | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Chargement..."
   },
   "intro": {
-    "title": "Laboratoire de Melange de Couleurs",
+    "title": "Test de Couleur - Découvrez votre type de couleur",
     "subtitle": "Melangez les couleurs pour decouvrir votre personnalite",
     "step1": "Choisissez des couleurs du spectre intuitivement",
     "step2": "Selectionnez la palette qui vous parle",
@@ -189,5 +190,12 @@
     "animalPersonality": "Personnalité animale",
     "brainType": "Type de cerveau",
     "sleepAnimal": "Animal du sommeil"
+  },
+  "about": {
+    "toggle": "À propos du test",
+    "heading1": "Comment fonctionne le test",
+    "text1": "Le test utilise un processus interactif en 7 étapes où vous choisissez des couleurs du spectre et des palettes. Vos choix instinctifs sont analysés pour déterminer votre couleur dominante parmi 8 types.",
+    "heading2": "La science de la psychologie des couleurs",
+    "text2": "La psychologie des couleurs étudie comment les couleurs affectent le comportement et les émotions humaines."
   }
 }

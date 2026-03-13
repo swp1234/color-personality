@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Renkleri karistirin ve benzersiz kisilik renginizi yapin! Renk Karistirma Laboratuvarinda 7 adimlik interaktif deneyim.",
+    "description": "Favori renginiz sizin hakkınızda ne söylüyor? 8 sonuçlu ücretsiz test!",
     "keywords": "renk karistirma laboratuvari, kisilik rengi testi, renk karistirma, psikolojik test",
     "og_title": "Renk Karistirma Laboratuvari - Kisilik Renginizi Yaratin!",
     "og_description": "Spektrumdan renkler secin ve benzersiz kisilik renginizi karistirin!",
     "twitter_title": "Renk Karistirma Laboratuvari",
-    "twitter_description": "Renkleri karistirin ve kisilik renginizi kesfedin!"
+    "twitter_description": "Renkleri karistirin ve kisilik renginizi kesfedin!",
+    "title": "Ücretsiz Renk Kişilik Testi | DopaBrain"
   },
   "app": {
     "title": "Renk Karistirma Laboratuvari | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Yukleniyor..."
   },
   "intro": {
-    "title": "Renk Karistirma Laboratuvari",
+    "title": "Renk Kişilik Testi - Renk Tipinizi Keşfedin",
     "subtitle": "Renkleri karistirarak kisiligini kesfet",
     "step1": "Spektrumdan sezgisel olarak renkler sec",
     "step2": "Sana uygun paleti sec",
@@ -189,5 +190,12 @@
     "animalPersonality": "Hayvan Kişiliği",
     "brainType": "Beyin Tipi",
     "sleepAnimal": "Uyku Hayvanı"
+  },
+  "about": {
+    "toggle": "Test hakkında",
+    "heading1": "Test nasıl çalışır",
+    "text1": "Test, spektrumdan renk seçtiğiniz ve paletler arasında seçim yaptığınız 7 adımlı interaktif bir süreç kullanır. İçgüdüsel renk seçimleriniz 8 tip arasında analiz edilir.",
+    "heading2": "Renk psikolojisinin bilimi",
+    "text2": "Renk psikolojisi, renklerin insan davranışı ve duyguları nasıl etkilediğini inceler."
   }
 }

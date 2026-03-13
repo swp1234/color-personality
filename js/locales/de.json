@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Mische Farben und kreiere deine einzigartige Persoenlichkeitsfarbe! 7-Schritte interaktives Erlebnis im Farbmischlabor.",
+    "description": "Was sagt deine Lieblingsfarbe über dich? Kostenloser Test mit 8 Ergebnissen!",
     "keywords": "Farbmischlabor, Persoenlichkeitsfarbentest, Farbmischung, psychologischer Test",
     "og_title": "Farbmischlabor - Kreiere deine Persoenlichkeitsfarbe!",
     "og_description": "Waehle Farben aus dem Spektrum und mische deine einzigartige Persoenlichkeitsfarbe!",
     "twitter_title": "Farbmischlabor - Deine Persoenlichkeitsfarbe",
-    "twitter_description": "Mische Farben und entdecke deine Persoenlichkeitsfarbe!"
+    "twitter_description": "Mische Farben und entdecke deine Persoenlichkeitsfarbe!",
+    "title": "Kostenloser Farb-Persönlichkeitstest | DopaBrain"
   },
   "app": {
     "title": "Farbmischlabor | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Wird geladen..."
   },
   "intro": {
-    "title": "Farbmischlabor",
+    "title": "Farb-Persönlichkeitstest - Entdecke deinen Farbtyp",
     "subtitle": "Mische Farben um deine Persoenlichkeit zu entdecken",
     "step1": "Waehle Farben aus dem Spektrum intuitiv",
     "step2": "Waehle die Palette die dich anspricht",
@@ -189,5 +190,12 @@
     "animalPersonality": "Tierpersönlichkeit",
     "brainType": "Gehirntyp",
     "sleepAnimal": "Schlaftier"
+  },
+  "about": {
+    "toggle": "Über diesen Test",
+    "heading1": "Wie der Test funktioniert",
+    "text1": "Der Test nutzt einen 7-stufigen interaktiven Prozess, bei dem du Farben aus dem Spektrum auswählst und Paletten vergleichst. Deine instinktiven Farbwahlen werden analysiert, um einen von 8 Typen zu bestimmen.",
+    "heading2": "Die Wissenschaft der Farbpsychologie",
+    "text2": "Farbpsychologie untersucht, wie Farben menschliches Verhalten und Emotionen beeinflussen."
   }
 }

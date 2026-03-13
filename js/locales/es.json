@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Mezcla colores y crea tu color de personalidad unico! Experiencia interactiva de 7 pasos en el Laboratorio de Mezcla de Colores.",
+    "description": "¿Qué dice tu color favorito sobre ti? Test gratis con 8 resultados. ¡Descubre tu tipo de color!",
     "keywords": "laboratorio de mezcla de colores, test de color de personalidad, mezcla de colores, test psicologico",
     "og_title": "Laboratorio de Mezcla de Colores - Crea tu color de personalidad!",
     "og_description": "Elige colores del espectro y mezcla tu color de personalidad unico!",
     "twitter_title": "Laboratorio de Mezcla de Colores",
-    "twitter_description": "Mezcla colores y descubre tu color de personalidad!"
+    "twitter_description": "Mezcla colores y descubre tu color de personalidad!",
+    "title": "Test de Personalidad por Color Gratis | DopaBrain"
   },
   "app": {
     "title": "Laboratorio de Mezcla de Colores | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Cargando..."
   },
   "intro": {
-    "title": "Laboratorio de Mezcla de Colores",
+    "title": "Test de Color - Descubre tu tipo de color",
     "subtitle": "Mezcla colores para descubrir tu personalidad",
     "step1": "Elige colores del espectro intuitivamente",
     "step2": "Selecciona la paleta que resuene contigo",
@@ -189,5 +190,12 @@
     "animalPersonality": "Personalidad animal",
     "brainType": "Tipo de cerebro",
     "sleepAnimal": "Animal del sueño"
+  },
+  "about": {
+    "toggle": "Acerca del test",
+    "heading1": "Cómo funciona el test",
+    "text1": "El test usa un proceso interactivo de 7 pasos donde eliges colores del espectro y paletas. Tus elecciones instintivas se analizan para determinar tu color dominante entre 8 tipos.",
+    "heading2": "La ciencia de la psicología del color",
+    "text2": "La psicología del color estudia cómo los colores afectan el comportamiento y las emociones humanas."
   }
 }

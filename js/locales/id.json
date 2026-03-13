@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Campurkan warna dan buat warna kepribadianmu yang unik! Pengalaman interaktif 7 langkah di Lab Pencampuran Warna.",
+    "description": "Apa yang warna favorit Anda katakan tentang Anda? Tes gratis dengan 8 hasil!",
     "keywords": "lab pencampuran warna, tes warna kepribadian, pencampuran warna, tes psikologi",
     "og_title": "Lab Pencampuran Warna - Buat Warna Kepribadianmu!",
     "og_description": "Pilih warna dari spektrum dan campurkan warna kepribadianmu yang unik!",
     "twitter_title": "Lab Pencampuran Warna",
-    "twitter_description": "Campurkan warna dan temukan warna kepribadianmu!"
+    "twitter_description": "Campurkan warna dan temukan warna kepribadianmu!",
+    "title": "Tes Kepribadian Warna Gratis | DopaBrain"
   },
   "app": {
     "title": "Lab Pencampuran Warna | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Memuat..."
   },
   "intro": {
-    "title": "Lab Pencampuran Warna",
+    "title": "Tes Kepribadian Warna - Temukan Tipe Warnamu",
     "subtitle": "Campurkan warna untuk menemukan kepribadianmu",
     "step1": "Pilih warna dari spektrum secara intuitif",
     "step2": "Pilih palet yang sesuai denganmu",
@@ -189,5 +190,12 @@
     "animalPersonality": "Kepribadian Hewan",
     "brainType": "Tipe Otak",
     "sleepAnimal": "Hewan Tidur"
+  },
+  "about": {
+    "toggle": "Tentang tes ini",
+    "heading1": "Cara kerja tes",
+    "text1": "Tes ini menggunakan proses interaktif 7 langkah di mana Anda memilih warna dari spektrum dan palet. Pilihan naluriah Anda dianalisis untuk menentukan warna dominan di antara 8 tipe.",
+    "heading2": "Ilmu psikologi warna",
+    "text2": "Psikologi warna mempelajari bagaimana warna memengaruhi perilaku dan emosi manusia."
   }
 }

@@ -1,11 +1,12 @@
 {
   "meta": {
-    "description": "Misture cores e crie sua cor de personalidade unica! Experiencia interativa de 7 etapas no Laboratorio de Mistura de Cores.",
+    "description": "O que sua cor favorita diz sobre você? Teste grátis com 8 resultados!",
     "keywords": "laboratorio de mistura de cores, teste de cor de personalidade, mistura de cores, teste psicologico",
     "og_title": "Laboratorio de Mistura de Cores - Crie sua cor de personalidade!",
     "og_description": "Escolha cores do espectro e misture sua cor de personalidade unica!",
     "twitter_title": "Laboratorio de Mistura de Cores",
-    "twitter_description": "Misture cores e descubra sua cor de personalidade!"
+    "twitter_description": "Misture cores e descubra sua cor de personalidade!",
+    "title": "Teste de Personalidade por Cor Grátis | DopaBrain"
   },
   "app": {
     "title": "Laboratorio de Mistura de Cores | DopaBrain",
@@ -13,7 +14,7 @@
     "loading": "Carregando..."
   },
   "intro": {
-    "title": "Laboratorio de Mistura de Cores",
+    "title": "Teste de Cor - Descubra seu tipo de cor",
     "subtitle": "Misture cores para descobrir sua personalidade",
     "step1": "Escolha cores do espectro intuitivamente",
     "step2": "Selecione a paleta que ressoa com voce",
@@ -189,5 +190,12 @@
     "animalPersonality": "Personalidade animal",
     "brainType": "Tipo de cérebro",
     "sleepAnimal": "Animal do sono"
+  },
+  "about": {
+    "toggle": "Sobre o teste",
+    "heading1": "Como funciona o teste",
+    "text1": "O teste usa um processo interativo de 7 etapas onde você escolhe cores do espectro e paletas. Suas escolhas instintivas são analisadas para determinar sua cor dominante entre 8 tipos.",
+    "heading2": "A ciência da psicologia das cores",
+    "text2": "A psicologia das cores estuda como as cores afetam o comportamento e as emoções humanas."
   }
 }
