@@ -77,7 +77,9 @@
     "incompatible": "주의할 색상",
     "share": "결과 공유하기",
     "your_blend": "나의 컬러 블렌드",
-    "signature": "시그니처"
+    "signature": "시그니처",
+    "moreTests": "더 많은 테스트",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 색상 유형입니다"
   },
   "colors": {
     "red": {
@@ -181,5 +183,11 @@
   },
   "game": {
     "back": "DopaBrain 홈"
+  },
+  "related": {
+    "auraScore": "오라 점수",
+    "animalPersonality": "동물 성격",
+    "brainType": "두뇌 유형",
+    "sleepAnimal": "수면 동물"
   }
 }

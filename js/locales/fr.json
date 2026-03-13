@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "Melangez les couleurs et creez votre couleur de personnalite unique! Experience interactive en 7 etapes dans le Laboratoire de Melange de Couleurs.", "keywords": "laboratoire de melange de couleurs, test de couleur de personnalite, melange de couleurs, test psychologique", "og_title": "Laboratoire de Melange de Couleurs - Creez votre couleur de personnalite!", "og_description": "Choisissez des couleurs du spectre et melangez votre couleur de personnalite unique!", "twitter_title": "Laboratoire de Melange de Couleurs", "twitter_description": "Melangez les couleurs et decouvrez votre couleur de personnalite!" },
-  "app": { "title": "Laboratoire de Melange de Couleurs | DopaBrain", "skipLink": "Aller au contenu principal", "loading": "Chargement..." },
-  "intro": { "title": "Laboratoire de Melange de Couleurs", "subtitle": "Melangez les couleurs pour decouvrir votre personnalite", "step1": "Choisissez des couleurs du spectre intuitivement", "step2": "Selectionnez la palette qui vous parle", "step3": "Observez la naissance de votre couleur signature", "time_estimate": "Duree: environ 2 minutes" },
-  "button": { "start": "Commencer le Melange", "back": "Retour", "retry": "Reessayer", "confirm": "Confirmer la Couleur", "share_download": "Telecharger l'image", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Copier le lien" },
-  "phase1": { "badge": "Palette Primaire", "prompt1": "Quelle couleur a votre energie matinale?", "prompt2": "Quelle couleur a votre zone de confort?", "prompt3": "Quelle couleur a votre ambition?", "label1": "Energie", "label2": "Confort", "label3": "Ambition" },
-  "phase2": { "badge": "Reactions de Couleur", "prompt": "Quelle palette vous attire le plus?", "vs": "VS", "dim1": "Introverti vs Extraverti", "dim2": "Creatif vs Analytique", "dim3": "Passionne vs Paisible", "dim4": "Optimiste vs Mysterieux", "pair1": { "left": "Nuit Calme", "right": "Festival Vibrant" }, "pair2": { "left": "Inspiration Libre", "right": "Clarte Ordonnee" }, "pair3": { "left": "Flamme Ardente", "right": "Lac Serein" }, "pair4": { "left": "Soleil Radieux", "right": "Cosmos Profond" } },
-  "mixing": { "title": "Melange de votre couleur signature en cours...", "subtitle": "Analyse de votre ADN de couleur..." },
-  "result": { "meaning": "Signification de la Couleur", "strengths": "Forces Principales", "weaknesses": "Domaines a Ameliorer", "compatible": "Couleurs Compatibles", "incompatible": "Couleurs a Observer", "share": "Partager le Resultat", "your_blend": "Votre Melange de Couleurs", "signature": "Signature" },
-  "colors": {
-    "red": { "name": "Rouge - Le Passionne", "tagline": "Tout accomplir avec une passion ardente", "description": "Vous etes passionne et audacieux. Avec une energie sans limites, vous pouvez atteindre n'importe quel objectif et diriger naturellement. Vous affrontez les nouveaux defis sans peur et cherissez le moment present.", "meaning": "Passion, Energie, Courage, Leadership, Activite, Volonte Forte", "strength1": "Excellent leadership et motivation", "strength2": "Intrepidite et determination", "strength3": "Action rapide et decisivite", "weakness1": "Peut etre impulsif parfois", "weakness2": "Peut negliger les opinions des autres" },
-    "blue": { "name": "Bleu - Le Sage", "tagline": "Comprendre le monde par la reflexion profonde", "description": "Vous etes calme et reflechi, recherchant stabilite et securite. Votre pensee analytique resout les problemes efficacement et votre fiabilite inspire confiance.", "meaning": "Tranquillite, Confiance, Profondeur, Sagesse, Stabilite, Sang-froid", "strength1": "Excellente pensee analytique et logique", "strength2": "Haute fiabilite et confiance", "strength3": "Perspicacite profonde et sagesse", "weakness1": "Peut etre excessivement passif", "weakness2": "Trop reflechir peut empecher l'action" },
-    "green": { "name": "Vert - L'Harmonisateur", "tagline": "Guerir le monde avec harmonie et equilibre", "description": "Vous etes paisible et recherchez l'harmonie. Vous comprenez profondement les emotions des autres et montrez une compassion sincere. Vous preferez une vie stable et equilibree.", "meaning": "Paix, Guerison, Harmonie, Prevenance, Equilibre, Naturel", "strength1": "Excellente empathie et prevenance", "strength2": "Capacite a maintenir des relations harmonieuses", "strength3": "Stabilite et fiabilite", "weakness1": "Peut eviter de partager ses opinions", "weakness2": "Tendance a reporter les decisions" },
-    "yellow": { "name": "Jaune - L'Optimiste", "tagline": "Tout illuminer de positivite comme le soleil", "description": "Vous etes brillant et optimiste. Votre attitude positive eclaire tous ceux qui vous entourent et vous excellez a trouver la joie. Votre nature amicale construit de merveilleuses relations.", "meaning": "Optimisme, Espoir, Luminosite, Convivialite, Positivite, Vitalite", "strength1": "Attitude positive et optimisme", "strength2": "Excellentes competences sociales", "strength3": "Capacite a inspirer les autres", "weakness1": "Peut eviter la reflexion profonde", "weakness2": "Peut avoir du mal avec l'adversite" },
-    "purple": { "name": "Violet - Le Createur", "tagline": "Dessiner de nouveaux mondes avec une imagination unique", "description": "Vous etes creatif avec une riche imagination. Vous voyez le monde de maniere unique avec une haute sensibilite artistique. Vous etes un esprit libre non lie par la tradition.", "meaning": "Creativite, Imagination, Mystere, Individualite, Art, Innovation", "strength1": "Excellente creativite et imagination", "strength2": "Perspective unique et individualite", "strength3": "Sensibilite artistique", "weakness1": "Peut etre deconnecte de la realite", "weakness2": "L'execution peut etre faible" },
-    "orange": { "name": "Orange - L'Energisant", "tagline": "Vivre librement avec une energie vibrante a chaque instant", "description": "Vous etes energique et vif. Vous aimez les nouvelles experiences et avez la capacite de profiter pleinement du present. Vous etes sociable, flexible et apportez de la vitalite.", "meaning": "Vitalite, Liberte, Spontaneite, Passion, Flexibilite, Vivacite", "strength1": "Forte activite et vivacite", "strength2": "Capacite a apprecier les nouvelles experiences", "strength3": "Excellente adaptabilite", "weakness1": "La planification a long terme peut etre faible", "weakness2": "Peut manquer de constance" },
-    "pink": { "name": "Rose - L'Empathique", "tagline": "Toucher les coeurs avec des sentiments chaleureux", "description": "Vous etes emotionnellement riche et tres sensible. Vous prenez soin profondement de votre entourage avec une attention chaleureuse. Votre expression emotionnelle est abondante.", "meaning": "Emotion, Compassion, Chaleur, Sensibilite, Delicatesse, Beaute Interieure", "strength1": "Excellente sensibilite et empathie", "strength2": "Attention chaleureuse et compassion", "strength3": "Riche expression emotionnelle", "weakness1": "Peut etre influence par les emotions", "weakness2": "Trop affecte par l'humeur des autres" },
-    "white": { "name": "Blanc - Le Pur", "tagline": "La grande capacite d'embrasser tout", "description": "Vous avez un coeur pur et ouvert. Vous acceptez tout le monde chaleureusement et essayez de comprendre sans juger. Vous recherchez l'authenticite et l'honnetete en harmonie avec tous.", "meaning": "Purete, Accomplissement, Neutralite, Tranquillite, Inclusivite, Commencement", "strength1": "Coeur ouvert embrassant tout le monde", "strength2": "Haute moralite et honnetete", "strength3": "Harmonie avec tous les types", "weakness1": "Peut manquer d'affirmation de soi", "weakness2": "Peut cacher ses emotions" }
+  "meta": {
+    "description": "Melangez les couleurs et creez votre couleur de personnalite unique! Experience interactive en 7 etapes dans le Laboratoire de Melange de Couleurs.",
+    "keywords": "laboratoire de melange de couleurs, test de couleur de personnalite, melange de couleurs, test psychologique",
+    "og_title": "Laboratoire de Melange de Couleurs - Creez votre couleur de personnalite!",
+    "og_description": "Choisissez des couleurs du spectre et melangez votre couleur de personnalite unique!",
+    "twitter_title": "Laboratoire de Melange de Couleurs",
+    "twitter_description": "Melangez les couleurs et decouvrez votre couleur de personnalite!"
   },
-  "share": { "kakao_title": "Resultat du Laboratoire de Melange", "kakao_button": "Je veux essayer aussi", "twitter_text": "Ma couleur de personnalite est {type} ({hex})! Quelle est votre couleur signature?", "copy_text": "Ma couleur de personnalite est {type} ({hex})! {url}" },
-  "message": { "copy_success": "Lien du resultat copie!", "copy_error": "Echec de la copie. Veuillez reessayer." },
-  "game": { "back": "Accueil DopaBrain" }
+  "app": {
+    "title": "Laboratoire de Melange de Couleurs | DopaBrain",
+    "skipLink": "Aller au contenu principal",
+    "loading": "Chargement..."
+  },
+  "intro": {
+    "title": "Laboratoire de Melange de Couleurs",
+    "subtitle": "Melangez les couleurs pour decouvrir votre personnalite",
+    "step1": "Choisissez des couleurs du spectre intuitivement",
+    "step2": "Selectionnez la palette qui vous parle",
+    "step3": "Observez la naissance de votre couleur signature",
+    "time_estimate": "Duree: environ 2 minutes"
+  },
+  "button": {
+    "start": "Commencer le Melange",
+    "back": "Retour",
+    "retry": "Reessayer",
+    "confirm": "Confirmer la Couleur",
+    "share_download": "Telecharger l'image",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copier le lien"
+  },
+  "phase1": {
+    "badge": "Palette Primaire",
+    "prompt1": "Quelle couleur a votre energie matinale?",
+    "prompt2": "Quelle couleur a votre zone de confort?",
+    "prompt3": "Quelle couleur a votre ambition?",
+    "label1": "Energie",
+    "label2": "Confort",
+    "label3": "Ambition"
+  },
+  "phase2": {
+    "badge": "Reactions de Couleur",
+    "prompt": "Quelle palette vous attire le plus?",
+    "vs": "VS",
+    "dim1": "Introverti vs Extraverti",
+    "dim2": "Creatif vs Analytique",
+    "dim3": "Passionne vs Paisible",
+    "dim4": "Optimiste vs Mysterieux",
+    "pair1": {
+      "left": "Nuit Calme",
+      "right": "Festival Vibrant"
+    },
+    "pair2": {
+      "left": "Inspiration Libre",
+      "right": "Clarte Ordonnee"
+    },
+    "pair3": {
+      "left": "Flamme Ardente",
+      "right": "Lac Serein"
+    },
+    "pair4": {
+      "left": "Soleil Radieux",
+      "right": "Cosmos Profond"
+    }
+  },
+  "mixing": {
+    "title": "Melange de votre couleur signature en cours...",
+    "subtitle": "Analyse de votre ADN de couleur..."
+  },
+  "result": {
+    "meaning": "Signification de la Couleur",
+    "strengths": "Forces Principales",
+    "weaknesses": "Domaines a Ameliorer",
+    "compatible": "Couleurs Compatibles",
+    "incompatible": "Couleurs a Observer",
+    "share": "Partager le Resultat",
+    "your_blend": "Votre Melange de Couleurs",
+    "signature": "Signature",
+    "moreTests": "Découvrir plus de tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants partagent votre type de couleur"
+  },
+  "colors": {
+    "red": {
+      "name": "Rouge - Le Passionne",
+      "tagline": "Tout accomplir avec une passion ardente",
+      "description": "Vous etes passionne et audacieux. Avec une energie sans limites, vous pouvez atteindre n'importe quel objectif et diriger naturellement. Vous affrontez les nouveaux defis sans peur et cherissez le moment present.",
+      "meaning": "Passion, Energie, Courage, Leadership, Activite, Volonte Forte",
+      "strength1": "Excellent leadership et motivation",
+      "strength2": "Intrepidite et determination",
+      "strength3": "Action rapide et decisivite",
+      "weakness1": "Peut etre impulsif parfois",
+      "weakness2": "Peut negliger les opinions des autres"
+    },
+    "blue": {
+      "name": "Bleu - Le Sage",
+      "tagline": "Comprendre le monde par la reflexion profonde",
+      "description": "Vous etes calme et reflechi, recherchant stabilite et securite. Votre pensee analytique resout les problemes efficacement et votre fiabilite inspire confiance.",
+      "meaning": "Tranquillite, Confiance, Profondeur, Sagesse, Stabilite, Sang-froid",
+      "strength1": "Excellente pensee analytique et logique",
+      "strength2": "Haute fiabilite et confiance",
+      "strength3": "Perspicacite profonde et sagesse",
+      "weakness1": "Peut etre excessivement passif",
+      "weakness2": "Trop reflechir peut empecher l'action"
+    },
+    "green": {
+      "name": "Vert - L'Harmonisateur",
+      "tagline": "Guerir le monde avec harmonie et equilibre",
+      "description": "Vous etes paisible et recherchez l'harmonie. Vous comprenez profondement les emotions des autres et montrez une compassion sincere. Vous preferez une vie stable et equilibree.",
+      "meaning": "Paix, Guerison, Harmonie, Prevenance, Equilibre, Naturel",
+      "strength1": "Excellente empathie et prevenance",
+      "strength2": "Capacite a maintenir des relations harmonieuses",
+      "strength3": "Stabilite et fiabilite",
+      "weakness1": "Peut eviter de partager ses opinions",
+      "weakness2": "Tendance a reporter les decisions"
+    },
+    "yellow": {
+      "name": "Jaune - L'Optimiste",
+      "tagline": "Tout illuminer de positivite comme le soleil",
+      "description": "Vous etes brillant et optimiste. Votre attitude positive eclaire tous ceux qui vous entourent et vous excellez a trouver la joie. Votre nature amicale construit de merveilleuses relations.",
+      "meaning": "Optimisme, Espoir, Luminosite, Convivialite, Positivite, Vitalite",
+      "strength1": "Attitude positive et optimisme",
+      "strength2": "Excellentes competences sociales",
+      "strength3": "Capacite a inspirer les autres",
+      "weakness1": "Peut eviter la reflexion profonde",
+      "weakness2": "Peut avoir du mal avec l'adversite"
+    },
+    "purple": {
+      "name": "Violet - Le Createur",
+      "tagline": "Dessiner de nouveaux mondes avec une imagination unique",
+      "description": "Vous etes creatif avec une riche imagination. Vous voyez le monde de maniere unique avec une haute sensibilite artistique. Vous etes un esprit libre non lie par la tradition.",
+      "meaning": "Creativite, Imagination, Mystere, Individualite, Art, Innovation",
+      "strength1": "Excellente creativite et imagination",
+      "strength2": "Perspective unique et individualite",
+      "strength3": "Sensibilite artistique",
+      "weakness1": "Peut etre deconnecte de la realite",
+      "weakness2": "L'execution peut etre faible"
+    },
+    "orange": {
+      "name": "Orange - L'Energisant",
+      "tagline": "Vivre librement avec une energie vibrante a chaque instant",
+      "description": "Vous etes energique et vif. Vous aimez les nouvelles experiences et avez la capacite de profiter pleinement du present. Vous etes sociable, flexible et apportez de la vitalite.",
+      "meaning": "Vitalite, Liberte, Spontaneite, Passion, Flexibilite, Vivacite",
+      "strength1": "Forte activite et vivacite",
+      "strength2": "Capacite a apprecier les nouvelles experiences",
+      "strength3": "Excellente adaptabilite",
+      "weakness1": "La planification a long terme peut etre faible",
+      "weakness2": "Peut manquer de constance"
+    },
+    "pink": {
+      "name": "Rose - L'Empathique",
+      "tagline": "Toucher les coeurs avec des sentiments chaleureux",
+      "description": "Vous etes emotionnellement riche et tres sensible. Vous prenez soin profondement de votre entourage avec une attention chaleureuse. Votre expression emotionnelle est abondante.",
+      "meaning": "Emotion, Compassion, Chaleur, Sensibilite, Delicatesse, Beaute Interieure",
+      "strength1": "Excellente sensibilite et empathie",
+      "strength2": "Attention chaleureuse et compassion",
+      "strength3": "Riche expression emotionnelle",
+      "weakness1": "Peut etre influence par les emotions",
+      "weakness2": "Trop affecte par l'humeur des autres"
+    },
+    "white": {
+      "name": "Blanc - Le Pur",
+      "tagline": "La grande capacite d'embrasser tout",
+      "description": "Vous avez un coeur pur et ouvert. Vous acceptez tout le monde chaleureusement et essayez de comprendre sans juger. Vous recherchez l'authenticite et l'honnetete en harmonie avec tous.",
+      "meaning": "Purete, Accomplissement, Neutralite, Tranquillite, Inclusivite, Commencement",
+      "strength1": "Coeur ouvert embrassant tout le monde",
+      "strength2": "Haute moralite et honnetete",
+      "strength3": "Harmonie avec tous les types",
+      "weakness1": "Peut manquer d'affirmation de soi",
+      "weakness2": "Peut cacher ses emotions"
+    }
+  },
+  "share": {
+    "kakao_title": "Resultat du Laboratoire de Melange",
+    "kakao_button": "Je veux essayer aussi",
+    "twitter_text": "Ma couleur de personnalite est {type} ({hex})! Quelle est votre couleur signature?",
+    "copy_text": "Ma couleur de personnalite est {type} ({hex})! {url}"
+  },
+  "message": {
+    "copy_success": "Lien du resultat copie!",
+    "copy_error": "Echec de la copie. Veuillez reessayer."
+  },
+  "game": {
+    "back": "Accueil DopaBrain"
+  },
+  "related": {
+    "auraScore": "Score d'aura",
+    "animalPersonality": "Personnalité animale",
+    "brainType": "Type de cerveau",
+    "sleepAnimal": "Animal du sommeil"
+  }
 }

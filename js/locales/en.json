@@ -77,7 +77,9 @@
     "incompatible": "Colors to Watch",
     "share": "Share Your Result",
     "your_blend": "Your Color Blend",
-    "signature": "Signature"
+    "signature": "Signature",
+    "moreTests": "Explore More Tests",
+    "percentileStat": "Only <strong>{percent}%</strong> of participants share your color type"
   },
   "colors": {
     "red": {
@@ -181,5 +183,11 @@
   },
   "game": {
     "back": "DopaBrain Home"
+  },
+  "related": {
+    "auraScore": "Aura Score",
+    "animalPersonality": "Animal Personality",
+    "brainType": "Brain Type",
+    "sleepAnimal": "Sleep Animal"
   }
 }

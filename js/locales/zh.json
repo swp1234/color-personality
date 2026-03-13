@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "混合颜色创造你独特的性格色彩！在颜色混合实验室进行7步互动体验。", "keywords": "颜色混合实验室, 性格色彩测试, 颜色混合, 心理测试", "og_title": "颜色混合实验室 - 创造你的性格色彩！", "og_description": "从光谱选色并选择调色板，混合你独特的性格色彩！", "twitter_title": "颜色混合实验室 - 你的性格色彩", "twitter_description": "混合颜色发现你独特的性格色彩！" },
-  "app": { "title": "颜色混合实验室 | DopaBrain", "skipLink": "跳到主要内容", "loading": "加载中..." },
-  "intro": { "title": "颜色混合实验室", "subtitle": "混合颜色来发现你的性格", "step1": "从光谱中直觉选择颜色", "step2": "选择与你共鸣的调色板", "step3": "见证你的标志色彩诞生", "time_estimate": "大约需要2分钟" },
-  "button": { "start": "开始混合", "back": "返回", "retry": "重新开始", "confirm": "确认颜色", "share_download": "下载图片", "share_kakao": "微信", "share_twitter": "微博", "share_facebook": "QQ", "share_copy": "复制链接" },
-  "phase1": { "badge": "基础调色板", "prompt1": "你的晨间活力是什么颜色？", "prompt2": "你的舒适区是什么颜色？", "prompt3": "你的雄心是什么颜色？", "label1": "活力", "label2": "舒适", "label3": "雄心" },
-  "phase2": { "badge": "颜色反应", "prompt": "哪个调色板更吸引你？", "vs": "VS", "dim1": "内向 vs 外向", "dim2": "创意 vs 分析", "dim3": "热情 vs 平和", "dim4": "乐观 vs 神秘", "pair1": { "left": "宁静的夜", "right": "热闹的节日" }, "pair2": { "left": "自由灵感", "right": "有序清晰" }, "pair3": { "left": "燃烧的火焰", "right": "平静的湖泊" }, "pair4": { "left": "灿烂的太阳", "right": "深邃的宇宙" } },
-  "mixing": { "title": "正在混合你的标志色彩...", "subtitle": "分析你的颜色DNA..." },
-  "result": { "meaning": "颜色含义", "strengths": "主要优势", "weaknesses": "改进空间", "compatible": "相容的颜色", "incompatible": "需注意的颜色", "share": "分享结果", "your_blend": "你的颜色混合", "signature": "标志色" },
-  "colors": {
-    "red": { "name": "红色 - 热情型", "tagline": "用熊熊烈火的热情成就一切", "description": "你是一个充满热情和大胆的人。拥有无尽的能量，可以实现任何目标并自然地领导。你无畏地接受新挑战，珍视当下的生活。", "meaning": "热情、能量、勇气、领导力、活动、坚强意志", "strength1": "优秀的领导力和执行力", "strength2": "无所畏惧和决心", "strength3": "快速行动和果断", "weakness1": "有时可能过于冲动", "weakness2": "可能忽视他人的意见" },
-    "blue": { "name": "蓝色 - 智慧型", "tagline": "通过深刻的思考理解世界", "description": "你平静而深思，追求稳定和安全。你的分析思维可以有效地解决问题，你的可靠性赢得了周围人的信任。", "meaning": "平静、信任、深度、智慧、稳定性、镇定", "strength1": "优秀的分析和逻辑思维", "strength2": "高度的可靠性和信任度", "strength3": "深刻的洞察力和智慧", "weakness1": "可能过于被动", "weakness2": "过度思考可能阻碍行动" },
-    "green": { "name": "绿色 - 和谐型", "tagline": "用和谐与平衡治愈世界", "description": "你寻求和平与和谐。你理解他人的情感并表现出深深的同情心。你偏好稳定、平衡的生活，给周围的人带来舒适。", "meaning": "和平、治愈、和谐、体贴、平衡、自然", "strength1": "优秀的同理心和体贴", "strength2": "维持和谐关系的能力", "strength3": "稳定性和可信赖性", "weakness1": "可能避免分享意见", "weakness2": "倾向于拖延决定" },
-    "yellow": { "name": "黄色 - 乐观型", "tagline": "像太阳一样用积极照亮一切", "description": "你明快而乐观。你的积极态度照亮周围的每个人，你擅长发现快乐。你友好的性格帮助你与许多人建立良好的关系。", "meaning": "乐观、希望、明亮、友好、积极、活力", "strength1": "积极态度和乐观", "strength2": "优秀的社交技能", "strength3": "启发他人的能力", "weakness1": "可能避免深思", "weakness2": "可能在逆境中挣扎" },
-    "purple": { "name": "紫色 - 创意型", "tagline": "用独特的想象力绘制新世界", "description": "你充满创意和丰富的想象力。你独特地看待世界，具有高度的艺术敏感性。你是不受传统束缚的自由精神。", "meaning": "创意、想象力、神秘、个性、艺术性、创新", "strength1": "优秀的创意和想象力", "strength2": "独特的视角和个性", "strength3": "艺术敏感性", "weakness1": "可能与现实脱节", "weakness2": "执行能力可能较弱" },
-    "orange": { "name": "橙色 - 活力型", "tagline": "用充满活力的能量自由地生活", "description": "你充满活力和生气。你喜欢新的体验，拥有充分享受当下的能力。你社交且灵活，为周围的人带来活力。", "meaning": "活力、自由、即时性、热情、灵活性、生气", "strength1": "强大的活动性和生气", "strength2": "享受新体验的能力", "strength3": "优秀的适应能力", "weakness1": "长期规划可能较弱", "weakness2": "可能缺乏一致性" },
-    "pink": { "name": "粉色 - 感性型", "tagline": "用温暖的感情触动人心", "description": "你在感情上很丰富，高度敏感。你用温暖的体贴深爱周围的人。你的情感表达丰富，善于读懂他人的感受。", "meaning": "情感、同情、温暖、敏感性、细腻、内在美", "strength1": "优秀的敏感性和同理心", "strength2": "温暖的体贴和同情心", "strength3": "丰富的情感表达", "weakness1": "可能被情感所左右", "weakness2": "可能过于受他人情绪影响" },
-    "white": { "name": "白色 - 纯净型", "tagline": "拥有包容一切的纯净气度", "description": "你拥有纯净而开放的心。你温暖地接纳每个人，并试图不加判断地理解。你追求真实和诚实，与所有颜色和人都能和谐相处。", "meaning": "纯净、完成、中立性、宁静、包容性、开始", "strength1": "包容一切的开放心", "strength2": "高度的道德性和诚实", "strength3": "与所有类型的和谐", "weakness1": "可能缺乏自我主张", "weakness2": "可能隐藏你的情感" }
+  "meta": {
+    "description": "混合颜色创造你独特的性格色彩！在颜色混合实验室进行7步互动体验。",
+    "keywords": "颜色混合实验室, 性格色彩测试, 颜色混合, 心理测试",
+    "og_title": "颜色混合实验室 - 创造你的性格色彩！",
+    "og_description": "从光谱选色并选择调色板，混合你独特的性格色彩！",
+    "twitter_title": "颜色混合实验室 - 你的性格色彩",
+    "twitter_description": "混合颜色发现你独特的性格色彩！"
   },
-  "share": { "kakao_title": "颜色混合实验室结果", "kakao_button": "我也试试", "twitter_text": "我的性格色彩是{type}（{hex}）！你的标志色是什么？", "copy_text": "我的性格色彩是{type}（{hex}）！{url}" },
-  "message": { "copy_success": "结果链接已复制！", "copy_error": "复制失败，请重试。" },
-  "game": { "back": "DopaBrain首页" }
+  "app": {
+    "title": "颜色混合实验室 | DopaBrain",
+    "skipLink": "跳到主要内容",
+    "loading": "加载中..."
+  },
+  "intro": {
+    "title": "颜色混合实验室",
+    "subtitle": "混合颜色来发现你的性格",
+    "step1": "从光谱中直觉选择颜色",
+    "step2": "选择与你共鸣的调色板",
+    "step3": "见证你的标志色彩诞生",
+    "time_estimate": "大约需要2分钟"
+  },
+  "button": {
+    "start": "开始混合",
+    "back": "返回",
+    "retry": "重新开始",
+    "confirm": "确认颜色",
+    "share_download": "下载图片",
+    "share_kakao": "微信",
+    "share_twitter": "微博",
+    "share_facebook": "QQ",
+    "share_copy": "复制链接"
+  },
+  "phase1": {
+    "badge": "基础调色板",
+    "prompt1": "你的晨间活力是什么颜色？",
+    "prompt2": "你的舒适区是什么颜色？",
+    "prompt3": "你的雄心是什么颜色？",
+    "label1": "活力",
+    "label2": "舒适",
+    "label3": "雄心"
+  },
+  "phase2": {
+    "badge": "颜色反应",
+    "prompt": "哪个调色板更吸引你？",
+    "vs": "VS",
+    "dim1": "内向 vs 外向",
+    "dim2": "创意 vs 分析",
+    "dim3": "热情 vs 平和",
+    "dim4": "乐观 vs 神秘",
+    "pair1": {
+      "left": "宁静的夜",
+      "right": "热闹的节日"
+    },
+    "pair2": {
+      "left": "自由灵感",
+      "right": "有序清晰"
+    },
+    "pair3": {
+      "left": "燃烧的火焰",
+      "right": "平静的湖泊"
+    },
+    "pair4": {
+      "left": "灿烂的太阳",
+      "right": "深邃的宇宙"
+    }
+  },
+  "mixing": {
+    "title": "正在混合你的标志色彩...",
+    "subtitle": "分析你的颜色DNA..."
+  },
+  "result": {
+    "meaning": "颜色含义",
+    "strengths": "主要优势",
+    "weaknesses": "改进空间",
+    "compatible": "相容的颜色",
+    "incompatible": "需注意的颜色",
+    "share": "分享结果",
+    "your_blend": "你的颜色混合",
+    "signature": "标志色",
+    "moreTests": "探索更多测试",
+    "percentileStat": "只有<strong>{percent}%</strong>的参与者拥有您的色彩类型"
+  },
+  "colors": {
+    "red": {
+      "name": "红色 - 热情型",
+      "tagline": "用熊熊烈火的热情成就一切",
+      "description": "你是一个充满热情和大胆的人。拥有无尽的能量，可以实现任何目标并自然地领导。你无畏地接受新挑战，珍视当下的生活。",
+      "meaning": "热情、能量、勇气、领导力、活动、坚强意志",
+      "strength1": "优秀的领导力和执行力",
+      "strength2": "无所畏惧和决心",
+      "strength3": "快速行动和果断",
+      "weakness1": "有时可能过于冲动",
+      "weakness2": "可能忽视他人的意见"
+    },
+    "blue": {
+      "name": "蓝色 - 智慧型",
+      "tagline": "通过深刻的思考理解世界",
+      "description": "你平静而深思，追求稳定和安全。你的分析思维可以有效地解决问题，你的可靠性赢得了周围人的信任。",
+      "meaning": "平静、信任、深度、智慧、稳定性、镇定",
+      "strength1": "优秀的分析和逻辑思维",
+      "strength2": "高度的可靠性和信任度",
+      "strength3": "深刻的洞察力和智慧",
+      "weakness1": "可能过于被动",
+      "weakness2": "过度思考可能阻碍行动"
+    },
+    "green": {
+      "name": "绿色 - 和谐型",
+      "tagline": "用和谐与平衡治愈世界",
+      "description": "你寻求和平与和谐。你理解他人的情感并表现出深深的同情心。你偏好稳定、平衡的生活，给周围的人带来舒适。",
+      "meaning": "和平、治愈、和谐、体贴、平衡、自然",
+      "strength1": "优秀的同理心和体贴",
+      "strength2": "维持和谐关系的能力",
+      "strength3": "稳定性和可信赖性",
+      "weakness1": "可能避免分享意见",
+      "weakness2": "倾向于拖延决定"
+    },
+    "yellow": {
+      "name": "黄色 - 乐观型",
+      "tagline": "像太阳一样用积极照亮一切",
+      "description": "你明快而乐观。你的积极态度照亮周围的每个人，你擅长发现快乐。你友好的性格帮助你与许多人建立良好的关系。",
+      "meaning": "乐观、希望、明亮、友好、积极、活力",
+      "strength1": "积极态度和乐观",
+      "strength2": "优秀的社交技能",
+      "strength3": "启发他人的能力",
+      "weakness1": "可能避免深思",
+      "weakness2": "可能在逆境中挣扎"
+    },
+    "purple": {
+      "name": "紫色 - 创意型",
+      "tagline": "用独特的想象力绘制新世界",
+      "description": "你充满创意和丰富的想象力。你独特地看待世界，具有高度的艺术敏感性。你是不受传统束缚的自由精神。",
+      "meaning": "创意、想象力、神秘、个性、艺术性、创新",
+      "strength1": "优秀的创意和想象力",
+      "strength2": "独特的视角和个性",
+      "strength3": "艺术敏感性",
+      "weakness1": "可能与现实脱节",
+      "weakness2": "执行能力可能较弱"
+    },
+    "orange": {
+      "name": "橙色 - 活力型",
+      "tagline": "用充满活力的能量自由地生活",
+      "description": "你充满活力和生气。你喜欢新的体验，拥有充分享受当下的能力。你社交且灵活，为周围的人带来活力。",
+      "meaning": "活力、自由、即时性、热情、灵活性、生气",
+      "strength1": "强大的活动性和生气",
+      "strength2": "享受新体验的能力",
+      "strength3": "优秀的适应能力",
+      "weakness1": "长期规划可能较弱",
+      "weakness2": "可能缺乏一致性"
+    },
+    "pink": {
+      "name": "粉色 - 感性型",
+      "tagline": "用温暖的感情触动人心",
+      "description": "你在感情上很丰富，高度敏感。你用温暖的体贴深爱周围的人。你的情感表达丰富，善于读懂他人的感受。",
+      "meaning": "情感、同情、温暖、敏感性、细腻、内在美",
+      "strength1": "优秀的敏感性和同理心",
+      "strength2": "温暖的体贴和同情心",
+      "strength3": "丰富的情感表达",
+      "weakness1": "可能被情感所左右",
+      "weakness2": "可能过于受他人情绪影响"
+    },
+    "white": {
+      "name": "白色 - 纯净型",
+      "tagline": "拥有包容一切的纯净气度",
+      "description": "你拥有纯净而开放的心。你温暖地接纳每个人，并试图不加判断地理解。你追求真实和诚实，与所有颜色和人都能和谐相处。",
+      "meaning": "纯净、完成、中立性、宁静、包容性、开始",
+      "strength1": "包容一切的开放心",
+      "strength2": "高度的道德性和诚实",
+      "strength3": "与所有类型的和谐",
+      "weakness1": "可能缺乏自我主张",
+      "weakness2": "可能隐藏你的情感"
+    }
+  },
+  "share": {
+    "kakao_title": "颜色混合实验室结果",
+    "kakao_button": "我也试试",
+    "twitter_text": "我的性格色彩是{type}（{hex}）！你的标志色是什么？",
+    "copy_text": "我的性格色彩是{type}（{hex}）！{url}"
+  },
+  "message": {
+    "copy_success": "结果链接已复制！",
+    "copy_error": "复制失败，请重试。"
+  },
+  "game": {
+    "back": "DopaBrain首页"
+  },
+  "related": {
+    "auraScore": "光环分数",
+    "animalPersonality": "动物性格",
+    "brainType": "大脑类型",
+    "sleepAnimal": "睡眠动物"
+  }
 }

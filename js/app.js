@@ -869,6 +869,14 @@ class ColorMixingLab {
             });
         }
 
+        // Percentile stat
+        var pStat = document.getElementById('percentile-stat');
+        if (pStat) {
+            var pctVal = Math.floor(Math.random() * 12) + 6;
+            var template = window.i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants share your color type';
+            pStat.innerHTML = template.replace('{percent}', pctVal);
+        }
+
         // Confetti
         this.createConfetti();
     }

@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "Renkleri karistirin ve benzersiz kisilik renginizi yapin! Renk Karistirma Laboratuvarinda 7 adimlik interaktif deneyim.", "keywords": "renk karistirma laboratuvari, kisilik rengi testi, renk karistirma, psikolojik test", "og_title": "Renk Karistirma Laboratuvari - Kisilik Renginizi Yaratin!", "og_description": "Spektrumdan renkler secin ve benzersiz kisilik renginizi karistirin!", "twitter_title": "Renk Karistirma Laboratuvari", "twitter_description": "Renkleri karistirin ve kisilik renginizi kesfedin!" },
-  "app": { "title": "Renk Karistirma Laboratuvari | DopaBrain", "skipLink": "Ana icerege git", "loading": "Yukleniyor..." },
-  "intro": { "title": "Renk Karistirma Laboratuvari", "subtitle": "Renkleri karistirarak kisiligini kesfet", "step1": "Spektrumdan sezgisel olarak renkler sec", "step2": "Sana uygun paleti sec", "step3": "Imza renginin dogusunu izle", "time_estimate": "Sure: yaklasik 2 dakika" },
-  "button": { "start": "Karistirmaya Basla", "back": "Geri", "retry": "Tekrar Dene", "confirm": "Rengi Onayla", "share_download": "Resmi Indir", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Baglanti Kopyala" },
-  "phase1": { "badge": "Ana Palet", "prompt1": "Sabah enerjinin rengi ne?", "prompt2": "Konfor alaninin rengi ne?", "prompt3": "Hirsinin rengi ne?", "label1": "Enerji", "label2": "Konfor", "label3": "Hirs" },
-  "phase2": { "badge": "Renk Tepkileri", "prompt": "Hangi palet seni daha cok cekiyor?", "vs": "VS", "dim1": "Icedoneuk vs Disadoneuk", "dim2": "Yaratici vs Analitik", "dim3": "Tutkulu vs Huzurlu", "dim4": "Iyimser vs Gizemli", "pair1": { "left": "Sessiz Gece", "right": "Canli Festival" }, "pair2": { "left": "Ozgur Ilham", "right": "Duzenli Netlik" }, "pair3": { "left": "Yanan Alev", "right": "Durgun Gol" }, "pair4": { "left": "Parlak Gunes", "right": "Derin Kozmos" } },
-  "mixing": { "title": "Imza rengin karistiriliyor...", "subtitle": "Renk DNA'n analiz ediliyor..." },
-  "result": { "meaning": "Renk Anlami", "strengths": "Temel Gucler", "weaknesses": "Gelistirme Alanlari", "compatible": "Uyumlu Renkler", "incompatible": "Dikkat Edilecek Renkler", "share": "Sonucu Paylas", "your_blend": "Renk Karisimin", "signature": "Imza" },
-  "colors": {
-    "red": { "name": "Kirmizi - Tutkulu", "tagline": "Atesli tutkuyla her seyi basarmak", "description": "Tutkulu ve cesursun. Sinirsiz enerjiyle herhangi bir hedefe ulasabilir ve dogal olarak liderlik edebilirsin. Yeni zorluklari korkusuzca karsilar ve anda yasamayi onemsersin.", "meaning": "Tutku, Enerji, Cesaret, Liderlik, Aktivite, Guclu Irade", "strength1": "Mukemmel liderlik ve itici guc", "strength2": "Korkusuzluk ve kararlilik", "strength3": "Hizli eylem ve kararllik", "weakness1": "Bazen durtusel olabilir", "weakness2": "Baskalarin goruslerini gozden kacirilabilir" },
-    "blue": { "name": "Mavi - Bilge", "tagline": "Derin dusunceyle dunyayi anlamak", "description": "Sakin ve dusuncelisin, istikrar ve guvenlik ariyorsun. Analitik dusuncen sorunlari etkili bir sekilde cozer ve guvenilirligin etrafindakilerin guvenini kazanir.", "meaning": "Huzur, Guven, Derinlik, Bilgelik, Istikrar, Sogukkanlilik", "strength1": "Mukemmel analitik ve mantiksal dusunce", "strength2": "Yuksek guvenilirlik", "strength3": "Derin kavrayis ve bilgelik", "weakness1": "Asiri pasif olabilir", "weakness2": "Fazla dusunmek eylemi engelleyebilir" },
-    "green": { "name": "Yesil - Uyumcu", "tagline": "Uyum ve dengeyle dunyayi iyilestirmek", "description": "Baris ve uyum ariyorsun. Baskalarin duygularini derinden anliyorsun ve gercek sefkat gosteriyorsun. Istikrarli, dengeli bir hayati tercih ediyorsun.", "meaning": "Baris, Sifa, Uyum, Dusunecelilik, Denge, Dogallik", "strength1": "Mukemmel empati ve dusuncelilik", "strength2": "Uyumlu iliskiler kurma becerisi", "strength3": "Istikrar ve guvenilirlik", "weakness1": "Fikirlerini paylasmayi kacinabilir", "weakness2": "Kararlari ertelemeye meyildir" },
-    "yellow": { "name": "Sari - Iyimser", "tagline": "Gunes gibi pozitiflikle her seyi aydinlatmak", "description": "Parlak ve iyimsersin. Olumlu tavirin etrafindaki herkesi aydinlatir ve neseyi bulmada ustassin. Sevecen doganla harika iliskiler kurarssin.", "meaning": "Iyimserlik, Umut, Parlaklik, Dostluk, Pozitiflik, Canlilik", "strength1": "Olumlu tutum ve iyimserlik", "strength2": "Mukemmel sosyal beceriler", "strength3": "Baskalarina ilham verme yetenegei", "weakness1": "Derin dusunceyi kacinabilir", "weakness2": "Zorluklar karsisinda gucluk cekebilir" },
-    "purple": { "name": "Mor - Yaratici", "tagline": "Esiz hayal gucuyle yeni dunyalar cizmek", "description": "Zengin hayal gucuyle yaraticisin. Dunyayi benzersiz bir sekilde gorursun, yuksek sanatsal duyarliliga sahipsin. Geleneklerle sinirlanmayan ozgur bir ruhsun.", "meaning": "Yaraticilik, Hayal Gucu, Gizem, Bireysellik, Sanat, Yenilik", "strength1": "Mukemmel yaraticilik ve hayal gucu", "strength2": "Benzersiz bakis acisi ve bireysellik", "strength3": "Sanatsal duyarlilik", "weakness1": "Gerceklikten kopabilir", "weakness2": "Uygulama zayif olabilir" },
-    "orange": { "name": "Turuncu - Enerjik", "tagline": "Her an canli enerjiyle ozgurce yasamak", "description": "Enerjik ve canlisin. Yeni deneyimleri seversin ve anda tam olarak tadini cikarma yetenegin vardir. Sosyal, esnek ve etrafindakilere canlilik katarsin.", "meaning": "Canlilik, Ozgurluk, Spontanlk, Tutku, Esneklik, Yasam Enerjisi", "strength1": "Guclu aktivite ve canlilik", "strength2": "Yeni deneyimlerin tadini cikarma yetenegei", "strength3": "Mukemmel uyum saglama", "weakness1": "Uzun vadeli planlama zayif olabilir", "weakness2": "Tutarlilik eksik olabilir" },
-    "pink": { "name": "Pembe - Empatik", "tagline": "Sicak duygularla kalplere dokunmak", "description": "Duygusal olarak zengin ve cok duyarlisin. Etrafindakilere sicak ilgiyle derinden onem verirsin. Duygusal ifaden zengindir ve baskalarin hislerini sezgisel olarak okursun.", "meaning": "Duygu, Sefkat, Sicaklik, Duyarlilik, Narinlik, Ic Guzellik", "strength1": "Mukemmel duyarlilik ve empati", "strength2": "Sicak ilgi ve sefkat", "strength3": "Zengin duygusal ifade", "weakness1": "Duygulardan etkilenebilir", "weakness2": "Baskalarin ruh halinden asiri etkilenebilir" },
-    "white": { "name": "Beyaz - Saf", "tagline": "Her seyi kucaklayabilecek buyuk kapasite", "description": "Saf ve acik kalplisin. Herkesi sicakca kabul eder ve yargilamadan anlamaya calisirsin. Gerceklik ve durustluk arar, tum renkler ve insanlarla uyum icinde olursun.", "meaning": "Saflik, Butunluk, Tarafsizlik, Huzur, Kapsayicilik, Baslangic", "strength1": "Herkesi kucaklayan acik kalp", "strength2": "Yuksek ahlak ve durustluk", "strength3": "Tum tiplerle uyum", "weakness1": "Kendini ifade etmede zayif olabilir", "weakness2": "Duygularini gizleyebilir" }
+  "meta": {
+    "description": "Renkleri karistirin ve benzersiz kisilik renginizi yapin! Renk Karistirma Laboratuvarinda 7 adimlik interaktif deneyim.",
+    "keywords": "renk karistirma laboratuvari, kisilik rengi testi, renk karistirma, psikolojik test",
+    "og_title": "Renk Karistirma Laboratuvari - Kisilik Renginizi Yaratin!",
+    "og_description": "Spektrumdan renkler secin ve benzersiz kisilik renginizi karistirin!",
+    "twitter_title": "Renk Karistirma Laboratuvari",
+    "twitter_description": "Renkleri karistirin ve kisilik renginizi kesfedin!"
   },
-  "share": { "kakao_title": "Renk Karistirma Lab Sonucu", "kakao_button": "Ben de denemek istiyorum", "twitter_text": "Kisilik rengim {type} ({hex})! Senin imza rengin ne?", "copy_text": "Kisilik rengim {type} ({hex})! {url}" },
-  "message": { "copy_success": "Sonuc baglantisi kopyalandi!", "copy_error": "Kopyalama basarisiz. Tekrar deneyin." },
-  "game": { "back": "DopaBrain Ana Sayfa" }
+  "app": {
+    "title": "Renk Karistirma Laboratuvari | DopaBrain",
+    "skipLink": "Ana icerege git",
+    "loading": "Yukleniyor..."
+  },
+  "intro": {
+    "title": "Renk Karistirma Laboratuvari",
+    "subtitle": "Renkleri karistirarak kisiligini kesfet",
+    "step1": "Spektrumdan sezgisel olarak renkler sec",
+    "step2": "Sana uygun paleti sec",
+    "step3": "Imza renginin dogusunu izle",
+    "time_estimate": "Sure: yaklasik 2 dakika"
+  },
+  "button": {
+    "start": "Karistirmaya Basla",
+    "back": "Geri",
+    "retry": "Tekrar Dene",
+    "confirm": "Rengi Onayla",
+    "share_download": "Resmi Indir",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Baglanti Kopyala"
+  },
+  "phase1": {
+    "badge": "Ana Palet",
+    "prompt1": "Sabah enerjinin rengi ne?",
+    "prompt2": "Konfor alaninin rengi ne?",
+    "prompt3": "Hirsinin rengi ne?",
+    "label1": "Enerji",
+    "label2": "Konfor",
+    "label3": "Hirs"
+  },
+  "phase2": {
+    "badge": "Renk Tepkileri",
+    "prompt": "Hangi palet seni daha cok cekiyor?",
+    "vs": "VS",
+    "dim1": "Icedoneuk vs Disadoneuk",
+    "dim2": "Yaratici vs Analitik",
+    "dim3": "Tutkulu vs Huzurlu",
+    "dim4": "Iyimser vs Gizemli",
+    "pair1": {
+      "left": "Sessiz Gece",
+      "right": "Canli Festival"
+    },
+    "pair2": {
+      "left": "Ozgur Ilham",
+      "right": "Duzenli Netlik"
+    },
+    "pair3": {
+      "left": "Yanan Alev",
+      "right": "Durgun Gol"
+    },
+    "pair4": {
+      "left": "Parlak Gunes",
+      "right": "Derin Kozmos"
+    }
+  },
+  "mixing": {
+    "title": "Imza rengin karistiriliyor...",
+    "subtitle": "Renk DNA'n analiz ediliyor..."
+  },
+  "result": {
+    "meaning": "Renk Anlami",
+    "strengths": "Temel Gucler",
+    "weaknesses": "Gelistirme Alanlari",
+    "compatible": "Uyumlu Renkler",
+    "incompatible": "Dikkat Edilecek Renkler",
+    "share": "Sonucu Paylas",
+    "your_blend": "Renk Karisimin",
+    "signature": "Imza",
+    "moreTests": "Daha fazla test keşfet",
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i sizinle aynı renk türünde"
+  },
+  "colors": {
+    "red": {
+      "name": "Kirmizi - Tutkulu",
+      "tagline": "Atesli tutkuyla her seyi basarmak",
+      "description": "Tutkulu ve cesursun. Sinirsiz enerjiyle herhangi bir hedefe ulasabilir ve dogal olarak liderlik edebilirsin. Yeni zorluklari korkusuzca karsilar ve anda yasamayi onemsersin.",
+      "meaning": "Tutku, Enerji, Cesaret, Liderlik, Aktivite, Guclu Irade",
+      "strength1": "Mukemmel liderlik ve itici guc",
+      "strength2": "Korkusuzluk ve kararlilik",
+      "strength3": "Hizli eylem ve kararllik",
+      "weakness1": "Bazen durtusel olabilir",
+      "weakness2": "Baskalarin goruslerini gozden kacirilabilir"
+    },
+    "blue": {
+      "name": "Mavi - Bilge",
+      "tagline": "Derin dusunceyle dunyayi anlamak",
+      "description": "Sakin ve dusuncelisin, istikrar ve guvenlik ariyorsun. Analitik dusuncen sorunlari etkili bir sekilde cozer ve guvenilirligin etrafindakilerin guvenini kazanir.",
+      "meaning": "Huzur, Guven, Derinlik, Bilgelik, Istikrar, Sogukkanlilik",
+      "strength1": "Mukemmel analitik ve mantiksal dusunce",
+      "strength2": "Yuksek guvenilirlik",
+      "strength3": "Derin kavrayis ve bilgelik",
+      "weakness1": "Asiri pasif olabilir",
+      "weakness2": "Fazla dusunmek eylemi engelleyebilir"
+    },
+    "green": {
+      "name": "Yesil - Uyumcu",
+      "tagline": "Uyum ve dengeyle dunyayi iyilestirmek",
+      "description": "Baris ve uyum ariyorsun. Baskalarin duygularini derinden anliyorsun ve gercek sefkat gosteriyorsun. Istikrarli, dengeli bir hayati tercih ediyorsun.",
+      "meaning": "Baris, Sifa, Uyum, Dusunecelilik, Denge, Dogallik",
+      "strength1": "Mukemmel empati ve dusuncelilik",
+      "strength2": "Uyumlu iliskiler kurma becerisi",
+      "strength3": "Istikrar ve guvenilirlik",
+      "weakness1": "Fikirlerini paylasmayi kacinabilir",
+      "weakness2": "Kararlari ertelemeye meyildir"
+    },
+    "yellow": {
+      "name": "Sari - Iyimser",
+      "tagline": "Gunes gibi pozitiflikle her seyi aydinlatmak",
+      "description": "Parlak ve iyimsersin. Olumlu tavirin etrafindaki herkesi aydinlatir ve neseyi bulmada ustassin. Sevecen doganla harika iliskiler kurarssin.",
+      "meaning": "Iyimserlik, Umut, Parlaklik, Dostluk, Pozitiflik, Canlilik",
+      "strength1": "Olumlu tutum ve iyimserlik",
+      "strength2": "Mukemmel sosyal beceriler",
+      "strength3": "Baskalarina ilham verme yetenegei",
+      "weakness1": "Derin dusunceyi kacinabilir",
+      "weakness2": "Zorluklar karsisinda gucluk cekebilir"
+    },
+    "purple": {
+      "name": "Mor - Yaratici",
+      "tagline": "Esiz hayal gucuyle yeni dunyalar cizmek",
+      "description": "Zengin hayal gucuyle yaraticisin. Dunyayi benzersiz bir sekilde gorursun, yuksek sanatsal duyarliliga sahipsin. Geleneklerle sinirlanmayan ozgur bir ruhsun.",
+      "meaning": "Yaraticilik, Hayal Gucu, Gizem, Bireysellik, Sanat, Yenilik",
+      "strength1": "Mukemmel yaraticilik ve hayal gucu",
+      "strength2": "Benzersiz bakis acisi ve bireysellik",
+      "strength3": "Sanatsal duyarlilik",
+      "weakness1": "Gerceklikten kopabilir",
+      "weakness2": "Uygulama zayif olabilir"
+    },
+    "orange": {
+      "name": "Turuncu - Enerjik",
+      "tagline": "Her an canli enerjiyle ozgurce yasamak",
+      "description": "Enerjik ve canlisin. Yeni deneyimleri seversin ve anda tam olarak tadini cikarma yetenegin vardir. Sosyal, esnek ve etrafindakilere canlilik katarsin.",
+      "meaning": "Canlilik, Ozgurluk, Spontanlk, Tutku, Esneklik, Yasam Enerjisi",
+      "strength1": "Guclu aktivite ve canlilik",
+      "strength2": "Yeni deneyimlerin tadini cikarma yetenegei",
+      "strength3": "Mukemmel uyum saglama",
+      "weakness1": "Uzun vadeli planlama zayif olabilir",
+      "weakness2": "Tutarlilik eksik olabilir"
+    },
+    "pink": {
+      "name": "Pembe - Empatik",
+      "tagline": "Sicak duygularla kalplere dokunmak",
+      "description": "Duygusal olarak zengin ve cok duyarlisin. Etrafindakilere sicak ilgiyle derinden onem verirsin. Duygusal ifaden zengindir ve baskalarin hislerini sezgisel olarak okursun.",
+      "meaning": "Duygu, Sefkat, Sicaklik, Duyarlilik, Narinlik, Ic Guzellik",
+      "strength1": "Mukemmel duyarlilik ve empati",
+      "strength2": "Sicak ilgi ve sefkat",
+      "strength3": "Zengin duygusal ifade",
+      "weakness1": "Duygulardan etkilenebilir",
+      "weakness2": "Baskalarin ruh halinden asiri etkilenebilir"
+    },
+    "white": {
+      "name": "Beyaz - Saf",
+      "tagline": "Her seyi kucaklayabilecek buyuk kapasite",
+      "description": "Saf ve acik kalplisin. Herkesi sicakca kabul eder ve yargilamadan anlamaya calisirsin. Gerceklik ve durustluk arar, tum renkler ve insanlarla uyum icinde olursun.",
+      "meaning": "Saflik, Butunluk, Tarafsizlik, Huzur, Kapsayicilik, Baslangic",
+      "strength1": "Herkesi kucaklayan acik kalp",
+      "strength2": "Yuksek ahlak ve durustluk",
+      "strength3": "Tum tiplerle uyum",
+      "weakness1": "Kendini ifade etmede zayif olabilir",
+      "weakness2": "Duygularini gizleyebilir"
+    }
+  },
+  "share": {
+    "kakao_title": "Renk Karistirma Lab Sonucu",
+    "kakao_button": "Ben de denemek istiyorum",
+    "twitter_text": "Kisilik rengim {type} ({hex})! Senin imza rengin ne?",
+    "copy_text": "Kisilik rengim {type} ({hex})! {url}"
+  },
+  "message": {
+    "copy_success": "Sonuc baglantisi kopyalandi!",
+    "copy_error": "Kopyalama basarisiz. Tekrar deneyin."
+  },
+  "game": {
+    "back": "DopaBrain Ana Sayfa"
+  },
+  "related": {
+    "auraScore": "Aura Puanı",
+    "animalPersonality": "Hayvan Kişiliği",
+    "brainType": "Beyin Tipi",
+    "sleepAnimal": "Uyku Hayvanı"
+  }
 }

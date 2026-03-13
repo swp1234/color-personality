@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "Mezcla colores y crea tu color de personalidad unico! Experiencia interactiva de 7 pasos en el Laboratorio de Mezcla de Colores.", "keywords": "laboratorio de mezcla de colores, test de color de personalidad, mezcla de colores, test psicologico", "og_title": "Laboratorio de Mezcla de Colores - Crea tu color de personalidad!", "og_description": "Elige colores del espectro y mezcla tu color de personalidad unico!", "twitter_title": "Laboratorio de Mezcla de Colores", "twitter_description": "Mezcla colores y descubre tu color de personalidad!" },
-  "app": { "title": "Laboratorio de Mezcla de Colores | DopaBrain", "skipLink": "Ir al contenido principal", "loading": "Cargando..." },
-  "intro": { "title": "Laboratorio de Mezcla de Colores", "subtitle": "Mezcla colores para descubrir tu personalidad", "step1": "Elige colores del espectro intuitivamente", "step2": "Selecciona la paleta que resuene contigo", "step3": "Observa el nacimiento de tu color distintivo", "time_estimate": "Tiempo: aproximadamente 2 minutos" },
-  "button": { "start": "Comenzar a Mezclar", "back": "Atras", "retry": "Intentar de Nuevo", "confirm": "Confirmar Color", "share_download": "Descargar Imagen", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Copiar Enlace" },
-  "phase1": { "badge": "Paleta Primaria", "prompt1": "Que color tiene tu energia matutina?", "prompt2": "Que color tiene tu zona de confort?", "prompt3": "Que color tiene tu ambicion?", "label1": "Energia", "label2": "Confort", "label3": "Ambicion" },
-  "phase2": { "badge": "Reacciones de Color", "prompt": "Cual paleta te atrae mas?", "vs": "VS", "dim1": "Introvertido vs Extrovertido", "dim2": "Creativo vs Analitico", "dim3": "Apasionado vs Pacifico", "dim4": "Optimista vs Misterioso", "pair1": { "left": "Noche Tranquila", "right": "Festival Vibrante" }, "pair2": { "left": "Inspiracion Libre", "right": "Claridad Ordenada" }, "pair3": { "left": "Llama Ardiente", "right": "Lago Sereno" }, "pair4": { "left": "Sol Radiante", "right": "Cosmos Profundo" } },
-  "mixing": { "title": "Mezclando tu color distintivo...", "subtitle": "Analizando tu ADN de color..." },
-  "result": { "meaning": "Significado del Color", "strengths": "Fortalezas Principales", "weaknesses": "Areas de Mejora", "compatible": "Colores Compatibles", "incompatible": "Colores a Observar", "share": "Compartir Resultado", "your_blend": "Tu Mezcla de Color", "signature": "Distintivo" },
-  "colors": {
-    "red": { "name": "Rojo - El Apasionado", "tagline": "Lograr todo con pasion ardiente", "description": "Eres apasionado y audaz. Con energia ilimitada puedes lograr cualquier meta y liderar naturalmente. Enfrentas nuevos desafios sin miedo y valoras vivir el presente.", "meaning": "Pasion, Energia, Coraje, Liderazgo, Actividad, Voluntad Fuerte", "strength1": "Excelente liderazgo e impulso", "strength2": "Valentia y determinacion", "strength3": "Accion rapida y decision", "weakness1": "Puede ser impulsivo a veces", "weakness2": "Puede ignorar opiniones ajenas" },
-    "blue": { "name": "Azul - El Sabio", "tagline": "Comprender el mundo a traves de la reflexion profunda", "description": "Eres calmado y reflexivo, buscas estabilidad y seguridad. Tu pensamiento analitico resuelve problemas eficazmente y tu fiabilidad genera confianza.", "meaning": "Tranquilidad, Confianza, Profundidad, Sabiduria, Estabilidad, Compostura", "strength1": "Excelente pensamiento analitico y logico", "strength2": "Alta fiabilidad y confianza", "strength3": "Profunda perspicacia y sabiduria", "weakness1": "Puede ser demasiado pasivo", "weakness2": "Pensar demasiado puede frenar la accion" },
-    "green": { "name": "Verde - El Armonizador", "tagline": "Sanar el mundo con armonia y equilibrio", "description": "Eres pacifico y buscas armonia. Comprendes profundamente las emociones ajenas y muestras compasion genuina. Prefieres una vida estable y equilibrada.", "meaning": "Paz, Sanacion, Armonia, Consideracion, Equilibrio, Naturalidad", "strength1": "Excelente empatia y consideracion", "strength2": "Capacidad de mantener relaciones armoniosas", "strength3": "Estabilidad y confiabilidad", "weakness1": "Puede evitar compartir opiniones", "weakness2": "Tiende a posponer decisiones" },
-    "yellow": { "name": "Amarillo - El Optimista", "tagline": "Iluminar todo con positividad como el sol", "description": "Eres brillante y optimista. Tu actitud positiva ilumina a todos a tu alrededor y eres experto en encontrar alegria. Tu naturaleza amigable construye relaciones maravillosas.", "meaning": "Optimismo, Esperanza, Brillo, Amabilidad, Positividad, Vitalidad", "strength1": "Actitud positiva y optimismo", "strength2": "Excelentes habilidades sociales", "strength3": "Capacidad de inspirar a otros", "weakness1": "Puede evitar el pensamiento profundo", "weakness2": "Puede luchar con la adversidad" },
-    "purple": { "name": "Purpura - El Creador", "tagline": "Dibujar nuevos mundos con imaginacion unica", "description": "Eres creativo con rica imaginacion. Ves el mundo de manera unica, con alta sensibilidad artistica. Eres un espiritu libre no atado por la tradicion.", "meaning": "Creatividad, Imaginacion, Misterio, Individualidad, Arte, Innovacion", "strength1": "Excelente creatividad e imaginacion", "strength2": "Perspectiva unica e individualidad", "strength3": "Sensibilidad artistica", "weakness1": "Puede desconectarse de la realidad", "weakness2": "La ejecucion puede ser debil" },
-    "orange": { "name": "Naranja - El Energizante", "tagline": "Vivir libremente con energia vibrante en cada momento", "description": "Eres energico y vivaz. Amas las nuevas experiencias y tienes la capacidad de disfrutar plenamente el presente. Eres sociable, flexible y aportas vitalidad.", "meaning": "Vitalidad, Libertad, Espontaneidad, Pasion, Flexibilidad, Vivacidad", "strength1": "Fuerte actividad y vivacidad", "strength2": "Capacidad de disfrutar nuevas experiencias", "strength3": "Excelente adaptabilidad", "weakness1": "La planificacion a largo plazo puede ser debil", "weakness2": "Puede faltar consistencia" },
-    "pink": { "name": "Rosa - El Empatico", "tagline": "Tocar corazones con sentimientos calidos", "description": "Eres emocionalmente rico y altamente sensible. Cuidas profundamente a quienes te rodean con calida consideracion. Tu expresion emocional es abundante.", "meaning": "Emocion, Compasion, Calidez, Sensibilidad, Delicadeza, Belleza Interior", "strength1": "Excelente sensibilidad y empatia", "strength2": "Calida consideracion y compasion", "strength3": "Rica expresion emocional", "weakness1": "Puede dejarse llevar por las emociones", "weakness2": "Demasiado influenciado por el animo ajeno" },
-    "white": { "name": "Blanco - El Puro", "tagline": "La gran capacidad de abrazar todo", "description": "Tienes un corazon puro y abierto. Aceptas a todos calidamente e intentas comprender sin juzgar. Buscas autenticidad y honestidad, armonizando con todos.", "meaning": "Pureza, Completitud, Neutralidad, Tranquilidad, Inclusividad, Comienzo", "strength1": "Corazon abierto que abraza a todos", "strength2": "Alta moralidad y honestidad", "strength3": "Armonia con todos los tipos", "weakness1": "Puede carecer de autoafirmacion", "weakness2": "Puede ocultar sus emociones" }
+  "meta": {
+    "description": "Mezcla colores y crea tu color de personalidad unico! Experiencia interactiva de 7 pasos en el Laboratorio de Mezcla de Colores.",
+    "keywords": "laboratorio de mezcla de colores, test de color de personalidad, mezcla de colores, test psicologico",
+    "og_title": "Laboratorio de Mezcla de Colores - Crea tu color de personalidad!",
+    "og_description": "Elige colores del espectro y mezcla tu color de personalidad unico!",
+    "twitter_title": "Laboratorio de Mezcla de Colores",
+    "twitter_description": "Mezcla colores y descubre tu color de personalidad!"
   },
-  "share": { "kakao_title": "Resultado del Laboratorio de Mezcla", "kakao_button": "Yo tambien quiero probar", "twitter_text": "Mi color de personalidad es {type} ({hex})! Cual es tu color distintivo?", "copy_text": "Mi color de personalidad es {type} ({hex})! {url}" },
-  "message": { "copy_success": "Enlace del resultado copiado!", "copy_error": "Error al copiar. Intenta de nuevo." },
-  "game": { "back": "Inicio DopaBrain" }
+  "app": {
+    "title": "Laboratorio de Mezcla de Colores | DopaBrain",
+    "skipLink": "Ir al contenido principal",
+    "loading": "Cargando..."
+  },
+  "intro": {
+    "title": "Laboratorio de Mezcla de Colores",
+    "subtitle": "Mezcla colores para descubrir tu personalidad",
+    "step1": "Elige colores del espectro intuitivamente",
+    "step2": "Selecciona la paleta que resuene contigo",
+    "step3": "Observa el nacimiento de tu color distintivo",
+    "time_estimate": "Tiempo: aproximadamente 2 minutos"
+  },
+  "button": {
+    "start": "Comenzar a Mezclar",
+    "back": "Atras",
+    "retry": "Intentar de Nuevo",
+    "confirm": "Confirmar Color",
+    "share_download": "Descargar Imagen",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Copiar Enlace"
+  },
+  "phase1": {
+    "badge": "Paleta Primaria",
+    "prompt1": "Que color tiene tu energia matutina?",
+    "prompt2": "Que color tiene tu zona de confort?",
+    "prompt3": "Que color tiene tu ambicion?",
+    "label1": "Energia",
+    "label2": "Confort",
+    "label3": "Ambicion"
+  },
+  "phase2": {
+    "badge": "Reacciones de Color",
+    "prompt": "Cual paleta te atrae mas?",
+    "vs": "VS",
+    "dim1": "Introvertido vs Extrovertido",
+    "dim2": "Creativo vs Analitico",
+    "dim3": "Apasionado vs Pacifico",
+    "dim4": "Optimista vs Misterioso",
+    "pair1": {
+      "left": "Noche Tranquila",
+      "right": "Festival Vibrante"
+    },
+    "pair2": {
+      "left": "Inspiracion Libre",
+      "right": "Claridad Ordenada"
+    },
+    "pair3": {
+      "left": "Llama Ardiente",
+      "right": "Lago Sereno"
+    },
+    "pair4": {
+      "left": "Sol Radiante",
+      "right": "Cosmos Profundo"
+    }
+  },
+  "mixing": {
+    "title": "Mezclando tu color distintivo...",
+    "subtitle": "Analizando tu ADN de color..."
+  },
+  "result": {
+    "meaning": "Significado del Color",
+    "strengths": "Fortalezas Principales",
+    "weaknesses": "Areas de Mejora",
+    "compatible": "Colores Compatibles",
+    "incompatible": "Colores a Observar",
+    "share": "Compartir Resultado",
+    "your_blend": "Tu Mezcla de Color",
+    "signature": "Distintivo",
+    "moreTests": "Explorar más tests",
+    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes comparte tu tipo de color"
+  },
+  "colors": {
+    "red": {
+      "name": "Rojo - El Apasionado",
+      "tagline": "Lograr todo con pasion ardiente",
+      "description": "Eres apasionado y audaz. Con energia ilimitada puedes lograr cualquier meta y liderar naturalmente. Enfrentas nuevos desafios sin miedo y valoras vivir el presente.",
+      "meaning": "Pasion, Energia, Coraje, Liderazgo, Actividad, Voluntad Fuerte",
+      "strength1": "Excelente liderazgo e impulso",
+      "strength2": "Valentia y determinacion",
+      "strength3": "Accion rapida y decision",
+      "weakness1": "Puede ser impulsivo a veces",
+      "weakness2": "Puede ignorar opiniones ajenas"
+    },
+    "blue": {
+      "name": "Azul - El Sabio",
+      "tagline": "Comprender el mundo a traves de la reflexion profunda",
+      "description": "Eres calmado y reflexivo, buscas estabilidad y seguridad. Tu pensamiento analitico resuelve problemas eficazmente y tu fiabilidad genera confianza.",
+      "meaning": "Tranquilidad, Confianza, Profundidad, Sabiduria, Estabilidad, Compostura",
+      "strength1": "Excelente pensamiento analitico y logico",
+      "strength2": "Alta fiabilidad y confianza",
+      "strength3": "Profunda perspicacia y sabiduria",
+      "weakness1": "Puede ser demasiado pasivo",
+      "weakness2": "Pensar demasiado puede frenar la accion"
+    },
+    "green": {
+      "name": "Verde - El Armonizador",
+      "tagline": "Sanar el mundo con armonia y equilibrio",
+      "description": "Eres pacifico y buscas armonia. Comprendes profundamente las emociones ajenas y muestras compasion genuina. Prefieres una vida estable y equilibrada.",
+      "meaning": "Paz, Sanacion, Armonia, Consideracion, Equilibrio, Naturalidad",
+      "strength1": "Excelente empatia y consideracion",
+      "strength2": "Capacidad de mantener relaciones armoniosas",
+      "strength3": "Estabilidad y confiabilidad",
+      "weakness1": "Puede evitar compartir opiniones",
+      "weakness2": "Tiende a posponer decisiones"
+    },
+    "yellow": {
+      "name": "Amarillo - El Optimista",
+      "tagline": "Iluminar todo con positividad como el sol",
+      "description": "Eres brillante y optimista. Tu actitud positiva ilumina a todos a tu alrededor y eres experto en encontrar alegria. Tu naturaleza amigable construye relaciones maravillosas.",
+      "meaning": "Optimismo, Esperanza, Brillo, Amabilidad, Positividad, Vitalidad",
+      "strength1": "Actitud positiva y optimismo",
+      "strength2": "Excelentes habilidades sociales",
+      "strength3": "Capacidad de inspirar a otros",
+      "weakness1": "Puede evitar el pensamiento profundo",
+      "weakness2": "Puede luchar con la adversidad"
+    },
+    "purple": {
+      "name": "Purpura - El Creador",
+      "tagline": "Dibujar nuevos mundos con imaginacion unica",
+      "description": "Eres creativo con rica imaginacion. Ves el mundo de manera unica, con alta sensibilidad artistica. Eres un espiritu libre no atado por la tradicion.",
+      "meaning": "Creatividad, Imaginacion, Misterio, Individualidad, Arte, Innovacion",
+      "strength1": "Excelente creatividad e imaginacion",
+      "strength2": "Perspectiva unica e individualidad",
+      "strength3": "Sensibilidad artistica",
+      "weakness1": "Puede desconectarse de la realidad",
+      "weakness2": "La ejecucion puede ser debil"
+    },
+    "orange": {
+      "name": "Naranja - El Energizante",
+      "tagline": "Vivir libremente con energia vibrante en cada momento",
+      "description": "Eres energico y vivaz. Amas las nuevas experiencias y tienes la capacidad de disfrutar plenamente el presente. Eres sociable, flexible y aportas vitalidad.",
+      "meaning": "Vitalidad, Libertad, Espontaneidad, Pasion, Flexibilidad, Vivacidad",
+      "strength1": "Fuerte actividad y vivacidad",
+      "strength2": "Capacidad de disfrutar nuevas experiencias",
+      "strength3": "Excelente adaptabilidad",
+      "weakness1": "La planificacion a largo plazo puede ser debil",
+      "weakness2": "Puede faltar consistencia"
+    },
+    "pink": {
+      "name": "Rosa - El Empatico",
+      "tagline": "Tocar corazones con sentimientos calidos",
+      "description": "Eres emocionalmente rico y altamente sensible. Cuidas profundamente a quienes te rodean con calida consideracion. Tu expresion emocional es abundante.",
+      "meaning": "Emocion, Compasion, Calidez, Sensibilidad, Delicadeza, Belleza Interior",
+      "strength1": "Excelente sensibilidad y empatia",
+      "strength2": "Calida consideracion y compasion",
+      "strength3": "Rica expresion emocional",
+      "weakness1": "Puede dejarse llevar por las emociones",
+      "weakness2": "Demasiado influenciado por el animo ajeno"
+    },
+    "white": {
+      "name": "Blanco - El Puro",
+      "tagline": "La gran capacidad de abrazar todo",
+      "description": "Tienes un corazon puro y abierto. Aceptas a todos calidamente e intentas comprender sin juzgar. Buscas autenticidad y honestidad, armonizando con todos.",
+      "meaning": "Pureza, Completitud, Neutralidad, Tranquilidad, Inclusividad, Comienzo",
+      "strength1": "Corazon abierto que abraza a todos",
+      "strength2": "Alta moralidad y honestidad",
+      "strength3": "Armonia con todos los tipos",
+      "weakness1": "Puede carecer de autoafirmacion",
+      "weakness2": "Puede ocultar sus emociones"
+    }
+  },
+  "share": {
+    "kakao_title": "Resultado del Laboratorio de Mezcla",
+    "kakao_button": "Yo tambien quiero probar",
+    "twitter_text": "Mi color de personalidad es {type} ({hex})! Cual es tu color distintivo?",
+    "copy_text": "Mi color de personalidad es {type} ({hex})! {url}"
+  },
+  "message": {
+    "copy_success": "Enlace del resultado copiado!",
+    "copy_error": "Error al copiar. Intenta de nuevo."
+  },
+  "game": {
+    "back": "Inicio DopaBrain"
+  },
+  "related": {
+    "auraScore": "Puntuación de aura",
+    "animalPersonality": "Personalidad animal",
+    "brainType": "Tipo de cerebro",
+    "sleepAnimal": "Animal del sueño"
+  }
 }

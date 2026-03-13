@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "Mische Farben und kreiere deine einzigartige Persoenlichkeitsfarbe! 7-Schritte interaktives Erlebnis im Farbmischlabor.", "keywords": "Farbmischlabor, Persoenlichkeitsfarbentest, Farbmischung, psychologischer Test", "og_title": "Farbmischlabor - Kreiere deine Persoenlichkeitsfarbe!", "og_description": "Waehle Farben aus dem Spektrum und mische deine einzigartige Persoenlichkeitsfarbe!", "twitter_title": "Farbmischlabor - Deine Persoenlichkeitsfarbe", "twitter_description": "Mische Farben und entdecke deine Persoenlichkeitsfarbe!" },
-  "app": { "title": "Farbmischlabor | DopaBrain", "skipLink": "Zum Hauptinhalt springen", "loading": "Wird geladen..." },
-  "intro": { "title": "Farbmischlabor", "subtitle": "Mische Farben um deine Persoenlichkeit zu entdecken", "step1": "Waehle Farben aus dem Spektrum intuitiv", "step2": "Waehle die Palette die dich anspricht", "step3": "Beobachte die Geburt deiner Signaturfarbe", "time_estimate": "Dauer: etwa 2 Minuten" },
-  "button": { "start": "Mischen starten", "back": "Zurueck", "retry": "Nochmal versuchen", "confirm": "Farbe bestaetigen", "share_download": "Bild herunterladen", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Link kopieren" },
-  "phase1": { "badge": "Primaere Palette", "prompt1": "Welche Farbe hat deine Morgenenergie?", "prompt2": "Welche Farbe hat deine Komfortzone?", "prompt3": "Welche Farbe hat dein Ehrgeiz?", "label1": "Energie", "label2": "Komfort", "label3": "Ehrgeiz" },
-  "phase2": { "badge": "Farbreaktionen", "prompt": "Welche Palette spricht dich mehr an?", "vs": "VS", "dim1": "Introvertiert vs Extrovertiert", "dim2": "Kreativ vs Analytisch", "dim3": "Leidenschaftlich vs Friedlich", "dim4": "Optimistisch vs Geheimnisvoll", "pair1": { "left": "Stille Nacht", "right": "Lebhaftes Festival" }, "pair2": { "left": "Freie Inspiration", "right": "Geordnete Klarheit" }, "pair3": { "left": "Brennende Flamme", "right": "Stiller See" }, "pair4": { "left": "Strahlende Sonne", "right": "Tiefer Kosmos" } },
-  "mixing": { "title": "Deine Signaturfarbe wird gemischt...", "subtitle": "Deine Farb-DNA wird analysiert..." },
-  "result": { "meaning": "Farbbedeutung", "strengths": "Hauptstaerken", "weaknesses": "Verbesserungsbereiche", "compatible": "Kompatible Farben", "incompatible": "Farben zum Beobachten", "share": "Ergebnis teilen", "your_blend": "Deine Farbmischung", "signature": "Signatur" },
-  "colors": {
-    "red": { "name": "Rot - Der Leidenschaftliche", "tagline": "Alles mit feuriger Leidenschaft erreichen", "description": "Du bist leidenschaftlich und kuehn. Mit grenzenloser Energie kannst du jedes Ziel erreichen und natuerlich fuehren. Du stellst dich neuen Herausforderungen furchtlos und schaetzt das Leben im Moment.", "meaning": "Leidenschaft, Energie, Mut, Fuehrung, Aktivitaet, Starker Wille", "strength1": "Hervorragende Fuehrung und Antrieb", "strength2": "Furchtlosigkeit und Entschlossenheit", "strength3": "Schnelles Handeln und Entscheidungskraft", "weakness1": "Kann manchmal impulsiv sein", "weakness2": "Koennte die Meinungen anderer uebersehen" },
-    "blue": { "name": "Blau - Der Weise", "tagline": "Die Welt durch tiefe Reflexion verstehen", "description": "Du bist ruhig und nachdenklich, suchst Stabilitaet und Sicherheit. Dein analytisches Denken loest Probleme effektiv und deine Zuverlaessigkeit schafft Vertrauen.", "meaning": "Ruhe, Vertrauen, Tiefe, Weisheit, Stabilitaet, Gelassenheit", "strength1": "Hervorragendes analytisches und logisches Denken", "strength2": "Hohe Zuverlaessigkeit und Vertrauenswuerdigkeit", "strength3": "Tiefe Einsicht und Weisheit", "weakness1": "Kann uebermaeig passiv sein", "weakness2": "Uebermaessiges Nachdenken kann Handeln verhindern" },
-    "green": { "name": "Gruen - Der Harmonisierer", "tagline": "Die Welt mit Harmonie und Gleichgewicht heilen", "description": "Du bist friedlich und suchst Harmonie. Du verstehst die Emotionen anderer zutiefst und zeigst echtes Mitgefuehl. Du bevorzugst ein stabiles, ausgeglichenes Leben.", "meaning": "Frieden, Heilung, Harmonie, Ruecksicht, Gleichgewicht, Natuerlichkeit", "strength1": "Hervorragende Empathie und Ruecksicht", "strength2": "Faehigkeit harmonische Beziehungen zu pflegen", "strength3": "Stabilitaet und Zuverlaessigkeit", "weakness1": "Koennte es vermeiden Meinungen zu teilen", "weakness2": "Neigt dazu Entscheidungen aufzuschieben" },
-    "yellow": { "name": "Gelb - Der Optimist", "tagline": "Alles wie die Sonne mit Positivitaet erhellen", "description": "Du bist strahlend und optimistisch. Deine positive Einstellung erhellt alle um dich herum und du bist grossartig darin Freude zu finden. Deine freundliche Art baut wunderbare Beziehungen auf.", "meaning": "Optimismus, Hoffnung, Helligkeit, Freundlichkeit, Positivitaet, Vitalitaet", "strength1": "Positive Einstellung und Optimismus", "strength2": "Hervorragende soziale Faehigkeiten", "strength3": "Faehigkeit andere zu inspirieren", "weakness1": "Koennte tiefes Denken vermeiden", "weakness2": "Koennte mit Widrigkeiten kaempfen" },
-    "purple": { "name": "Violett - Der Schoepfer", "tagline": "Neue Welten mit einzigartiger Fantasie malen", "description": "Du bist kreativ mit reicher Fantasie. Du siehst die Welt einzigartig mit hoher kuenstlerischer Sensibilitaet. Du bist ein freier Geist nicht gebunden an Tradition.", "meaning": "Kreativitaet, Fantasie, Geheimnis, Individualitaet, Kunst, Innovation", "strength1": "Hervorragende Kreativitaet und Fantasie", "strength2": "Einzigartige Perspektive und Individualitaet", "strength3": "Kuenstlerische Sensibilitaet", "weakness1": "Koennte von der Realitaet abgekoppelt sein", "weakness2": "Ausfuehrung koennte schwach sein" },
-    "orange": { "name": "Orange - Der Energiebringer", "tagline": "Frei leben mit lebhafter Energie in jedem Moment", "description": "Du bist energisch und lebendig. Du liebst neue Erfahrungen und hast die Faehigkeit die Gegenwart voll zu geniessen. Du bist gesellig flexibel und bringst Vitalitaet.", "meaning": "Vitalitaet, Freiheit, Spontanitaet, Leidenschaft, Flexibilitaet, Lebendigkeit", "strength1": "Starke Aktivitaet und Lebendigkeit", "strength2": "Faehigkeit neue Erfahrungen zu geniessen", "strength3": "Hervorragende Anpassungsfaehigkeit", "weakness1": "Langfristige Planung koennte schwach sein", "weakness2": "Koennte an Konsistenz fehlen" },
-    "pink": { "name": "Rosa - Der Empathische", "tagline": "Herzen mit warmen Gefuehlen beruehren", "description": "Du bist emotional reich und hochsensibel. Du sorgst dich zutiefst um die Menschen um dich herum mit warmer Zuwendung. Dein emotionaler Ausdruck ist reichhaltig.", "meaning": "Emotion, Mitgefuehl, Waerme, Sensibilitaet, Zartheit, Innere Schoenheit", "strength1": "Hervorragende Sensibilitaet und Empathie", "strength2": "Warme Zuwendung und Mitgefuehl", "strength3": "Reicher emotionaler Ausdruck", "weakness1": "Kann von Emotionen beeinflusst werden", "weakness2": "Zu sehr von der Stimmung anderer beeinflusst" },
-    "white": { "name": "Weiss - Der Reine", "tagline": "Die grosse Faehigkeit alles zu umarmen", "description": "Du hast ein reines und offenes Herz. Du akzeptierst alle warmherzig und versuchst ohne Urteil zu verstehen. Du suchst Aufrichtigkeit und Ehrlichkeit in Harmonie mit allen.", "meaning": "Reinheit, Vollstaendigkeit, Neutralitaet, Ruhe, Inklusivitaet, Anfang", "strength1": "Offenes Herz das jeden umarmt", "strength2": "Hohe Moral und Ehrlichkeit", "strength3": "Harmonie mit allen Typen", "weakness1": "Koennte an Selbstbehauptung fehlen", "weakness2": "Koennte Emotionen verbergen" }
+  "meta": {
+    "description": "Mische Farben und kreiere deine einzigartige Persoenlichkeitsfarbe! 7-Schritte interaktives Erlebnis im Farbmischlabor.",
+    "keywords": "Farbmischlabor, Persoenlichkeitsfarbentest, Farbmischung, psychologischer Test",
+    "og_title": "Farbmischlabor - Kreiere deine Persoenlichkeitsfarbe!",
+    "og_description": "Waehle Farben aus dem Spektrum und mische deine einzigartige Persoenlichkeitsfarbe!",
+    "twitter_title": "Farbmischlabor - Deine Persoenlichkeitsfarbe",
+    "twitter_description": "Mische Farben und entdecke deine Persoenlichkeitsfarbe!"
   },
-  "share": { "kakao_title": "Farbmischlabor Ergebnis", "kakao_button": "Ich will auch probieren", "twitter_text": "Meine Persoenlichkeitsfarbe ist {type} ({hex})! Was ist deine Signaturfarbe?", "copy_text": "Meine Persoenlichkeitsfarbe ist {type} ({hex})! {url}" },
-  "message": { "copy_success": "Ergebnislink kopiert!", "copy_error": "Kopieren fehlgeschlagen. Bitte erneut versuchen." },
-  "game": { "back": "DopaBrain Startseite" }
+  "app": {
+    "title": "Farbmischlabor | DopaBrain",
+    "skipLink": "Zum Hauptinhalt springen",
+    "loading": "Wird geladen..."
+  },
+  "intro": {
+    "title": "Farbmischlabor",
+    "subtitle": "Mische Farben um deine Persoenlichkeit zu entdecken",
+    "step1": "Waehle Farben aus dem Spektrum intuitiv",
+    "step2": "Waehle die Palette die dich anspricht",
+    "step3": "Beobachte die Geburt deiner Signaturfarbe",
+    "time_estimate": "Dauer: etwa 2 Minuten"
+  },
+  "button": {
+    "start": "Mischen starten",
+    "back": "Zurueck",
+    "retry": "Nochmal versuchen",
+    "confirm": "Farbe bestaetigen",
+    "share_download": "Bild herunterladen",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Link kopieren"
+  },
+  "phase1": {
+    "badge": "Primaere Palette",
+    "prompt1": "Welche Farbe hat deine Morgenenergie?",
+    "prompt2": "Welche Farbe hat deine Komfortzone?",
+    "prompt3": "Welche Farbe hat dein Ehrgeiz?",
+    "label1": "Energie",
+    "label2": "Komfort",
+    "label3": "Ehrgeiz"
+  },
+  "phase2": {
+    "badge": "Farbreaktionen",
+    "prompt": "Welche Palette spricht dich mehr an?",
+    "vs": "VS",
+    "dim1": "Introvertiert vs Extrovertiert",
+    "dim2": "Kreativ vs Analytisch",
+    "dim3": "Leidenschaftlich vs Friedlich",
+    "dim4": "Optimistisch vs Geheimnisvoll",
+    "pair1": {
+      "left": "Stille Nacht",
+      "right": "Lebhaftes Festival"
+    },
+    "pair2": {
+      "left": "Freie Inspiration",
+      "right": "Geordnete Klarheit"
+    },
+    "pair3": {
+      "left": "Brennende Flamme",
+      "right": "Stiller See"
+    },
+    "pair4": {
+      "left": "Strahlende Sonne",
+      "right": "Tiefer Kosmos"
+    }
+  },
+  "mixing": {
+    "title": "Deine Signaturfarbe wird gemischt...",
+    "subtitle": "Deine Farb-DNA wird analysiert..."
+  },
+  "result": {
+    "meaning": "Farbbedeutung",
+    "strengths": "Hauptstaerken",
+    "weaknesses": "Verbesserungsbereiche",
+    "compatible": "Kompatible Farben",
+    "incompatible": "Farben zum Beobachten",
+    "share": "Ergebnis teilen",
+    "your_blend": "Deine Farbmischung",
+    "signature": "Signatur",
+    "moreTests": "Weitere Tests entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer teilen Ihren Farbtyp"
+  },
+  "colors": {
+    "red": {
+      "name": "Rot - Der Leidenschaftliche",
+      "tagline": "Alles mit feuriger Leidenschaft erreichen",
+      "description": "Du bist leidenschaftlich und kuehn. Mit grenzenloser Energie kannst du jedes Ziel erreichen und natuerlich fuehren. Du stellst dich neuen Herausforderungen furchtlos und schaetzt das Leben im Moment.",
+      "meaning": "Leidenschaft, Energie, Mut, Fuehrung, Aktivitaet, Starker Wille",
+      "strength1": "Hervorragende Fuehrung und Antrieb",
+      "strength2": "Furchtlosigkeit und Entschlossenheit",
+      "strength3": "Schnelles Handeln und Entscheidungskraft",
+      "weakness1": "Kann manchmal impulsiv sein",
+      "weakness2": "Koennte die Meinungen anderer uebersehen"
+    },
+    "blue": {
+      "name": "Blau - Der Weise",
+      "tagline": "Die Welt durch tiefe Reflexion verstehen",
+      "description": "Du bist ruhig und nachdenklich, suchst Stabilitaet und Sicherheit. Dein analytisches Denken loest Probleme effektiv und deine Zuverlaessigkeit schafft Vertrauen.",
+      "meaning": "Ruhe, Vertrauen, Tiefe, Weisheit, Stabilitaet, Gelassenheit",
+      "strength1": "Hervorragendes analytisches und logisches Denken",
+      "strength2": "Hohe Zuverlaessigkeit und Vertrauenswuerdigkeit",
+      "strength3": "Tiefe Einsicht und Weisheit",
+      "weakness1": "Kann uebermaeig passiv sein",
+      "weakness2": "Uebermaessiges Nachdenken kann Handeln verhindern"
+    },
+    "green": {
+      "name": "Gruen - Der Harmonisierer",
+      "tagline": "Die Welt mit Harmonie und Gleichgewicht heilen",
+      "description": "Du bist friedlich und suchst Harmonie. Du verstehst die Emotionen anderer zutiefst und zeigst echtes Mitgefuehl. Du bevorzugst ein stabiles, ausgeglichenes Leben.",
+      "meaning": "Frieden, Heilung, Harmonie, Ruecksicht, Gleichgewicht, Natuerlichkeit",
+      "strength1": "Hervorragende Empathie und Ruecksicht",
+      "strength2": "Faehigkeit harmonische Beziehungen zu pflegen",
+      "strength3": "Stabilitaet und Zuverlaessigkeit",
+      "weakness1": "Koennte es vermeiden Meinungen zu teilen",
+      "weakness2": "Neigt dazu Entscheidungen aufzuschieben"
+    },
+    "yellow": {
+      "name": "Gelb - Der Optimist",
+      "tagline": "Alles wie die Sonne mit Positivitaet erhellen",
+      "description": "Du bist strahlend und optimistisch. Deine positive Einstellung erhellt alle um dich herum und du bist grossartig darin Freude zu finden. Deine freundliche Art baut wunderbare Beziehungen auf.",
+      "meaning": "Optimismus, Hoffnung, Helligkeit, Freundlichkeit, Positivitaet, Vitalitaet",
+      "strength1": "Positive Einstellung und Optimismus",
+      "strength2": "Hervorragende soziale Faehigkeiten",
+      "strength3": "Faehigkeit andere zu inspirieren",
+      "weakness1": "Koennte tiefes Denken vermeiden",
+      "weakness2": "Koennte mit Widrigkeiten kaempfen"
+    },
+    "purple": {
+      "name": "Violett - Der Schoepfer",
+      "tagline": "Neue Welten mit einzigartiger Fantasie malen",
+      "description": "Du bist kreativ mit reicher Fantasie. Du siehst die Welt einzigartig mit hoher kuenstlerischer Sensibilitaet. Du bist ein freier Geist nicht gebunden an Tradition.",
+      "meaning": "Kreativitaet, Fantasie, Geheimnis, Individualitaet, Kunst, Innovation",
+      "strength1": "Hervorragende Kreativitaet und Fantasie",
+      "strength2": "Einzigartige Perspektive und Individualitaet",
+      "strength3": "Kuenstlerische Sensibilitaet",
+      "weakness1": "Koennte von der Realitaet abgekoppelt sein",
+      "weakness2": "Ausfuehrung koennte schwach sein"
+    },
+    "orange": {
+      "name": "Orange - Der Energiebringer",
+      "tagline": "Frei leben mit lebhafter Energie in jedem Moment",
+      "description": "Du bist energisch und lebendig. Du liebst neue Erfahrungen und hast die Faehigkeit die Gegenwart voll zu geniessen. Du bist gesellig flexibel und bringst Vitalitaet.",
+      "meaning": "Vitalitaet, Freiheit, Spontanitaet, Leidenschaft, Flexibilitaet, Lebendigkeit",
+      "strength1": "Starke Aktivitaet und Lebendigkeit",
+      "strength2": "Faehigkeit neue Erfahrungen zu geniessen",
+      "strength3": "Hervorragende Anpassungsfaehigkeit",
+      "weakness1": "Langfristige Planung koennte schwach sein",
+      "weakness2": "Koennte an Konsistenz fehlen"
+    },
+    "pink": {
+      "name": "Rosa - Der Empathische",
+      "tagline": "Herzen mit warmen Gefuehlen beruehren",
+      "description": "Du bist emotional reich und hochsensibel. Du sorgst dich zutiefst um die Menschen um dich herum mit warmer Zuwendung. Dein emotionaler Ausdruck ist reichhaltig.",
+      "meaning": "Emotion, Mitgefuehl, Waerme, Sensibilitaet, Zartheit, Innere Schoenheit",
+      "strength1": "Hervorragende Sensibilitaet und Empathie",
+      "strength2": "Warme Zuwendung und Mitgefuehl",
+      "strength3": "Reicher emotionaler Ausdruck",
+      "weakness1": "Kann von Emotionen beeinflusst werden",
+      "weakness2": "Zu sehr von der Stimmung anderer beeinflusst"
+    },
+    "white": {
+      "name": "Weiss - Der Reine",
+      "tagline": "Die grosse Faehigkeit alles zu umarmen",
+      "description": "Du hast ein reines und offenes Herz. Du akzeptierst alle warmherzig und versuchst ohne Urteil zu verstehen. Du suchst Aufrichtigkeit und Ehrlichkeit in Harmonie mit allen.",
+      "meaning": "Reinheit, Vollstaendigkeit, Neutralitaet, Ruhe, Inklusivitaet, Anfang",
+      "strength1": "Offenes Herz das jeden umarmt",
+      "strength2": "Hohe Moral und Ehrlichkeit",
+      "strength3": "Harmonie mit allen Typen",
+      "weakness1": "Koennte an Selbstbehauptung fehlen",
+      "weakness2": "Koennte Emotionen verbergen"
+    }
+  },
+  "share": {
+    "kakao_title": "Farbmischlabor Ergebnis",
+    "kakao_button": "Ich will auch probieren",
+    "twitter_text": "Meine Persoenlichkeitsfarbe ist {type} ({hex})! Was ist deine Signaturfarbe?",
+    "copy_text": "Meine Persoenlichkeitsfarbe ist {type} ({hex})! {url}"
+  },
+  "message": {
+    "copy_success": "Ergebnislink kopiert!",
+    "copy_error": "Kopieren fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "game": {
+    "back": "DopaBrain Startseite"
+  },
+  "related": {
+    "auraScore": "Aura-Punktzahl",
+    "animalPersonality": "Tierpersönlichkeit",
+    "brainType": "Gehirntyp",
+    "sleepAnimal": "Schlaftier"
+  }
 }

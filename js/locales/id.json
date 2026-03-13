@@ -1,23 +1,193 @@
 {
-  "meta": { "description": "Campurkan warna dan buat warna kepribadianmu yang unik! Pengalaman interaktif 7 langkah di Lab Pencampuran Warna.", "keywords": "lab pencampuran warna, tes warna kepribadian, pencampuran warna, tes psikologi", "og_title": "Lab Pencampuran Warna - Buat Warna Kepribadianmu!", "og_description": "Pilih warna dari spektrum dan campurkan warna kepribadianmu yang unik!", "twitter_title": "Lab Pencampuran Warna", "twitter_description": "Campurkan warna dan temukan warna kepribadianmu!" },
-  "app": { "title": "Lab Pencampuran Warna | DopaBrain", "skipLink": "Lompat ke konten utama", "loading": "Memuat..." },
-  "intro": { "title": "Lab Pencampuran Warna", "subtitle": "Campurkan warna untuk menemukan kepribadianmu", "step1": "Pilih warna dari spektrum secara intuitif", "step2": "Pilih palet yang sesuai denganmu", "step3": "Saksikan kelahiran warna khasmu", "time_estimate": "Waktu: sekitar 2 menit" },
-  "button": { "start": "Mulai Mencampur", "back": "Kembali", "retry": "Coba Lagi", "confirm": "Konfirmasi Warna", "share_download": "Unduh Gambar", "share_kakao": "WhatsApp", "share_twitter": "Twitter", "share_facebook": "Facebook", "share_copy": "Salin Tautan" },
-  "phase1": { "badge": "Palet Utama", "prompt1": "Warna apa energi pagimu?", "prompt2": "Warna apa zona nyamanmu?", "prompt3": "Warna apa ambisimu?", "label1": "Energi", "label2": "Kenyamanan", "label3": "Ambisi" },
-  "phase2": { "badge": "Reaksi Warna", "prompt": "Palet mana yang lebih menarikmu?", "vs": "VS", "dim1": "Introvert vs Ekstrovert", "dim2": "Kreatif vs Analitis", "dim3": "Bergairah vs Damai", "dim4": "Optimis vs Misterius", "pair1": { "left": "Malam Tenang", "right": "Festival Meriah" }, "pair2": { "left": "Inspirasi Bebas", "right": "Kejelasan Teratur" }, "pair3": { "left": "Api Menyala", "right": "Danau Tenang" }, "pair4": { "left": "Matahari Bersinar", "right": "Kosmos Dalam" } },
-  "mixing": { "title": "Mencampurkan warna khasmu...", "subtitle": "Menganalisis DNA warnamu..." },
-  "result": { "meaning": "Arti Warna", "strengths": "Kekuatan Utama", "weaknesses": "Area untuk Ditingkatkan", "compatible": "Warna yang Cocok", "incompatible": "Warna untuk Diwaspadai", "share": "Bagikan Hasil", "your_blend": "Campuran Warnamu", "signature": "Khas" },
-  "colors": {
-    "red": { "name": "Merah - Si Bergairah", "tagline": "Raih segalanya dengan gairah membara", "description": "Kamu bergairah dan berani. Dengan energi tak terbatas, kamu bisa meraih tujuan apapun dan memimpin secara alami. Kamu menghadapi tantangan baru tanpa takut dan menghargai hidup di saat ini.", "meaning": "Gairah, Energi, Keberanian, Kepemimpinan, Aktivitas, Tekad Kuat", "strength1": "Kepemimpinan dan dorongan luar biasa", "strength2": "Keberanian dan tekad", "strength3": "Tindakan cepat dan tegas", "weakness1": "Bisa impulsif kadang-kadang", "weakness2": "Mungkin mengabaikan pendapat orang lain" },
-    "blue": { "name": "Biru - Si Bijak", "tagline": "Memahami dunia melalui refleksi mendalam", "description": "Kamu tenang dan penuh pemikiran, mencari stabilitas dan keamanan. Pemikiran analitismu menyelesaikan masalah secara efektif dan keandalanmu mendapat kepercayaan.", "meaning": "Ketenangan, Kepercayaan, Kedalaman, Kebijaksanaan, Stabilitas, Ketenangan Batin", "strength1": "Pemikiran analitis dan logis yang sangat baik", "strength2": "Keandalan dan kepercayaan tinggi", "strength3": "Wawasan dan kebijaksanaan mendalam", "weakness1": "Bisa terlalu pasif", "weakness2": "Berpikir berlebihan bisa menghalangi tindakan" },
-    "green": { "name": "Hijau - Si Penyelaras", "tagline": "Menyembuhkan dunia dengan harmoni dan keseimbangan", "description": "Kamu damai dan mencari harmoni. Kamu memahami emosi orang lain secara mendalam dan menunjukkan belas kasih yang tulus. Kamu lebih suka hidup yang stabil dan seimbang.", "meaning": "Kedamaian, Penyembuhan, Harmoni, Perhatian, Keseimbangan, Kealamian", "strength1": "Empati dan perhatian luar biasa", "strength2": "Kemampuan menjaga hubungan harmonis", "strength3": "Stabilitas dan keandalan", "weakness1": "Mungkin menghindari berbagi pendapat", "weakness2": "Cenderung menunda keputusan" },
-    "yellow": { "name": "Kuning - Si Optimis", "tagline": "Menerangi segalanya dengan positifitas seperti matahari", "description": "Kamu cerah dan optimis. Sikap positifmu mencerahkan semua orang di sekitarmu dan kamu ahli menemukan kegembiraan. Sifat ramahmu membangun hubungan yang indah.", "meaning": "Optimisme, Harapan, Kecerahan, Keramahan, Positifitas, Vitalitas", "strength1": "Sikap positif dan optimisme", "strength2": "Keterampilan sosial yang luar biasa", "strength3": "Kemampuan menginspirasi orang lain", "weakness1": "Mungkin menghindari pemikiran mendalam", "weakness2": "Mungkin kesulitan menghadapi kesulitan" },
-    "purple": { "name": "Ungu - Si Pencipta", "tagline": "Menggambar dunia baru dengan imajinasi unik", "description": "Kamu kreatif dengan imajinasi yang kaya. Kamu melihat dunia secara unik, dengan sensitivitas artistik tinggi. Kamu jiwa bebas yang tidak terikat tradisi.", "meaning": "Kreativitas, Imajinasi, Misteri, Individualitas, Seni, Inovasi", "strength1": "Kreativitas dan imajinasi luar biasa", "strength2": "Perspektif unik dan individualitas", "strength3": "Sensitivitas artistik", "weakness1": "Mungkin terputus dari realitas", "weakness2": "Eksekusi mungkin lemah" },
-    "orange": { "name": "Oranye - Si Energik", "tagline": "Hidup bebas dengan energi semarak di setiap momen", "description": "Kamu energik dan bersemangat. Kamu suka pengalaman baru dan punya kemampuan untuk menikmati saat ini sepenuhnya. Kamu mudah bergaul, fleksibel, dan membawa vitalitas.", "meaning": "Vitalitas, Kebebasan, Spontanitas, Gairah, Fleksibilitas, Semangat", "strength1": "Aktivitas dan semangat yang kuat", "strength2": "Kemampuan menikmati pengalaman baru", "strength3": "Adaptabilitas luar biasa", "weakness1": "Perencanaan jangka panjang mungkin lemah", "weakness2": "Mungkin kurang konsistensi" },
-    "pink": { "name": "Merah Muda - Si Empatik", "tagline": "Menyentuh hati dengan perasaan hangat", "description": "Kamu kaya emosi dan sangat sensitif. Kamu merawat orang-orang di sekitarmu dengan perhatian hangat. Ekspresi emosionalmu melimpah dan kamu membaca perasaan orang lain secara intuitif.", "meaning": "Emosi, Belas Kasih, Kehangatan, Sensitivitas, Kelembutan, Keindahan Batin", "strength1": "Sensitivitas dan empati luar biasa", "strength2": "Perhatian hangat dan belas kasih", "strength3": "Ekspresi emosional yang kaya", "weakness1": "Mungkin terpengaruh emosi", "weakness2": "Terlalu terpengaruh suasana hati orang lain" },
-    "white": { "name": "Putih - Si Murni", "tagline": "Kapasitas besar untuk merangkul segalanya", "description": "Kamu punya hati yang murni dan terbuka. Kamu menerima semua orang dengan hangat dan mencoba memahami tanpa menghakimi. Kamu mencari keaslian dan kejujuran.", "meaning": "Kemurnian, Kelengkapan, Netralitas, Ketenangan, Inklusivitas, Permulaan", "strength1": "Hati terbuka yang merangkul semua", "strength2": "Moralitas dan kejujuran tinggi", "strength3": "Harmoni dengan semua tipe", "weakness1": "Mungkin kurang tegas", "weakness2": "Mungkin menyembunyikan emosi" }
+  "meta": {
+    "description": "Campurkan warna dan buat warna kepribadianmu yang unik! Pengalaman interaktif 7 langkah di Lab Pencampuran Warna.",
+    "keywords": "lab pencampuran warna, tes warna kepribadian, pencampuran warna, tes psikologi",
+    "og_title": "Lab Pencampuran Warna - Buat Warna Kepribadianmu!",
+    "og_description": "Pilih warna dari spektrum dan campurkan warna kepribadianmu yang unik!",
+    "twitter_title": "Lab Pencampuran Warna",
+    "twitter_description": "Campurkan warna dan temukan warna kepribadianmu!"
   },
-  "share": { "kakao_title": "Hasil Lab Pencampuran Warna", "kakao_button": "Aku mau coba juga", "twitter_text": "Warna kepribadianku adalah {type} ({hex})! Apa warna khasmu?", "copy_text": "Warna kepribadianku adalah {type} ({hex})! {url}" },
-  "message": { "copy_success": "Tautan hasil disalin!", "copy_error": "Gagal menyalin. Coba lagi." },
-  "game": { "back": "Beranda DopaBrain" }
+  "app": {
+    "title": "Lab Pencampuran Warna | DopaBrain",
+    "skipLink": "Lompat ke konten utama",
+    "loading": "Memuat..."
+  },
+  "intro": {
+    "title": "Lab Pencampuran Warna",
+    "subtitle": "Campurkan warna untuk menemukan kepribadianmu",
+    "step1": "Pilih warna dari spektrum secara intuitif",
+    "step2": "Pilih palet yang sesuai denganmu",
+    "step3": "Saksikan kelahiran warna khasmu",
+    "time_estimate": "Waktu: sekitar 2 menit"
+  },
+  "button": {
+    "start": "Mulai Mencampur",
+    "back": "Kembali",
+    "retry": "Coba Lagi",
+    "confirm": "Konfirmasi Warna",
+    "share_download": "Unduh Gambar",
+    "share_kakao": "WhatsApp",
+    "share_twitter": "Twitter",
+    "share_facebook": "Facebook",
+    "share_copy": "Salin Tautan"
+  },
+  "phase1": {
+    "badge": "Palet Utama",
+    "prompt1": "Warna apa energi pagimu?",
+    "prompt2": "Warna apa zona nyamanmu?",
+    "prompt3": "Warna apa ambisimu?",
+    "label1": "Energi",
+    "label2": "Kenyamanan",
+    "label3": "Ambisi"
+  },
+  "phase2": {
+    "badge": "Reaksi Warna",
+    "prompt": "Palet mana yang lebih menarikmu?",
+    "vs": "VS",
+    "dim1": "Introvert vs Ekstrovert",
+    "dim2": "Kreatif vs Analitis",
+    "dim3": "Bergairah vs Damai",
+    "dim4": "Optimis vs Misterius",
+    "pair1": {
+      "left": "Malam Tenang",
+      "right": "Festival Meriah"
+    },
+    "pair2": {
+      "left": "Inspirasi Bebas",
+      "right": "Kejelasan Teratur"
+    },
+    "pair3": {
+      "left": "Api Menyala",
+      "right": "Danau Tenang"
+    },
+    "pair4": {
+      "left": "Matahari Bersinar",
+      "right": "Kosmos Dalam"
+    }
+  },
+  "mixing": {
+    "title": "Mencampurkan warna khasmu...",
+    "subtitle": "Menganalisis DNA warnamu..."
+  },
+  "result": {
+    "meaning": "Arti Warna",
+    "strengths": "Kekuatan Utama",
+    "weaknesses": "Area untuk Ditingkatkan",
+    "compatible": "Warna yang Cocok",
+    "incompatible": "Warna untuk Diwaspadai",
+    "share": "Bagikan Hasil",
+    "your_blend": "Campuran Warnamu",
+    "signature": "Khas",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang memiliki tipe warna seperti Anda"
+  },
+  "colors": {
+    "red": {
+      "name": "Merah - Si Bergairah",
+      "tagline": "Raih segalanya dengan gairah membara",
+      "description": "Kamu bergairah dan berani. Dengan energi tak terbatas, kamu bisa meraih tujuan apapun dan memimpin secara alami. Kamu menghadapi tantangan baru tanpa takut dan menghargai hidup di saat ini.",
+      "meaning": "Gairah, Energi, Keberanian, Kepemimpinan, Aktivitas, Tekad Kuat",
+      "strength1": "Kepemimpinan dan dorongan luar biasa",
+      "strength2": "Keberanian dan tekad",
+      "strength3": "Tindakan cepat dan tegas",
+      "weakness1": "Bisa impulsif kadang-kadang",
+      "weakness2": "Mungkin mengabaikan pendapat orang lain"
+    },
+    "blue": {
+      "name": "Biru - Si Bijak",
+      "tagline": "Memahami dunia melalui refleksi mendalam",
+      "description": "Kamu tenang dan penuh pemikiran, mencari stabilitas dan keamanan. Pemikiran analitismu menyelesaikan masalah secara efektif dan keandalanmu mendapat kepercayaan.",
+      "meaning": "Ketenangan, Kepercayaan, Kedalaman, Kebijaksanaan, Stabilitas, Ketenangan Batin",
+      "strength1": "Pemikiran analitis dan logis yang sangat baik",
+      "strength2": "Keandalan dan kepercayaan tinggi",
+      "strength3": "Wawasan dan kebijaksanaan mendalam",
+      "weakness1": "Bisa terlalu pasif",
+      "weakness2": "Berpikir berlebihan bisa menghalangi tindakan"
+    },
+    "green": {
+      "name": "Hijau - Si Penyelaras",
+      "tagline": "Menyembuhkan dunia dengan harmoni dan keseimbangan",
+      "description": "Kamu damai dan mencari harmoni. Kamu memahami emosi orang lain secara mendalam dan menunjukkan belas kasih yang tulus. Kamu lebih suka hidup yang stabil dan seimbang.",
+      "meaning": "Kedamaian, Penyembuhan, Harmoni, Perhatian, Keseimbangan, Kealamian",
+      "strength1": "Empati dan perhatian luar biasa",
+      "strength2": "Kemampuan menjaga hubungan harmonis",
+      "strength3": "Stabilitas dan keandalan",
+      "weakness1": "Mungkin menghindari berbagi pendapat",
+      "weakness2": "Cenderung menunda keputusan"
+    },
+    "yellow": {
+      "name": "Kuning - Si Optimis",
+      "tagline": "Menerangi segalanya dengan positifitas seperti matahari",
+      "description": "Kamu cerah dan optimis. Sikap positifmu mencerahkan semua orang di sekitarmu dan kamu ahli menemukan kegembiraan. Sifat ramahmu membangun hubungan yang indah.",
+      "meaning": "Optimisme, Harapan, Kecerahan, Keramahan, Positifitas, Vitalitas",
+      "strength1": "Sikap positif dan optimisme",
+      "strength2": "Keterampilan sosial yang luar biasa",
+      "strength3": "Kemampuan menginspirasi orang lain",
+      "weakness1": "Mungkin menghindari pemikiran mendalam",
+      "weakness2": "Mungkin kesulitan menghadapi kesulitan"
+    },
+    "purple": {
+      "name": "Ungu - Si Pencipta",
+      "tagline": "Menggambar dunia baru dengan imajinasi unik",
+      "description": "Kamu kreatif dengan imajinasi yang kaya. Kamu melihat dunia secara unik, dengan sensitivitas artistik tinggi. Kamu jiwa bebas yang tidak terikat tradisi.",
+      "meaning": "Kreativitas, Imajinasi, Misteri, Individualitas, Seni, Inovasi",
+      "strength1": "Kreativitas dan imajinasi luar biasa",
+      "strength2": "Perspektif unik dan individualitas",
+      "strength3": "Sensitivitas artistik",
+      "weakness1": "Mungkin terputus dari realitas",
+      "weakness2": "Eksekusi mungkin lemah"
+    },
+    "orange": {
+      "name": "Oranye - Si Energik",
+      "tagline": "Hidup bebas dengan energi semarak di setiap momen",
+      "description": "Kamu energik dan bersemangat. Kamu suka pengalaman baru dan punya kemampuan untuk menikmati saat ini sepenuhnya. Kamu mudah bergaul, fleksibel, dan membawa vitalitas.",
+      "meaning": "Vitalitas, Kebebasan, Spontanitas, Gairah, Fleksibilitas, Semangat",
+      "strength1": "Aktivitas dan semangat yang kuat",
+      "strength2": "Kemampuan menikmati pengalaman baru",
+      "strength3": "Adaptabilitas luar biasa",
+      "weakness1": "Perencanaan jangka panjang mungkin lemah",
+      "weakness2": "Mungkin kurang konsistensi"
+    },
+    "pink": {
+      "name": "Merah Muda - Si Empatik",
+      "tagline": "Menyentuh hati dengan perasaan hangat",
+      "description": "Kamu kaya emosi dan sangat sensitif. Kamu merawat orang-orang di sekitarmu dengan perhatian hangat. Ekspresi emosionalmu melimpah dan kamu membaca perasaan orang lain secara intuitif.",
+      "meaning": "Emosi, Belas Kasih, Kehangatan, Sensitivitas, Kelembutan, Keindahan Batin",
+      "strength1": "Sensitivitas dan empati luar biasa",
+      "strength2": "Perhatian hangat dan belas kasih",
+      "strength3": "Ekspresi emosional yang kaya",
+      "weakness1": "Mungkin terpengaruh emosi",
+      "weakness2": "Terlalu terpengaruh suasana hati orang lain"
+    },
+    "white": {
+      "name": "Putih - Si Murni",
+      "tagline": "Kapasitas besar untuk merangkul segalanya",
+      "description": "Kamu punya hati yang murni dan terbuka. Kamu menerima semua orang dengan hangat dan mencoba memahami tanpa menghakimi. Kamu mencari keaslian dan kejujuran.",
+      "meaning": "Kemurnian, Kelengkapan, Netralitas, Ketenangan, Inklusivitas, Permulaan",
+      "strength1": "Hati terbuka yang merangkul semua",
+      "strength2": "Moralitas dan kejujuran tinggi",
+      "strength3": "Harmoni dengan semua tipe",
+      "weakness1": "Mungkin kurang tegas",
+      "weakness2": "Mungkin menyembunyikan emosi"
+    }
+  },
+  "share": {
+    "kakao_title": "Hasil Lab Pencampuran Warna",
+    "kakao_button": "Aku mau coba juga",
+    "twitter_text": "Warna kepribadianku adalah {type} ({hex})! Apa warna khasmu?",
+    "copy_text": "Warna kepribadianku adalah {type} ({hex})! {url}"
+  },
+  "message": {
+    "copy_success": "Tautan hasil disalin!",
+    "copy_error": "Gagal menyalin. Coba lagi."
+  },
+  "game": {
+    "back": "Beranda DopaBrain"
+  },
+  "related": {
+    "auraScore": "Skor Aura",
+    "animalPersonality": "Kepribadian Hewan",
+    "brainType": "Tipe Otak",
+    "sleepAnimal": "Hewan Tidur"
+  }
 }
