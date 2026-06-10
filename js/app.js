@@ -226,6 +226,7 @@ class ColorMixingLab {
         this.scores = {};
         this.isDragging = false;
         this.selectedHex = '#ff6b6b';
+        this.resultViewTracked = false;
 
         this.hideLoader();
         this.init();
@@ -261,6 +262,63 @@ class ColorMixingLab {
                 page_location: window.location.href
             });
         }
+    }
+
+    trackEvent(eventName, params) {
+        var payload = Object.assign({ app_name: 'color-personality' }, params || {});
+        if (typeof gtag === 'function') {
+            gtag('event', eventName, payload);
+        } else {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push(Object.assign({ event: eventName }, payload));
+        }
+    }
+
+    getCurrentLang() {
+        if (window.i18n && typeof window.i18n.getCurrentLanguage === 'function') {
+            return window.i18n.getCurrentLanguage();
+        }
+        return document.documentElement.lang || 'en';
+    }
+
+    getShareUrl() {
+        var url = new URL(window.location.origin + window.location.pathname);
+        var resultType = this.resultType || 'unknown';
+        url.searchParams.set('lang', this.getCurrentLang());
+        url.searchParams.set('utm_source', 'share');
+        url.searchParams.set('utm_medium', 'color_personality_result');
+        url.searchParams.set('utm_campaign', 'personality_result_share');
+        url.searchParams.set('utm_content', resultType);
+        if (this.resultType) url.searchParams.set('color_type', this.resultType);
+        if (this.signatureHex) url.searchParams.set('signature_hex', this.signatureHex.replace('#', ''));
+        return url.toString();
+    }
+
+    getShareEventParams(method, extra) {
+        var resultType = this.resultType || 'unknown';
+        return Object.assign({
+            content_type: 'test_result',
+            surface: 'result_actions',
+            method: method,
+            color_type: resultType,
+            signature_hex: this.signatureHex,
+            lang: this.getCurrentLang(),
+            utm_source: 'share',
+            utm_medium: 'color_personality_result',
+            utm_campaign: 'personality_result_share',
+            utm_content: resultType
+        }, extra || {});
+    }
+
+    copyShareText(text, method, extra) {
+        var params = this.getShareEventParams(method, extra);
+        navigator.clipboard.writeText(text).then(function() {
+            alert(window.i18n.t('message.copy_success'));
+            this.trackEvent('color_personality_copy_link', params);
+            this.trackEvent('share', params);
+        }.bind(this)).catch(function() {
+            alert(window.i18n.t('message.copy_error'));
+        });
     }
 
     setupEventListeners() {
@@ -463,6 +521,7 @@ class ColorMixingLab {
         this.phase2Choices = [];
         this.scores = {};
         this.resultType = null;
+        this.resultViewTracked = false;
 
         Object.keys(COLOR_TYPES).forEach(function(type) {
             this.scores[type] = 0;
@@ -879,6 +938,13 @@ class ColorMixingLab {
 
         // Confetti
         this.createConfetti();
+
+        if (!this.resultViewTracked) {
+            this.resultViewTracked = true;
+            var params = this.getShareEventParams('view', { surface: 'result_screen' });
+            this.trackEvent('result_view', params);
+            this.trackEvent('color_personality_result_view', params);
+        }
     }
 
     createConfetti() {
@@ -984,17 +1050,17 @@ class ColorMixingLab {
         link.download = 'color-mixing-lab-' + this.resultType + '-' + Date.now() + '.png';
         link.click();
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'download_image', {
-                event_category: 'share',
-                color_type: this.resultType
-            });
-        }
+        var params = this.getShareEventParams('download', {
+            save_surface: 'result_canvas',
+            share_url: this.getShareUrl()
+        });
+        this.trackEvent('download_image', params);
+        this.trackEvent('color_personality_save_click', params);
     }
 
     shareKakao() {
         var typeData = COLOR_TYPES[this.resultType];
-        var resultUrl = window.location.href;
+        var resultUrl = this.getShareUrl();
         var resultType = window.i18n.t(typeData.nameKey);
 
         if (typeof Kakao !== 'undefined' && Kakao.Share) {
@@ -1012,12 +1078,13 @@ class ColorMixingLab {
                 }]
             });
         } else {
-            this.shareCopy();
+            this.copyShareText(resultUrl, 'kakao_fallback', { share_url: resultUrl });
+            return;
         }
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'kakao', color_type: this.resultType });
-        }
+        var params = this.getShareEventParams('kakao', { share_url: resultUrl });
+        this.trackEvent('color_personality_share_click', params);
+        this.trackEvent('share', params);
     }
 
     shareTwitter() {
@@ -1026,41 +1093,36 @@ class ColorMixingLab {
         var text = window.i18n.t('share.twitter_text')
             .replace('{type}', resultType)
             .replace('{hex}', this.signatureHex);
+        var resultUrl = this.getShareUrl();
         var url = 'https://twitter.com/intent/tweet?text=' +
-            encodeURIComponent(text) + '&url=' + encodeURIComponent(window.location.href);
+            encodeURIComponent(text) + '&url=' + encodeURIComponent(resultUrl);
         window.open(url, '_blank', 'width=550,height=420');
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'twitter', color_type: this.resultType });
-        }
+        var params = this.getShareEventParams('twitter', { share_url: resultUrl });
+        this.trackEvent('color_personality_share_click', params);
+        this.trackEvent('share', params);
     }
 
     shareFacebook() {
-        var url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href);
+        var resultUrl = this.getShareUrl();
+        var url = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(resultUrl);
         window.open(url, '_blank', 'width=550,height=420');
 
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'facebook', color_type: this.resultType });
-        }
+        var params = this.getShareEventParams('facebook', { share_url: resultUrl });
+        this.trackEvent('color_personality_share_click', params);
+        this.trackEvent('share', params);
     }
 
     shareCopy() {
         var typeData = COLOR_TYPES[this.resultType];
         var resultType = window.i18n.t(typeData.nameKey);
+        var resultUrl = this.getShareUrl();
         var text = window.i18n.t('share.copy_text')
             .replace('{type}', resultType)
             .replace('{hex}', this.signatureHex)
-            .replace('{url}', window.location.href);
+            .replace('{url}', resultUrl);
 
-        navigator.clipboard.writeText(text).then(function() {
-            alert(window.i18n.t('message.copy_success'));
-        }).catch(function() {
-            alert(window.i18n.t('message.copy_error'));
-        });
-
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'share', { method: 'copy', color_type: this.resultType });
-        }
+        this.copyShareText(text, 'clipboard', { share_url: resultUrl });
     }
 
     // --- Navigation ---
@@ -1092,6 +1154,7 @@ class ColorMixingLab {
         this.phase2Choices = [];
         this.scores = {};
         this.resultType = null;
+        this.resultViewTracked = false;
         this.signatureHex = '#000000';
         this.showScreen('intro-screen');
     }
