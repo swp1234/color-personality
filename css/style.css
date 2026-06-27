@@ -376,6 +376,13 @@ body {
     justify-content: center;
 }
 
+.ad-container .adsbygoogle {
+    display: block;
+    width: 100%;
+    max-width: 336px;
+    min-height: 90px;
+}
+
 .ad-container.ad-top {
     margin-top: 0;
 }

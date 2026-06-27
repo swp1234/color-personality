@@ -227,6 +227,7 @@ class ColorMixingLab {
         this.isDragging = false;
         this.selectedHex = '#ff6b6b';
         this.resultViewTracked = false;
+        this.resultAdPushed = false;
 
         this.hideLoader();
         this.init();
@@ -945,6 +946,43 @@ class ColorMixingLab {
             this.trackEvent('result_view', params);
             this.trackEvent('color_personality_result_view', params);
         }
+
+        this.loadResultAd();
+    }
+
+    loadResultAd() {
+        if (this.resultAdPushed) return;
+
+        var ad = document.getElementById('result-ad-slot');
+        if (!ad || ad.getAttribute('data-ad-loaded') === 'true') return;
+
+        var self = this;
+        var attempts = 0;
+        function tryPushResultAd() {
+            attempts++;
+            var rect = ad.getBoundingClientRect();
+            if (rect.width <= 0) {
+                if (attempts < 10) setTimeout(tryPushResultAd, 150);
+                return;
+            }
+
+            try {
+                (window.adsbygoogle = window.adsbygoogle || []).push({});
+                self.resultAdPushed = true;
+                ad.setAttribute('data-ad-loaded', 'true');
+                self.trackEvent('color_personality_result_ad_impression', self.getShareEventParams('ad', {
+                    ad_surface: 'color_personality_result_mid'
+                }));
+            } catch (e) {
+                if (attempts < 3) {
+                    setTimeout(tryPushResultAd, 250);
+                } else {
+                    console.warn('result ad load failed:', e.message);
+                }
+            }
+        }
+
+        requestAnimationFrame(tryPushResultAd);
     }
 
     createConfetti() {
