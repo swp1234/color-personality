@@ -1,5 +1,5 @@
 // 색채성격 진단 - Service Worker
-const CACHE_NAME = 'color-personality-v1';
+const CACHE_NAME = 'color-personality-v2';
 const urlsToCache = [
     './',
     './index.html',

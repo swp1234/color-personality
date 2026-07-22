@@ -253,7 +253,11 @@ class ColorMixingLab {
         }
         this.setupEventListeners();
         this.initTheme();
+        this.configureGuideLink();
         this.setupGA();
+        if (new URLSearchParams(window.location.search).get('start') === '1') {
+            this.startExperience();
+        }
     }
 
     setupGA() {
@@ -280,6 +284,31 @@ class ColorMixingLab {
             return window.i18n.getCurrentLanguage();
         }
         return document.documentElement.lang || 'en';
+    }
+
+    configureGuideLink() {
+        var lang = this.getCurrentLang();
+        var supported = ['en', 'ko', 'zh', 'hi', 'ru', 'ja', 'es', 'pt', 'id', 'tr', 'de', 'fr'];
+        if (supported.indexOf(lang) === -1) lang = 'en';
+        var labels = {
+            en: 'Read the evidence-aware color guide', ko: '근거와 함께 색상 가이드 읽기',
+            zh: '阅读有研究依据的颜色指南', hi: 'प्रमाण-आधारित रंग गाइड पढ़ें',
+            ru: 'Читать научно обоснованный гид', ja: '根拠とともに色ガイドを読む',
+            es: 'Leer la guía de color con evidencia', pt: 'Ler o guia de cores com evidências',
+            id: 'Baca panduan warna berbasis bukti', tr: 'Kanıta dayalı renk rehberini oku',
+            de: 'Evidenzbasierten Farbguide lesen', fr: 'Lire le guide des couleurs fondé sur les données'
+        };
+        var link = document.getElementById('color-guide-link');
+        var label = document.getElementById('color-guide-label');
+        if (link) {
+            link.href = '/portal/blog/' + lang + '/what-your-favorite-color-says-about-you.html?surface=color_result_guide';
+            link.addEventListener('click', function() {
+                this.trackEvent('color_personality_guide_click', {
+                    surface: 'result_related', lang: lang, guide_locale: lang
+                });
+            }.bind(this));
+        }
+        if (label) label.textContent = labels[lang] || labels.en;
     }
 
     getShareUrl() {
@@ -509,11 +538,14 @@ class ColorMixingLab {
 
     // --- Phase 1: Spectrum ---
     startExperience() {
+        var entryParams = new URLSearchParams(window.location.search);
         if (typeof gtag !== 'undefined') {
             gtag('event', 'test_start', {
                 app_name: 'color-personality',
                 content_type: 'color-mixing-lab',
-                event_category: 'engagement'
+                event_category: 'engagement',
+                entry_surface: entryParams.get('surface') || 'app_intro',
+                direct_start: entryParams.get('start') === '1'
             });
         }
 
@@ -1213,6 +1245,7 @@ class ColorMixingLab {
 
     async changeLang(lang) {
         await window.i18n.setLanguage(lang);
+        this.configureGuideLink();
         var menu = document.getElementById('lang-menu');
         if (menu) menu.classList.add('hidden');
 
