@@ -1,61 +1,44 @@
 {
   "meta": {
-    "title": "Free Color Personality Test Online | DopaBrain",
-    "description": "What does your favorite color say about you? Take this free color personality test to mix colors and discover your unique personality type. 8 results, instant!",
-    "keywords": "color mixing lab, personality color test, color mixing, personality test, viral test",
-    "og_title": "Color Mixing Lab - Create Your Personality Color!",
-    "og_description": "Pick colors from the spectrum and choose palettes to blend your unique personality color! Which of the 8 types are you?",
-    "twitter_title": "Color Mixing Lab - Your Personality Color",
-    "twitter_description": "Mix colors to discover your unique personality color!"
+    "page_title": "Color Choice Mixer | DopaBrain",
+    "description": "Choose three colors and four palettes, then review a transparent seven-point summary. Entertainment, not a personality assessment.",
+    "og_title": "Color Choice Mixer",
+    "og_description": "Choose three colors and four palettes, then review a transparent seven-point summary. Entertainment, not a personality assessment.",
+    "twitter_title": "Color Choice Mixer",
+    "twitter_description": "Choose three colors and four palettes, then review a transparent seven-point summary. Entertainment, not a personality assessment."
   },
   "app": {
-    "title": "Color Mixing Lab - Your Personality Color | DopaBrain",
     "skipLink": "Skip to main content",
     "loading": "Loading..."
   },
-  "about": {
-    "toggle": "About This Test",
-    "heading1": "How the Color Personality Test Works",
-    "text1": "The Color Personality Test uses a unique 7-step interactive process where you pick colors from a spectrum and choose between palettes. Your instinctive color choices are analyzed to determine your dominant personality color among 8 types: Red (Passionate), Blue (Intellectual), Green (Harmonizer), Yellow (Optimist), Purple (Creator), Orange (Energizer), Pink (Empath), and White (Pure).",
-    "heading2": "The Science of Color Psychology",
-    "text2": "Color psychology studies how colors affect human behavior and emotions. Research shows that color preferences can reflect personality traits, emotional states, and cognitive styles. This test applies these principles in a fun, interactive format to help you discover which color best represents your personality."
-  },
   "intro": {
-    "title": "Color Personality Test - Discover Your Color Type",
-    "subtitle": "Mix colors to discover your personality",
-    "step1": "Pick colors from the spectrum instinctively",
-    "step2": "Choose palettes that resonate with you",
-    "step3": "Watch your signature color come to life",
-    "time_estimate": "Takes about 2 minutes"
+    "title": "Color Choice Mixer",
+    "subtitle": "Mix seven color choices and see the count",
+    "step1": "Choose three spectrum colors",
+    "step2": "Choose four palettes",
+    "step3": "Review every point",
+    "time_estimate": "About 1 minute",
+    "boundary": "This author-created activity summarizes these choices only. It does not measure personality, emotion, compatibility, or health."
   },
   "button": {
-    "start": "Start Mixing",
+    "start": "Start choosing",
     "back": "Back",
-    "retry": "Try Again",
-    "confirm": "Confirm Color",
-    "share_download": "Download Image",
-    "share_kakao": "KakaoTalk",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Copy Link"
+    "retry": "Try again",
+    "confirm": "Keep this color",
+    "next": "Read the evidence-aware color guide",
+    "share": "Share this activity"
   },
   "phase1": {
     "badge": "Primary Palette",
     "prompt1": "What color is your morning energy?",
     "prompt2": "What color is your comfort zone?",
-    "prompt3": "What color is your ambition?",
-    "label1": "Energy",
-    "label2": "Comfort",
-    "label3": "Ambition"
+    "prompt3": "What color is your ambition?"
   },
   "phase2": {
     "badge": "Color Reactions",
     "prompt": "Which palette resonates more?",
     "vs": "VS",
-    "dim1": "Introvert vs Extrovert",
-    "dim2": "Creative vs Analytical",
-    "dim3": "Passionate vs Peaceful",
-    "dim4": "Optimistic vs Mysterious",
+    "counts_toward": "Counts toward {color}",
     "pair1": {
       "left": "Quiet Night",
       "right": "Vibrant Festival"
@@ -73,129 +56,38 @@
       "right": "Deep Cosmos"
     }
   },
-  "mixing": {
-    "title": "Blending your signature color...",
-    "subtitle": "Analyzing your color DNA..."
+  "summary": {
+    "title": "Counting your seven choices...",
+    "subtitle": "No hidden analysis is running."
   },
   "result": {
-    "meaning": "Color Meaning",
-    "strengths": "Key Strengths",
-    "weaknesses": "Areas to Improve",
-    "compatible": "Compatible Colors",
-    "incompatible": "Colors to Watch",
-    "share": "Share Your Result",
-    "your_blend": "Your Color Blend",
-    "signature": "Signature",
-    "moreTests": "Explore More Tests",
-    "percentileStat": "Only <strong>{percent}%</strong> of participants share your color type"
+    "your_color": "Most-selected color label",
+    "score_heading": "All seven points",
+    "method": "Each spectrum choice adds one point to the nearest named hue; low-saturation choices count as white. Each palette displays the color that receives one point. The highest count is shown; ties use the listed color order.",
+    "boundary": "This is a summary of seven choices, not a personality test or a claim about behavior, mood, compatibility, or ability.",
+    "most_points": "Most points came from {color}",
+    "moreTests": "Try another reflection"
   },
   "colors": {
-    "red": {
-      "name": "Red - The Passionate",
-      "tagline": "Achieving everything with fiery passion",
-      "description": "You have a passionate and bold personality. With boundless energy, you can achieve any goal and lead naturally. You embrace new challenges fearlessly and cherish living in the present moment.",
-      "meaning": "Passion, Energy, Courage, Leadership, Activity, Strong Will",
-      "strength1": "Excellent leadership and drive",
-      "strength2": "Fearlessness and determination",
-      "strength3": "Quick action and decisiveness",
-      "weakness1": "Can be impulsive sometimes",
-      "weakness2": "May overlook others' opinions"
-    },
-    "blue": {
-      "name": "Blue - The Intellectual",
-      "tagline": "Understanding the world through deep reflection",
-      "description": "You are calm and thoughtful, seeking stability and security. Your analytical thinking solves problems effectively, and your reliability earns trust from those around you.",
-      "meaning": "Tranquility, Trust, Depth, Wisdom, Stability, Composure",
-      "strength1": "Excellent analytical and logical thinking",
-      "strength2": "High reliability and trustworthiness",
-      "strength3": "Deep insight and wisdom",
-      "weakness1": "Can be overly passive",
-      "weakness2": "Overthinking may hinder action"
-    },
-    "green": {
-      "name": "Green - The Harmonizer",
-      "tagline": "Healing the world with harmony and balance",
-      "description": "You are peaceful and seek harmony. You understand others' emotions deeply and show genuine compassion. You prefer a stable, balanced life and bring comfort to those around you.",
-      "meaning": "Peace, Healing, Harmony, Consideration, Balance, Naturalness",
-      "strength1": "Excellent empathy and consideration",
-      "strength2": "Ability to maintain harmonious relationships",
-      "strength3": "Stability and trustworthiness",
-      "weakness1": "May avoid sharing your opinions",
-      "weakness2": "Tend to procrastinate decisions"
-    },
-    "yellow": {
-      "name": "Yellow - The Optimist",
-      "tagline": "Brightening everything with positivity like the sun",
-      "description": "You are bright and optimistic. Your positive attitude lights up everyone around you and you excel at finding joy. Your friendly nature helps you build wonderful relationships with many people.",
-      "meaning": "Optimism, Hope, Brightness, Friendliness, Positivity, Vitality",
-      "strength1": "Positive attitude and optimism",
-      "strength2": "Excellent social skills",
-      "strength3": "Ability to inspire others",
-      "weakness1": "May avoid deep thinking",
-      "weakness2": "May struggle with adversity"
-    },
-    "purple": {
-      "name": "Purple - The Creator",
-      "tagline": "Drawing new worlds with unique imagination",
-      "description": "You are creative with a rich imagination. You see the world uniquely, with high artistic sensitivity. You are a free spirit not bound by tradition, walking your own path.",
-      "meaning": "Creativity, Imagination, Mystery, Individuality, Artistry, Innovation",
-      "strength1": "Excellent creativity and imagination",
-      "strength2": "Unique perspective and individuality",
-      "strength3": "Artistic sensitivity",
-      "weakness1": "May be disconnected from reality",
-      "weakness2": "Execution may be weak"
-    },
-    "orange": {
-      "name": "Orange - The Energizer",
-      "tagline": "Living freely with vibrant energy in each moment",
-      "description": "You are energetic and vivid. You love new experiences and have the ability to fully enjoy the present. You are sociable, flexible, and bring vitality to everyone around you.",
-      "meaning": "Vitality, Freedom, Spontaneity, Passion, Flexibility, Liveliness",
-      "strength1": "Strong activity and liveliness",
-      "strength2": "Ability to enjoy new experiences",
-      "strength3": "Excellent adaptability",
-      "weakness1": "Long-term planning may be weak",
-      "weakness2": "May lack consistency"
-    },
-    "pink": {
-      "name": "Pink - The Empath",
-      "tagline": "Touching hearts with warm feelings",
-      "description": "You are emotionally rich and highly sensitive. You care deeply for those around you with warm consideration. Your emotional expression is abundant and you read others' feelings intuitively.",
-      "meaning": "Emotion, Compassion, Warmth, Sensitivity, Delicacy, Inner Beauty",
-      "strength1": "Excellent sensitivity and empathy",
-      "strength2": "Warm consideration and compassion",
-      "strength3": "Rich emotional expression",
-      "weakness1": "May be swayed by emotions",
-      "weakness2": "Too influenced by others' moods"
-    },
-    "white": {
-      "name": "White - The Pure",
-      "tagline": "The great capacity to embrace everything",
-      "description": "You have a pure and open heart. You accept everyone warmly and try to understand without judgment. You seek genuineness and honesty, harmonizing with all colors and people.",
-      "meaning": "Purity, Completion, Neutrality, Tranquility, Inclusivity, Beginning",
-      "strength1": "Open heart embracing everyone",
-      "strength2": "High morality and honesty",
-      "strength3": "Harmony with all types",
-      "weakness1": "May lack self-assertion",
-      "weakness2": "May hide your emotions"
-    }
+    "red": "Red",
+    "orange": "Orange",
+    "yellow": "Yellow",
+    "green": "Green",
+    "blue": "Blue",
+    "purple": "Purple",
+    "pink": "Pink",
+    "white": "White"
   },
   "share": {
-    "kakao_title": "My Color Mixing Lab Result",
-    "kakao_button": "Try It Too",
-    "twitter_text": "My personality color is {type} ({hex})! What's your signature color?",
-    "copy_text": "My personality color is {type} ({hex})! {url}"
+    "text": "Mix seven color choices and review the transparent count.",
+    "success": "Shared",
+    "error": "Sharing failed"
   },
-  "message": {
-    "copy_success": "Result link copied to clipboard!",
-    "copy_error": "Failed to copy. Please try again."
+  "related": {
+    "animal": "Animal choice activity",
+    "brain": "Decision-style quiz"
   },
   "game": {
     "back": "DopaBrain Home"
-  },
-  "related": {
-    "auraScore": "Aura Score",
-    "animalPersonality": "Animal Personality",
-    "brainType": "Brain Type",
-    "sleepAnimal": "Sleep Animal"
   }
 }

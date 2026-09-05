@@ -1,54 +1,44 @@
 {
   "meta": {
-    "description": "Que dit votre couleur préférée sur vous ? Test gratuit avec 8 résultats !",
-    "keywords": "laboratoire de melange de couleurs, test de couleur de personnalite, melange de couleurs, test psychologique",
-    "og_title": "Laboratoire de Melange de Couleurs - Creez votre couleur de personnalite!",
-    "og_description": "Choisissez des couleurs du spectre et melangez votre couleur de personnalite unique!",
-    "twitter_title": "Laboratoire de Melange de Couleurs",
-    "twitter_description": "Melangez les couleurs et decouvrez votre couleur de personnalite!",
-    "title": "Test de Personnalité Couleur Gratuit | DopaBrain"
+    "page_title": "Mélangeur de choix de couleurs | DopaBrain",
+    "description": "Choisissez trois couleurs et quatre palettes, puis consultez un décompte transparent de sept points. Divertissement, pas évaluation de personnalité.",
+    "og_title": "Mélangeur de choix de couleurs",
+    "og_description": "Choisissez trois couleurs et quatre palettes, puis consultez un décompte transparent de sept points. Divertissement, pas évaluation de personnalité.",
+    "twitter_title": "Mélangeur de choix de couleurs",
+    "twitter_description": "Choisissez trois couleurs et quatre palettes, puis consultez un décompte transparent de sept points. Divertissement, pas évaluation de personnalité."
   },
   "app": {
-    "title": "Laboratoire de Melange de Couleurs | DopaBrain",
     "skipLink": "Aller au contenu principal",
     "loading": "Chargement..."
   },
   "intro": {
-    "title": "Test de Couleur - Découvrez votre type de couleur",
-    "subtitle": "Melangez les couleurs pour decouvrir votre personnalite",
-    "step1": "Choisissez des couleurs du spectre intuitivement",
-    "step2": "Selectionnez la palette qui vous parle",
-    "step3": "Observez la naissance de votre couleur signature",
-    "time_estimate": "Duree: environ 2 minutes"
+    "title": "Mélangeur de choix de couleurs",
+    "subtitle": "Mélangez sept choix et voyez le décompte",
+    "step1": "Choisir trois couleurs du spectre",
+    "step2": "Choisir quatre palettes",
+    "step3": "Voir chaque point",
+    "time_estimate": "Environ 1 minute",
+    "boundary": "Cette activité originale résume uniquement ces choix. Elle ne mesure ni personnalité, ni émotion, ni compatibilité, ni santé."
   },
   "button": {
-    "start": "Commencer le Melange",
+    "start": "Commencer",
     "back": "Retour",
-    "retry": "Reessayer",
-    "confirm": "Confirmer la Couleur",
-    "share_download": "Telecharger l'image",
-    "share_kakao": "WhatsApp",
-    "share_twitter": "Twitter",
-    "share_facebook": "Facebook",
-    "share_copy": "Copier le lien"
+    "retry": "Réessayer",
+    "confirm": "Garder cette couleur",
+    "next": "Lire le guide couleur avec ses limites",
+    "share": "Partager cette activité"
   },
   "phase1": {
     "badge": "Palette Primaire",
     "prompt1": "Quelle couleur a votre energie matinale?",
     "prompt2": "Quelle couleur a votre zone de confort?",
-    "prompt3": "Quelle couleur a votre ambition?",
-    "label1": "Energie",
-    "label2": "Confort",
-    "label3": "Ambition"
+    "prompt3": "Quelle couleur a votre ambition?"
   },
   "phase2": {
     "badge": "Reactions de Couleur",
     "prompt": "Quelle palette vous attire le plus?",
     "vs": "VS",
-    "dim1": "Introverti vs Extraverti",
-    "dim2": "Creatif vs Analytique",
-    "dim3": "Passionne vs Paisible",
-    "dim4": "Optimiste vs Mysterieux",
+    "counts_toward": "Compte pour {color}",
     "pair1": {
       "left": "Nuit Calme",
       "right": "Festival Vibrant"
@@ -66,136 +56,38 @@
       "right": "Cosmos Profond"
     }
   },
-  "mixing": {
-    "title": "Melange de votre couleur signature en cours...",
-    "subtitle": "Analyse de votre ADN de couleur..."
+  "summary": {
+    "title": "Comptage de vos sept choix...",
+    "subtitle": "Aucune analyse cachée n’est effectuée."
   },
   "result": {
-    "meaning": "Signification de la Couleur",
-    "strengths": "Forces Principales",
-    "weaknesses": "Domaines a Ameliorer",
-    "compatible": "Couleurs Compatibles",
-    "incompatible": "Couleurs a Observer",
-    "share": "Partager le Resultat",
-    "your_blend": "Votre Melange de Couleurs",
-    "signature": "Signature",
-    "moreTests": "Découvrir plus de tests",
-    "percentileStat": "Seulement <strong>{percent}%</strong> des participants partagent votre type de couleur"
+    "your_color": "Étiquette de couleur la plus choisie",
+    "score_heading": "Les sept points",
+    "method": "Chaque choix du spectre ajoute un point à la teinte la plus proche ; une faible saturation compte comme blanc. Chaque palette affiche la couleur qui reçoit un point. Le maximum apparaît ; les égalités suivent l’ordre indiqué.",
+    "boundary": "C’est un résumé de sept choix, pas un test de personnalité ni une affirmation sur le comportement, l’humeur, la compatibilité ou les capacités.",
+    "most_points": "{color} a reçu le plus de points",
+    "moreTests": "Autre réflexion"
   },
   "colors": {
-    "red": {
-      "name": "Rouge - Le Passionne",
-      "tagline": "Tout accomplir avec une passion ardente",
-      "description": "Vous etes passionne et audacieux. Avec une energie sans limites, vous pouvez atteindre n'importe quel objectif et diriger naturellement. Vous affrontez les nouveaux defis sans peur et cherissez le moment present.",
-      "meaning": "Passion, Energie, Courage, Leadership, Activite, Volonte Forte",
-      "strength1": "Excellent leadership et motivation",
-      "strength2": "Intrepidite et determination",
-      "strength3": "Action rapide et decisivite",
-      "weakness1": "Peut etre impulsif parfois",
-      "weakness2": "Peut negliger les opinions des autres"
-    },
-    "blue": {
-      "name": "Bleu - Le Sage",
-      "tagline": "Comprendre le monde par la reflexion profonde",
-      "description": "Vous etes calme et reflechi, recherchant stabilite et securite. Votre pensee analytique resout les problemes efficacement et votre fiabilite inspire confiance.",
-      "meaning": "Tranquillite, Confiance, Profondeur, Sagesse, Stabilite, Sang-froid",
-      "strength1": "Excellente pensee analytique et logique",
-      "strength2": "Haute fiabilite et confiance",
-      "strength3": "Perspicacite profonde et sagesse",
-      "weakness1": "Peut etre excessivement passif",
-      "weakness2": "Trop reflechir peut empecher l'action"
-    },
-    "green": {
-      "name": "Vert - L'Harmonisateur",
-      "tagline": "Guerir le monde avec harmonie et equilibre",
-      "description": "Vous etes paisible et recherchez l'harmonie. Vous comprenez profondement les emotions des autres et montrez une compassion sincere. Vous preferez une vie stable et equilibree.",
-      "meaning": "Paix, Guerison, Harmonie, Prevenance, Equilibre, Naturel",
-      "strength1": "Excellente empathie et prevenance",
-      "strength2": "Capacite a maintenir des relations harmonieuses",
-      "strength3": "Stabilite et fiabilite",
-      "weakness1": "Peut eviter de partager ses opinions",
-      "weakness2": "Tendance a reporter les decisions"
-    },
-    "yellow": {
-      "name": "Jaune - L'Optimiste",
-      "tagline": "Tout illuminer de positivite comme le soleil",
-      "description": "Vous etes brillant et optimiste. Votre attitude positive eclaire tous ceux qui vous entourent et vous excellez a trouver la joie. Votre nature amicale construit de merveilleuses relations.",
-      "meaning": "Optimisme, Espoir, Luminosite, Convivialite, Positivite, Vitalite",
-      "strength1": "Attitude positive et optimisme",
-      "strength2": "Excellentes competences sociales",
-      "strength3": "Capacite a inspirer les autres",
-      "weakness1": "Peut eviter la reflexion profonde",
-      "weakness2": "Peut avoir du mal avec l'adversite"
-    },
-    "purple": {
-      "name": "Violet - Le Createur",
-      "tagline": "Dessiner de nouveaux mondes avec une imagination unique",
-      "description": "Vous etes creatif avec une riche imagination. Vous voyez le monde de maniere unique avec une haute sensibilite artistique. Vous etes un esprit libre non lie par la tradition.",
-      "meaning": "Creativite, Imagination, Mystere, Individualite, Art, Innovation",
-      "strength1": "Excellente creativite et imagination",
-      "strength2": "Perspective unique et individualite",
-      "strength3": "Sensibilite artistique",
-      "weakness1": "Peut etre deconnecte de la realite",
-      "weakness2": "L'execution peut etre faible"
-    },
-    "orange": {
-      "name": "Orange - L'Energisant",
-      "tagline": "Vivre librement avec une energie vibrante a chaque instant",
-      "description": "Vous etes energique et vif. Vous aimez les nouvelles experiences et avez la capacite de profiter pleinement du present. Vous etes sociable, flexible et apportez de la vitalite.",
-      "meaning": "Vitalite, Liberte, Spontaneite, Passion, Flexibilite, Vivacite",
-      "strength1": "Forte activite et vivacite",
-      "strength2": "Capacite a apprecier les nouvelles experiences",
-      "strength3": "Excellente adaptabilite",
-      "weakness1": "La planification a long terme peut etre faible",
-      "weakness2": "Peut manquer de constance"
-    },
-    "pink": {
-      "name": "Rose - L'Empathique",
-      "tagline": "Toucher les coeurs avec des sentiments chaleureux",
-      "description": "Vous etes emotionnellement riche et tres sensible. Vous prenez soin profondement de votre entourage avec une attention chaleureuse. Votre expression emotionnelle est abondante.",
-      "meaning": "Emotion, Compassion, Chaleur, Sensibilite, Delicatesse, Beaute Interieure",
-      "strength1": "Excellente sensibilite et empathie",
-      "strength2": "Attention chaleureuse et compassion",
-      "strength3": "Riche expression emotionnelle",
-      "weakness1": "Peut etre influence par les emotions",
-      "weakness2": "Trop affecte par l'humeur des autres"
-    },
-    "white": {
-      "name": "Blanc - Le Pur",
-      "tagline": "La grande capacite d'embrasser tout",
-      "description": "Vous avez un coeur pur et ouvert. Vous acceptez tout le monde chaleureusement et essayez de comprendre sans juger. Vous recherchez l'authenticite et l'honnetete en harmonie avec tous.",
-      "meaning": "Purete, Accomplissement, Neutralite, Tranquillite, Inclusivite, Commencement",
-      "strength1": "Coeur ouvert embrassant tout le monde",
-      "strength2": "Haute moralite et honnetete",
-      "strength3": "Harmonie avec tous les types",
-      "weakness1": "Peut manquer d'affirmation de soi",
-      "weakness2": "Peut cacher ses emotions"
-    }
+    "red": "Rouge",
+    "orange": "Orange",
+    "yellow": "Jaune",
+    "green": "Vert",
+    "blue": "Bleu",
+    "purple": "Violet",
+    "pink": "Rose",
+    "white": "Blanc"
   },
   "share": {
-    "kakao_title": "Resultat du Laboratoire de Melange",
-    "kakao_button": "Je veux essayer aussi",
-    "twitter_text": "Ma couleur de personnalite est {type} ({hex})! Quelle est votre couleur signature?",
-    "copy_text": "Ma couleur de personnalite est {type} ({hex})! {url}"
+    "text": "Mélangez sept choix de couleurs et consultez le décompte transparent.",
+    "success": "Partagé",
+    "error": "Échec du partage"
   },
-  "message": {
-    "copy_success": "Lien du resultat copie!",
-    "copy_error": "Echec de la copie. Veuillez reessayer."
+  "related": {
+    "animal": "Activité de choix animal",
+    "brain": "Quiz de style de décision"
   },
   "game": {
     "back": "Accueil DopaBrain"
-  },
-  "related": {
-    "auraScore": "Score d'aura",
-    "animalPersonality": "Personnalité animale",
-    "brainType": "Type de cerveau",
-    "sleepAnimal": "Animal du sommeil"
-  },
-  "about": {
-    "toggle": "À propos du test",
-    "heading1": "Comment fonctionne le test",
-    "text1": "Le test utilise un processus interactif en 7 étapes où vous choisissez des couleurs du spectre et des palettes. Vos choix instinctifs sont analysés pour déterminer votre couleur dominante parmi 8 types.",
-    "heading2": "La science de la psychologie des couleurs",
-    "text2": "La psychologie des couleurs étudie comment les couleurs affectent le comportement et les émotions humaines."
   }
 }
