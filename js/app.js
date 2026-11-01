@@ -30,8 +30,31 @@ class ColorChoiceMixer {
     document.getElementById('retry-btn').addEventListener('click',()=>this.reset());
     document.getElementById('spectrum-back').addEventListener('click',()=>this.back());
     document.getElementById('palette-back').addEventListener('click',()=>this.back());
-    document.getElementById('next-action').addEventListener('click',()=>this.track('color_personality_next_click'));
-    document.querySelector('.related-grid').addEventListener('click',e=>{if(e.target.closest('.related-card'))this.track('color_personality_related_click')});
+    document.getElementById('next-action').addEventListener('click',()=>{
+      this.track('color_personality_next_click');
+      if(typeof gtag==='function'){
+        gtag('event','content_cta_click',{
+          cta_surface:'color_personality_guide',
+          destination:document.getElementById('next-action').getAttribute('href'),
+          source:'color_personality_result',
+          lang:window.i18n?.getCurrentLanguage()||'ko'
+        });
+      }
+    });
+    document.querySelector('.related-grid').addEventListener('click',e=>{
+      const card=e.target.closest('.related-card');
+      if(card){
+        this.track('color_personality_related_click');
+        if(typeof gtag==='function'){
+          gtag('event','content_cta_click',{
+            cta_surface:'color_personality_related',
+            destination:card.getAttribute('href'),
+            source:'color_personality_result',
+            lang:window.i18n?.getCurrentLanguage()||'ko'
+          });
+        }
+      }
+    });
     document.getElementById('share-page').addEventListener('click',()=>this.share());
     document.getElementById('theme-toggle').addEventListener('click',()=>this.toggleTheme());
     const menu=document.getElementById('lang-menu');document.getElementById('lang-toggle').addEventListener('click',e=>{e.stopPropagation();menu.classList.toggle('hidden')});
